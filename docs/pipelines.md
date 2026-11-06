@@ -108,7 +108,7 @@ Each JSONL example has system/user/assistant messages plus session, participant,
 
 Training requires a separate CUDA environment with PyTorch, Transformers, TRL, PEFT, Datasets, Accelerate and bitsandbytes. Qwen/Mistral profiles additionally use Unsloth. GPU training and serving were not executed during release validation. The CPU environment lock is **not** a tested GPU-training lock.
 
-For a new CUDA environment, use the installation guidance matching your hardware. The implementation uses the [TRL completion-only SFT API](https://huggingface.co/docs/trl/v0.21.0/sft_trainer). Qwen3.5 requires current architecture support: [Unsloth's loader](https://github.com/unslothai/unsloth/blob/main/unsloth/models/loader.py) specifies Transformers >=5.2.0 and supports `text_only=True`, which this pipeline requests. The [official Qwen3.5 model card](https://huggingface.co/Qwen/Qwen3.5-4B) and [Unsloth notebook](https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_5_(4B)_Vision.ipynb) document framework compatibility; the latter currently uses PyTorch 2.8.0 and TRL 0.22.2. Treat these as upstream installation references, not as validation of this release's full training run.
+For a new CUDA environment, use the installation guidance matching your hardware. The implementation uses the [TRL completion-only SFT API](https://huggingface.co/docs/trl/main/en/sft_trainer). Qwen3.5 requires current architecture support: [Unsloth's loader](https://github.com/unslothai/unsloth/blob/main/unsloth/models/loader.py) specifies Transformers >=5.2.0 and supports `text_only=True`, which this pipeline requests. The [official Qwen3.5 model card](https://huggingface.co/Qwen/Qwen3.5-4B) and [Unsloth notebook](https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_5_(4B)_Vision.ipynb) document framework compatibility; the latter currently uses PyTorch 2.8.0 and TRL 0.22.2. Treat these as upstream installation references, not as validation of this release's full training run.
 
 Inspect training inputs and configuration without importing GPU libraries or downloading weights:
 
@@ -126,11 +126,27 @@ Six profiles are in `pipelines/configs/sft_profiles.json`:
 | Profiles | Epochs | Batch / accumulation | Maximum length | Packing |
 |---|---:|---|---:|---|
 | `llama-group`, `llama-topic` | 5 | 8 / 32 | No explicit truncation limit | No |
-| `qwen-group` | 3 | 8 / 2 | 4,096 | Yes |
-| `qwen-topic` | 3 | 16 / 1 | 4,096 | No |
+| `qwen-group`, `qwen-topic` | 3 | 4 / 4 | 4,096 | No |
 | `mistral-group`, `mistral-topic` | 3 | 16 / 1 | 4,096 | Yes |
 
-All profiles use learning rate 5e-5, LoRA rank/alpha 16, dropout 0, paged AdamW 8-bit and cosine scheduling with 10% warmup. Llama uses all linear modules and seed 42; cross-model profiles use seed 3407 and weight decay 0.001. The paper does not establish the precise historical Qwen/Mistral target-module list, quantization setting, dependency versions or checkpoint-selection policy. Those profiles supply explicit new-run defaults and record the unverified settings. Training records its actual runtime versions and saves the adapter, tokenizer and trainer state. The portable Llama default uses SDPA; `--attention-implementation` can select another supported backend, and `--no-compile` disables the paper's compilation setting.
+All profiles use learning rate 5e-5, LoRA rank/alpha 16, dropout 0, paged AdamW 8-bit and cosine scheduling with 10% warmup. Llama uses seed 42, weight decay 0, and LoRA on the attention query/key/value/output and MLP gate/up/down projections. Qwen and Mistral use seed 3407 and weight decay 0.001. The profiles retain the recovered target-module definitions, including Qwen's text-module regular expression. Both Qwen splits use train/evaluation batch size 4, accumulation 4, no packing, and 4-bit NF4 weights with double quantization.
+
+The recovered trainer states select epoch 4 for Llama, epoch 2 for Qwen, and epoch 1 for Mistral on both splits. These are historical results, not forced checkpoints: new runs select the checkpoint with the lowest validation loss. Mistral also uses evaluation packing, padding-free training, the recorded `chunked_nll` loss, and compilation. The saved Llama trainer flag has gradient checkpointing disabled; the model-preparation helper can independently enable it. This release records both settings explicitly and does not claim that checkpointing was disabled at runtime in the historical run. Qwen's saved `completion_only_loss` is null (automatic); the released formatter supplies prompt-completion examples, for which TRL uses completion-only loss.
+
+Training writes the resolved trainer and quantization arguments into `training_plan.json`, records actual runtime package versions, and saves the adapter, tokenizer and trainer state. The portable Llama default uses SDPA; `--attention-implementation` can select another supported backend, and `--no-compile` disables compilation. The Qwen/Mistral Unsloth loader chooses its attention backend. Use a compatible Unsloth/TRL installation for the recorded packing and loss settings; CPU tests do not validate its CUDA kernels.
+
+### Recovered training evidence
+
+The profiles now use metadata extracted from the saved training arguments, adapter configuration, trainer state and run logs. Each profile records the exact run identifier, catalogue profile, checkpoint steps and available package versions under `historical_evidence`. The source exports are identified by SHA-256:
+
+| Export | SHA-256 |
+|---|---|
+| `all_sft_evidence.json` | `119da8dfb4774e4aae30ec9ca7186728af9c1390ba97a33d586294f2c6ca4bdd` |
+| `evidence.json` | `657bca82e98c4f05ec19dbfb4c506bef379eff80730da92d39adb3b28e9e67eb` |
+
+The main Llama profiles use catalogue L010 and the June 8, 2026 `bd-real` five-epoch runs. The three-epoch Llama runs in the smaller evidence export are different experiments. Qwen and Mistral use catalogue L013 and L012, respectively. Recorded Qwen versions include PyTorch 2.9.0, Transformers 5.5.0, TRL 0.24.0 and Unsloth 2026.7.5; Mistral records PyTorch 2.11.0+cu129, Transformers 5.14.1, TRL 1.9.0 and Unsloth 2026.7.5. These historical versions are provenance, not a tested installation lock for this release.
+
+The new metadata do not include the original JSONLs or trained adapter weights. Mistral's original base-weight quantization and the June Llama dependency versions remain unverified. The runnable Mistral profile retains an explicit 4-bit NF4 new-run default; Llama's NF4 choice follows the retained training script because the recovered run metadata contain no quantization configuration. The data-preparation mismatch above therefore remains, and newly trained adapters are not an exact recreation of the released cached generations.
 
 ## Offline validation
 

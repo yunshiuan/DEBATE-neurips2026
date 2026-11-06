@@ -1,7 +1,7 @@
 [
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Llama",
+    "family": "Human",
     "split": "group_test",
     "channel": "public",
     "role": "human",
@@ -34,7 +34,51 @@
   },
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Llama",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.326",
+    "source_value": -0.32586416646359917,
+    "rounded_source": "-0.326"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.145",
+    "source_value": -0.14452258194482281,
+    "rounded_source": "-0.145"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.348",
+    "source_value": -0.3480155408350829,
+    "rounded_source": "-0.348"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.118",
+    "source_value": -0.11799717867990633,
+    "rounded_source": "-0.118"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Human",
     "split": "group_test",
     "channel": "private",
     "role": "human",
@@ -67,7 +111,51 @@
   },
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Llama",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "private",
+    "role": "base",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.579",
+    "source_value": -0.5789494683277849,
+    "rounded_source": "-0.579"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.080",
+    "source_value": -0.08001529384096595,
+    "rounded_source": "-0.080"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "private",
+    "role": "base",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.476",
+    "source_value": -0.4761291806855763,
+    "rounded_source": "-0.476"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.222",
+    "source_value": -0.2222671524301254,
+    "rounded_source": "-0.222"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Human",
     "split": "topic_test",
     "channel": "public",
     "role": "human",
@@ -100,7 +188,51 @@
   },
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Llama",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.458",
+    "source_value": -0.4575458599596558,
+    "rounded_source": "-0.458"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.265",
+    "source_value": -0.264722136611411,
+    "rounded_source": "-0.265"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.556",
+    "source_value": -0.5561694715584142,
+    "rounded_source": "-0.556"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "mean_delta_sd",
+    "displayed": "-0.252",
+    "source_value": -0.25188555626030196,
+    "rounded_source": "-0.252"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_convergence.tex",
+    "family": "Human",
     "split": "topic_test",
     "channel": "private",
     "role": "human",
@@ -134,123 +266,13 @@
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
     "family": "Qwen",
-    "split": "group_test",
-    "channel": "public",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.199",
-    "source_value": -0.19859553210917635,
-    "rounded_source": "-0.199"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "group_test",
-    "channel": "public",
-    "role": "base",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.412",
-    "source_value": -0.41225788758517623,
-    "rounded_source": "-0.412"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "group_test",
-    "channel": "public",
-    "role": "SFT",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.231",
-    "source_value": -0.23091630306639988,
-    "rounded_source": "-0.231"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "group_test",
-    "channel": "private",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.059",
-    "source_value": -0.05858307021327325,
-    "rounded_source": "-0.059"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "group_test",
-    "channel": "private",
-    "role": "base",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.634",
-    "source_value": -0.6338587886416849,
-    "rounded_source": "-0.634"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "group_test",
-    "channel": "private",
-    "role": "SFT",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.135",
-    "source_value": -0.1349246141548659,
-    "rounded_source": "-0.135"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "topic_test",
-    "channel": "public",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.066",
-    "source_value": -0.06649824909250213,
-    "rounded_source": "-0.066"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "topic_test",
-    "channel": "public",
-    "role": "base",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.402",
-    "source_value": -0.40243486557770436,
-    "rounded_source": "-0.402"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "topic_test",
-    "channel": "public",
-    "role": "SFT",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.210",
-    "source_value": -0.20961114222945954,
-    "rounded_source": "-0.210"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
-    "split": "topic_test",
-    "channel": "private",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.162",
-    "source_value": -0.16169206749848586,
-    "rounded_source": "-0.162"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Qwen",
     "split": "topic_test",
     "channel": "private",
     "role": "base",
     "metric": "mean_delta_sd",
-    "displayed": "-0.548",
-    "source_value": -0.5484366188362324,
-    "rounded_source": "-0.548"
+    "displayed": "-0.673",
+    "source_value": -0.6731886696119012,
+    "rounded_source": "-0.673"
   },
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
@@ -259,119 +281,9 @@
     "channel": "private",
     "role": "SFT",
     "metric": "mean_delta_sd",
-    "displayed": "-0.173",
-    "source_value": -0.1732213889121832,
-    "rounded_source": "-0.173"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "group_test",
-    "channel": "public",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.115",
-    "source_value": -0.11491313804596426,
-    "rounded_source": "-0.115"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "group_test",
-    "channel": "public",
-    "role": "base",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.357",
-    "source_value": -0.3568630048545056,
-    "rounded_source": "-0.357"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "group_test",
-    "channel": "public",
-    "role": "SFT",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.127",
-    "source_value": -0.12684464269932905,
-    "rounded_source": "-0.127"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "group_test",
-    "channel": "private",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.121",
-    "source_value": -0.12087975312848909,
-    "rounded_source": "-0.121"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "group_test",
-    "channel": "private",
-    "role": "base",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.496",
-    "source_value": -0.49638228384160077,
-    "rounded_source": "-0.496"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "group_test",
-    "channel": "private",
-    "role": "SFT",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.243",
-    "source_value": -0.24252025558614987,
-    "rounded_source": "-0.243"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "topic_test",
-    "channel": "public",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.076",
-    "source_value": -0.07601249778122998,
-    "rounded_source": "-0.076"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "topic_test",
-    "channel": "public",
-    "role": "base",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.510",
-    "source_value": -0.5096032165967677,
-    "rounded_source": "-0.510"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "topic_test",
-    "channel": "public",
-    "role": "SFT",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.205",
-    "source_value": -0.2053193012986554,
-    "rounded_source": "-0.205"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_convergence.tex",
-    "family": "Mistral",
-    "split": "topic_test",
-    "channel": "private",
-    "role": "human",
-    "metric": "mean_delta_sd",
-    "displayed": "-0.016",
-    "source_value": -0.015799666117833233,
-    "rounded_source": "-0.016"
+    "displayed": "-0.298",
+    "source_value": -0.29797343968785195,
+    "rounded_source": "-0.298"
   },
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
@@ -380,9 +292,9 @@
     "channel": "private",
     "role": "base",
     "metric": "mean_delta_sd",
-    "displayed": "-0.549",
-    "source_value": -0.5488802042179045,
-    "rounded_source": "-0.549"
+    "displayed": "-0.624",
+    "source_value": -0.6242871032609539,
+    "rounded_source": "-0.624"
   },
   {
     "paper_file": "tables/sft_cross_model_convergence.tex",
@@ -391,9 +303,42 @@
     "channel": "private",
     "role": "SFT",
     "metric": "mean_delta_sd",
-    "displayed": "-0.126",
-    "source_value": -0.12607160597899125,
-    "rounded_source": "-0.126"
+    "displayed": "-0.201",
+    "source_value": -0.20147850502204068,
+    "rounded_source": "-0.201"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.585",
+    "source_value": 1.5845464725643896,
+    "rounded_source": "1.585"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.641",
+    "source_value": 1.6408114558472553,
+    "rounded_source": "1.641"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.782",
+    "source_value": 0.7816989268037311,
+    "rounded_source": "0.782"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -411,11 +356,11 @@
     "family": "Llama",
     "split": "group_test",
     "channel": "private",
-    "role": "SFT",
-    "metric": "private_stance_alignment_abs",
-    "displayed": "0.975",
-    "source_value": 0.9753424657534246,
-    "rounded_source": "0.975"
+    "role": "base",
+    "metric": "private_stance_change_error_abs",
+    "displayed": "1.732",
+    "source_value": 1.7317647058823529,
+    "rounded_source": "1.732"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -423,10 +368,54 @@
     "split": "group_test",
     "channel": "private",
     "role": "base",
-    "metric": "private_stance_change_error_abs",
-    "displayed": "1.732",
-    "source_value": 1.7317647058823529,
-    "rounded_source": "1.732"
+    "metric": "private_opinion_convergence_error",
+    "displayed": "0.804",
+    "source_value": 0.8044025768958446,
+    "rounded_source": "0.804"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.137",
+    "source_value": 1.1368301026225769,
+    "rounded_source": "1.137"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.079",
+    "source_value": 1.0794621026894866,
+    "rounded_source": "1.079"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.582",
+    "source_value": 0.5823982897597109,
+    "rounded_source": "0.582"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_private_errors.tex",
+    "family": "Llama",
+    "split": "group_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "private_stance_alignment_abs",
+    "displayed": "0.975",
+    "source_value": 0.9753424657534246,
+    "rounded_source": "0.975"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -444,22 +433,44 @@
     "family": "Llama",
     "split": "group_test",
     "channel": "private",
-    "role": "base",
-    "metric": "private_opinion_convergence_error",
-    "displayed": "0.804",
-    "source_value": 0.8044025768958446,
-    "rounded_source": "0.804"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_private_errors.tex",
-    "family": "Llama",
-    "split": "group_test",
-    "channel": "private",
     "role": "SFT",
     "metric": "private_opinion_convergence_error",
     "displayed": "0.557",
     "source_value": 0.5570973652780612,
     "rounded_source": "0.557"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.635",
+    "source_value": 1.6345291479820627,
+    "rounded_source": "1.635"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.696",
+    "source_value": 1.6958598726114649,
+    "rounded_source": "1.696"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.854",
+    "source_value": 0.8541941384893359,
+    "rounded_source": "0.854"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -477,11 +488,11 @@
     "family": "Llama",
     "split": "topic_test",
     "channel": "private",
-    "role": "SFT",
-    "metric": "private_stance_alignment_abs",
-    "displayed": "1.040",
-    "source_value": 1.040219378427788,
-    "rounded_source": "1.040"
+    "role": "base",
+    "metric": "private_stance_change_error_abs",
+    "displayed": "1.787",
+    "source_value": 1.7870662460567823,
+    "rounded_source": "1.787"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -489,10 +500,54 @@
     "split": "topic_test",
     "channel": "private",
     "role": "base",
-    "metric": "private_stance_change_error_abs",
-    "displayed": "1.787",
-    "source_value": 1.7870662460567823,
-    "rounded_source": "1.787"
+    "metric": "private_opinion_convergence_error",
+    "displayed": "0.860",
+    "source_value": 0.8600971309962551,
+    "rounded_source": "0.860"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.098",
+    "source_value": 1.0984732824427481,
+    "rounded_source": "1.098"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.103",
+    "source_value": 1.1029411764705883,
+    "rounded_source": "1.103"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Llama",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.645",
+    "source_value": 0.6447216270283209,
+    "rounded_source": "0.645"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_private_errors.tex",
+    "family": "Llama",
+    "split": "topic_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "private_stance_alignment_abs",
+    "displayed": "1.040",
+    "source_value": 1.040219378427788,
+    "rounded_source": "1.040"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -510,22 +565,44 @@
     "family": "Llama",
     "split": "topic_test",
     "channel": "private",
-    "role": "base",
-    "metric": "private_opinion_convergence_error",
-    "displayed": "0.860",
-    "source_value": 0.8600971309962551,
-    "rounded_source": "0.860"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_private_errors.tex",
-    "family": "Llama",
-    "split": "topic_test",
-    "channel": "private",
     "role": "SFT",
     "metric": "private_opinion_convergence_error",
     "displayed": "0.718",
     "source_value": 0.7176063987784882,
     "rounded_source": "0.718"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.606",
+    "source_value": 1.6060267857142858,
+    "rounded_source": "1.606"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.638",
+    "source_value": 1.6379310344827587,
+    "rounded_source": "1.638"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.818",
+    "source_value": 0.8183857738399689,
+    "rounded_source": "0.818"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -543,11 +620,11 @@
     "family": "Qwen",
     "split": "group_test",
     "channel": "private",
-    "role": "SFT",
-    "metric": "private_stance_alignment_abs",
-    "displayed": "1.145",
-    "source_value": 1.1454545454545455,
-    "rounded_source": "1.145"
+    "role": "base",
+    "metric": "private_stance_change_error_abs",
+    "displayed": "1.477",
+    "source_value": 1.477142857142857,
+    "rounded_source": "1.477"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -555,10 +632,54 @@
     "split": "group_test",
     "channel": "private",
     "role": "base",
-    "metric": "private_stance_change_error_abs",
-    "displayed": "1.477",
-    "source_value": 1.477142857142857,
-    "rounded_source": "1.477"
+    "metric": "private_opinion_convergence_error",
+    "displayed": "0.807",
+    "source_value": 0.8067296708993689,
+    "rounded_source": "0.807"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.028",
+    "source_value": 1.0275545350172215,
+    "rounded_source": "1.028"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.019",
+    "source_value": 1.0186666666666666,
+    "rounded_source": "1.019"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.701",
+    "source_value": 0.7014598633838696,
+    "rounded_source": "0.701"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_private_errors.tex",
+    "family": "Qwen",
+    "split": "group_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "private_stance_alignment_abs",
+    "displayed": "1.145",
+    "source_value": 1.1454545454545455,
+    "rounded_source": "1.145"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -576,22 +697,44 @@
     "family": "Qwen",
     "split": "group_test",
     "channel": "private",
-    "role": "base",
-    "metric": "private_opinion_convergence_error",
-    "displayed": "0.807",
-    "source_value": 0.8067296708993689,
-    "rounded_source": "0.807"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_private_errors.tex",
-    "family": "Qwen",
-    "split": "group_test",
-    "channel": "private",
     "role": "SFT",
     "metric": "private_opinion_convergence_error",
     "displayed": "0.678",
     "source_value": 0.6777920760894074,
     "rounded_source": "0.678"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.543",
+    "source_value": 1.542597187758478,
+    "rounded_source": "1.543"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.580",
+    "source_value": 1.5804263565891472,
+    "rounded_source": "1.580"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.829",
+    "source_value": 0.8289257987762043,
+    "rounded_source": "0.829"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -609,11 +752,11 @@
     "family": "Qwen",
     "split": "topic_test",
     "channel": "private",
-    "role": "SFT",
-    "metric": "private_stance_alignment_abs",
-    "displayed": "1.174",
-    "source_value": 1.1735074626865671,
-    "rounded_source": "1.174"
+    "role": "base",
+    "metric": "private_stance_change_error_abs",
+    "displayed": "1.378",
+    "source_value": 1.3777777777777778,
+    "rounded_source": "1.378"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -621,10 +764,54 @@
     "split": "topic_test",
     "channel": "private",
     "role": "base",
-    "metric": "private_stance_change_error_abs",
-    "displayed": "1.378",
-    "source_value": 1.3777777777777778,
-    "rounded_source": "1.378"
+    "metric": "private_opinion_convergence_error",
+    "displayed": "0.775",
+    "source_value": 0.7751581081917416,
+    "rounded_source": "0.775"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.056",
+    "source_value": 1.055694098088113,
+    "rounded_source": "1.056"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.066",
+    "source_value": 1.0658396946564885,
+    "rounded_source": "1.066"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.670",
+    "source_value": 0.6698010621950634,
+    "rounded_source": "0.670"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_private_errors.tex",
+    "family": "Qwen",
+    "split": "topic_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "private_stance_alignment_abs",
+    "displayed": "1.174",
+    "source_value": 1.1735074626865671,
+    "rounded_source": "1.174"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -642,22 +829,44 @@
     "family": "Qwen",
     "split": "topic_test",
     "channel": "private",
-    "role": "base",
-    "metric": "private_opinion_convergence_error",
-    "displayed": "0.775",
-    "source_value": 0.7751581081917416,
-    "rounded_source": "0.775"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_private_errors.tex",
-    "family": "Qwen",
-    "split": "topic_test",
-    "channel": "private",
     "role": "SFT",
     "metric": "private_opinion_convergence_error",
     "displayed": "0.720",
     "source_value": 0.7198640842582871,
     "rounded_source": "0.720"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.633",
+    "source_value": 1.6332599118942732,
+    "rounded_source": "1.633"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.494",
+    "source_value": 1.494145199063232,
+    "rounded_source": "1.494"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.840",
+    "source_value": 0.8395963925400958,
+    "rounded_source": "0.840"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -675,11 +884,11 @@
     "family": "Mistral",
     "split": "group_test",
     "channel": "private",
-    "role": "SFT",
-    "metric": "private_stance_alignment_abs",
-    "displayed": "1.251",
-    "source_value": 1.2512953367875648,
-    "rounded_source": "1.251"
+    "role": "base",
+    "metric": "private_stance_change_error_abs",
+    "displayed": "1.258",
+    "source_value": 1.2583333333333333,
+    "rounded_source": "1.258"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -687,10 +896,54 @@
     "split": "group_test",
     "channel": "private",
     "role": "base",
-    "metric": "private_stance_change_error_abs",
-    "displayed": "1.258",
-    "source_value": 1.2583333333333333,
-    "rounded_source": "1.258"
+    "metric": "private_opinion_convergence_error",
+    "displayed": "0.773",
+    "source_value": 0.7727031920806843,
+    "rounded_source": "0.773"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.236",
+    "source_value": 1.2361275088547816,
+    "rounded_source": "1.236"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.239",
+    "source_value": 1.2391304347826086,
+    "rounded_source": "1.239"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.728",
+    "source_value": 0.7278420549891391,
+    "rounded_source": "0.728"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_private_errors.tex",
+    "family": "Mistral",
+    "split": "group_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "private_stance_alignment_abs",
+    "displayed": "1.251",
+    "source_value": 1.2512953367875648,
+    "rounded_source": "1.251"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -708,22 +961,44 @@
     "family": "Mistral",
     "split": "group_test",
     "channel": "private",
-    "role": "base",
-    "metric": "private_opinion_convergence_error",
-    "displayed": "0.773",
-    "source_value": 0.7727031920806843,
-    "rounded_source": "0.773"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_private_errors.tex",
-    "family": "Mistral",
-    "split": "group_test",
-    "channel": "private",
     "role": "SFT",
     "metric": "private_opinion_convergence_error",
     "displayed": "0.692",
     "source_value": 0.6922735068316763,
     "rounded_source": "0.692"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.688",
+    "source_value": 1.6883954154727794,
+    "rounded_source": "1.688"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.555",
+    "source_value": 1.5549618320610687,
+    "rounded_source": "1.555"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "base",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.792",
+    "source_value": 0.7922597060188793,
+    "rounded_source": "0.792"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
@@ -741,17 +1016,6 @@
     "family": "Mistral",
     "split": "topic_test",
     "channel": "private",
-    "role": "SFT",
-    "metric": "private_stance_alignment_abs",
-    "displayed": "1.284",
-    "source_value": 1.2835314091680814,
-    "rounded_source": "1.284"
-  },
-  {
-    "paper_file": "tables/sft_cross_model_private_errors.tex",
-    "family": "Mistral",
-    "split": "topic_test",
-    "channel": "private",
     "role": "base",
     "metric": "private_stance_change_error_abs",
     "displayed": "1.429",
@@ -763,22 +1027,66 @@
     "family": "Mistral",
     "split": "topic_test",
     "channel": "private",
+    "role": "base",
+    "metric": "private_opinion_convergence_error",
+    "displayed": "0.862",
+    "source_value": 0.8620075522907148,
+    "rounded_source": "0.862"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
     "role": "SFT",
-    "metric": "private_stance_change_error_abs",
-    "displayed": "1.253",
-    "source_value": 1.2531645569620253,
-    "rounded_source": "1.253"
+    "metric": "public_stance_alignment_abs",
+    "displayed": "1.318",
+    "source_value": 1.3181467181467181,
+    "rounded_source": "1.318"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_stance_change_error_abs",
+    "displayed": "1.378",
+    "source_value": 1.3783333333333334,
+    "rounded_source": "1.378"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_public_errors.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "public",
+    "role": "SFT",
+    "metric": "public_opinion_convergence_error",
+    "displayed": "0.807",
+    "source_value": 0.8071623675063373,
+    "rounded_source": "0.807"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",
     "family": "Mistral",
     "split": "topic_test",
     "channel": "private",
-    "role": "base",
-    "metric": "private_opinion_convergence_error",
-    "displayed": "0.862",
-    "source_value": 0.8620075522907148,
-    "rounded_source": "0.862"
+    "role": "SFT",
+    "metric": "private_stance_alignment_abs",
+    "displayed": "1.284",
+    "source_value": 1.2835314091680814,
+    "rounded_source": "1.284"
+  },
+  {
+    "paper_file": "tables/sft_cross_model_private_errors.tex",
+    "family": "Mistral",
+    "split": "topic_test",
+    "channel": "private",
+    "role": "SFT",
+    "metric": "private_stance_change_error_abs",
+    "displayed": "1.253",
+    "source_value": 1.2531645569620253,
+    "rounded_source": "1.253"
   },
   {
     "paper_file": "tables/sft_cross_model_private_errors.tex",

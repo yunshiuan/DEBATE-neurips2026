@@ -24,7 +24,7 @@ Lower error is better. Solid bars show Full Dynamics Simulation; hatched bars sh
 
 [![Public and private opinion-convergence bars and standard-deviation trajectories compare human groups, base models, Llama SFT, and DeGroot.](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/convergence_group_test_20261106.png)](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/convergence_group_test_20261106.png)
 
-Full Dynamics Simulation: more negative bars indicate a larger reduction in within-group stance variation. The right panels show the corresponding standard-deviation trajectories, anchored to the human initial standard deviation. Llama SFT brings both public and private opinion convergence closer to the human pattern than the base Llama model.
+Full Dynamics Simulation: more negative bars indicate a larger reduction in within-group stance variation. The right panels show the corresponding standard-deviation trajectories. Llama SFT brings both public and private opinion convergence closer to the human pattern than the base Llama model.
 
 ## Reproduce from cached data
 
@@ -49,7 +49,7 @@ debate download --source /path/to/DEBATE_LLM --data-root ./data
 
 The complete release downloads about 1.69 GB and extracts to about 15.1 GB. Allow additional space for the download cache, temporary extraction files, and analysis outputs. `debate download --list` shows component sizes. `--components` selects components; the default downloads all. Use `--data-root` to choose a data location outside the code checkout.
 
-The reproduction command writes PDF/PNG figures, numeric CSVs, LaTeX tables, and verification reports. See [paper reproduction](docs/paper_reproduction.md) for individual stages and the figure/table mapping.
+The reproduction command writes PDF/PNG figures, numeric CSVs, LaTeX tables, and verification reports. The cross-model tables cover opinion convergence, public-opinion prediction errors, and private-opinion prediction errors for Llama, Qwen, and Mistral. See [paper reproduction](docs/paper_reproduction.md) for individual stages and the figure/table mapping.
 
 ## Run new experiments
 
@@ -62,13 +62,13 @@ See [pipeline instructions](docs/pipelines.md) for simulation modes, Likert and 
 
 Use `debate evaluate --help` to compute the benchmark metrics from newly annotated human/model records. This command checks event alignment and applies the supplied validity labels explicitly.
 
-SFT data preparation and training scripts are included for Llama, Qwen, and Mistral. The original formatted training JSONLs and trained adapters were not recovered; the reconstructed corpus has different example counts. The training commands support new experiments and do not claim exact retraining of the published checkpoints. See the [SFT provenance and counts](docs/pipelines.md#sft-preparation-and-provenance).
+SFT data preparation and training scripts are included for Llama, Qwen, and Mistral, with training profiles updated from the recovered run metadata. The original formatted training JSONLs and trained adapters were not recovered; the reconstructed corpus has different example counts. The training commands support new experiments and do not claim exact retraining of the published checkpoints. See the [SFT provenance and counts](docs/pipelines.md#sft-preparation-and-provenance).
 
 ## Evaluation protocol and coverage
 
 The camera-ready evaluation uses one set of 107 discussion topics and two partition strategies: held-out participant groups and held-out topics. It uses the valid observations required by each metric, without requiring all participants in a session to complete every stage. The split masks contain 708 sessions; 697 have canonical human-evaluation records.
 
-The main Llama results, unchanged base-model evaluations, and Qwen/Mistral replications retain their respective evaluation references. Comparisons between Base and SFT are made within each model family. Training-partition data are used for gradient updates; the reported SFT test partitions were also used for checkpoint selection. These partitions are not an untouched model-selection holdout.
+The cached evaluations retain their original split masks and validity labels. The cross-model table exports also retain the original model-family summaries and document the calculation used for the camera-ready convergence table. Training-partition data are used for gradient updates; the reported SFT test partitions were also used for checkpoint selection. These partitions are not an untouched model-selection holdout.
 
 See [paper reproduction](docs/paper_reproduction.md) for the figure/table mapping and the evidence available for each analysis. The release distinguishes recomputation from individual cached labels, rerendering from retained aggregate values, and analyses whose original annotation records are unavailable. It does not substitute a different evaluation subset to fill a missing source.
 

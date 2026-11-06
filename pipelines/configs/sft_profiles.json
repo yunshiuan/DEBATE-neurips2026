@@ -11,7 +11,15 @@
     "lora_rank": 16,
     "lora_alpha": 16,
     "lora_dropout": 0.0,
-    "target_modules": "all-linear",
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ],
     "load_in_4bit": true,
     "quant_type": "nf4",
     "max_length": null,
@@ -22,13 +30,49 @@
     "warmup_ratio": 0.1,
     "seed": 42,
     "weight_decay": 0.0,
-    "gradient_checkpointing": true,
+    "gradient_checkpointing": false,
     "torch_compile": true,
     "checkpoint_selection": "lowest epoch validation loss on corresponding test partition",
     "expected_historical_train_examples": 17057,
     "expected_historical_test_examples": 3804,
-    "source": "paper Appendix SFT Hyperparameters and src/finetuning/llama_finetuning.py",
-    "exact_training_corpus_and_checkpoint_in_release": false
+    "source": "Camera-ready SFT evidence, catalogue profile L010; see docs/pipelines.md",
+    "exact_training_corpus_and_checkpoint_in_release": false,
+    "gradient_checkpointing_kwargs": {
+      "use_reentrant": true
+    },
+    "torch_compile_backend": "inductor",
+    "torch_compile_mode": "max-autotune",
+    "eval_accumulation_steps": null,
+    "eval_packing": null,
+    "padding_free": false,
+    "loss_type": "nll",
+    "bf16": true,
+    "bf16_full_eval": false,
+    "tf32": true,
+    "data_seed": null,
+    "auto_find_batch_size": false,
+    "group_by_length": true,
+    "model_preparation_gradient_checkpointing": true,
+    "use_rslora": false,
+    "use_double_quant": false,
+    "unverified_historical_settings": [
+      "original dependency versions",
+      "runtime gradient checkpointing after model preparation (saved trainer flag is false)",
+      "saved quantization metadata absent; NF4 follows retained original training script"
+    ],
+    "historical_evidence": {
+      "catalogue_profile": "L010",
+      "run_id": "ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs",
+      "source_file_sha256": {
+        "all_sft_evidence.json": "119da8dfb4774e4aae30ec9ca7186728af9c1390ba97a33d586294f2c6ca4bdd",
+        "evidence.json": "657bca82e98c4f05ec19dbfb4c506bef379eff80730da92d39adb3b28e9e67eb"
+      },
+      "selected_epoch": 4,
+      "best_checkpoint_step": 268,
+      "final_step": 335,
+      "selected_epoch_is_descriptive_not_forced": true,
+      "packages": null
+    }
   },
   "llama-topic": {
     "model": "meta-llama/Llama-3.1-8B-Instruct",
@@ -42,7 +86,15 @@
     "lora_rank": 16,
     "lora_alpha": 16,
     "lora_dropout": 0.0,
-    "target_modules": "all-linear",
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ],
     "load_in_4bit": true,
     "quant_type": "nf4",
     "max_length": null,
@@ -53,39 +105,67 @@
     "warmup_ratio": 0.1,
     "seed": 42,
     "weight_decay": 0.0,
-    "gradient_checkpointing": true,
+    "gradient_checkpointing": false,
     "torch_compile": true,
     "checkpoint_selection": "lowest epoch validation loss on corresponding test partition",
     "expected_historical_train_examples": 14662,
     "expected_historical_test_examples": 6199,
-    "source": "paper Appendix SFT Hyperparameters and src/finetuning/llama_finetuning.py",
-    "exact_training_corpus_and_checkpoint_in_release": false
+    "source": "Camera-ready SFT evidence, catalogue profile L010; see docs/pipelines.md",
+    "exact_training_corpus_and_checkpoint_in_release": false,
+    "gradient_checkpointing_kwargs": {
+      "use_reentrant": true
+    },
+    "torch_compile_backend": "inductor",
+    "torch_compile_mode": "max-autotune",
+    "eval_accumulation_steps": null,
+    "eval_packing": null,
+    "padding_free": false,
+    "loss_type": "nll",
+    "bf16": true,
+    "bf16_full_eval": false,
+    "tf32": true,
+    "data_seed": null,
+    "auto_find_batch_size": false,
+    "group_by_length": true,
+    "model_preparation_gradient_checkpointing": true,
+    "use_rslora": false,
+    "use_double_quant": false,
+    "unverified_historical_settings": [
+      "original dependency versions",
+      "runtime gradient checkpointing after model preparation (saved trainer flag is false)",
+      "saved quantization metadata absent; NF4 follows retained original training script"
+    ],
+    "historical_evidence": {
+      "catalogue_profile": "L010",
+      "run_id": "ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs",
+      "source_file_sha256": {
+        "all_sft_evidence.json": "119da8dfb4774e4aae30ec9ca7186728af9c1390ba97a33d586294f2c6ca4bdd",
+        "evidence.json": "657bca82e98c4f05ec19dbfb4c506bef379eff80730da92d39adb3b28e9e67eb"
+      },
+      "selected_epoch": 4,
+      "best_checkpoint_step": 232,
+      "final_step": 290,
+      "selected_epoch_is_descriptive_not_forced": true,
+      "packages": null
+    }
   },
   "qwen-group": {
     "model": "Qwen/Qwen3.5-4B",
     "backend": "unsloth",
     "split": "group",
     "epochs": 3,
-    "batch_size": 8,
-    "eval_batch_size": 8,
-    "gradient_accumulation_steps": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
     "learning_rate": 5e-05,
     "lora_rank": 16,
     "lora_alpha": 16,
     "lora_dropout": 0.0,
-    "target_modules": [
-      "q_proj",
-      "k_proj",
-      "v_proj",
-      "o_proj",
-      "gate_proj",
-      "up_proj",
-      "down_proj"
-    ],
+    "target_modules": "(?:.*?(?:language|text).*?(?:self_attn|attention|attn|mixer|mlp|feed_forward|ffn|dense|mixer).*?(?:q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj))|(?:\\bmodel\\.layers\\.[\\d]{1,}\\.(?:self_attn|attention|attn|mixer|mlp|feed_forward|ffn|dense|mixer)\\.(?:(?:q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)))",
     "load_in_4bit": true,
     "max_length": 4096,
-    "packing": true,
-    "completion_only_loss": true,
+    "packing": false,
+    "completion_only_loss": null,
     "optim": "paged_adamw_8bit",
     "lr_scheduler_type": "cosine",
     "warmup_ratio": 0.1,
@@ -94,40 +174,77 @@
     "gradient_checkpointing": true,
     "torch_compile": false,
     "enable_thinking": false,
-    "source": "paper Appendix SFT Hyperparameters; generic Unsloth implementation",
+    "source": "Camera-ready SFT evidence, catalogue profile L013; see docs/pipelines.md",
     "exact_training_corpus_and_checkpoint_in_release": false,
     "unverified_historical_settings": [
-      "precise original target-module list",
-      "original dependency versions",
-      "exact original checkpoint-selection policy",
-      "original quantization setting; new-run profile uses 4-bit weights"
-    ]
+      "exact original formatted training JSONL content"
+    ],
+    "gradient_checkpointing_kwargs": null,
+    "torch_compile_backend": null,
+    "torch_compile_mode": null,
+    "eval_accumulation_steps": 2,
+    "eval_packing": null,
+    "padding_free": false,
+    "loss_type": "nll",
+    "bf16": true,
+    "bf16_full_eval": true,
+    "tf32": true,
+    "data_seed": 3407,
+    "auto_find_batch_size": false,
+    "model_preparation_gradient_checkpointing": "unsloth",
+    "use_rslora": false,
+    "quant_type": "nf4",
+    "use_double_quant": true,
+    "checkpoint_selection": "lowest epoch validation loss on corresponding test partition",
+    "expected_historical_train_examples": 20239,
+    "expected_historical_test_examples": 4956,
+    "historical_evidence": {
+      "catalogue_profile": "L013",
+      "run_id": "ft:Qwen3.5-4B-SFT-20260724:both-group-3epochs-unsloth",
+      "source_file_sha256": {
+        "all_sft_evidence.json": "119da8dfb4774e4aae30ec9ca7186728af9c1390ba97a33d586294f2c6ca4bdd",
+        "evidence.json": "657bca82e98c4f05ec19dbfb4c506bef379eff80730da92d39adb3b28e9e67eb"
+      },
+      "selected_epoch": 2,
+      "best_checkpoint_step": 2530,
+      "final_step": 3795,
+      "selected_epoch_is_descriptive_not_forced": true,
+      "packages": {
+        "unsloth_zoo": "2026.7.6",
+        "accelerate": "1.10.1",
+        "torch": "2.9.0",
+        "trl": "0.24.0",
+        "triton": "3.5.0",
+        "transformers": "5.5.0",
+        "wandb": "0.22.1",
+        "peft": "0.18.1",
+        "unsloth": "2026.7.5",
+        "datasets": "4.3.0",
+        "bitsandbytes": "0.48.1"
+      },
+      "dataset_examples": {
+        "train": 20239,
+        "eval": 4956
+      }
+    }
   },
   "qwen-topic": {
     "model": "Qwen/Qwen3.5-4B",
     "backend": "unsloth",
     "split": "topic",
     "epochs": 3,
-    "batch_size": 16,
-    "eval_batch_size": 16,
-    "gradient_accumulation_steps": 1,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
     "learning_rate": 5e-05,
     "lora_rank": 16,
     "lora_alpha": 16,
     "lora_dropout": 0.0,
-    "target_modules": [
-      "q_proj",
-      "k_proj",
-      "v_proj",
-      "o_proj",
-      "gate_proj",
-      "up_proj",
-      "down_proj"
-    ],
+    "target_modules": "(?:.*?(?:language|text).*?(?:self_attn|attention|attn|mixer|mlp|feed_forward|ffn|dense|mixer).*?(?:q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj))|(?:\\bmodel\\.layers\\.[\\d]{1,}\\.(?:self_attn|attention|attn|mixer|mlp|feed_forward|ffn|dense|mixer)\\.(?:(?:q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)))",
     "load_in_4bit": true,
     "max_length": 4096,
     "packing": false,
-    "completion_only_loss": true,
+    "completion_only_loss": null,
     "optim": "paged_adamw_8bit",
     "lr_scheduler_type": "cosine",
     "warmup_ratio": 0.1,
@@ -136,14 +253,59 @@
     "gradient_checkpointing": true,
     "torch_compile": false,
     "enable_thinking": false,
-    "source": "paper Appendix SFT Hyperparameters; generic Unsloth implementation",
+    "source": "Camera-ready SFT evidence, catalogue profile L013; see docs/pipelines.md",
     "exact_training_corpus_and_checkpoint_in_release": false,
     "unverified_historical_settings": [
-      "precise original target-module list",
-      "original dependency versions",
-      "exact original checkpoint-selection policy",
-      "original quantization setting; new-run profile uses 4-bit weights"
-    ]
+      "exact original formatted training JSONL content"
+    ],
+    "gradient_checkpointing_kwargs": null,
+    "torch_compile_backend": null,
+    "torch_compile_mode": null,
+    "eval_accumulation_steps": 2,
+    "eval_packing": null,
+    "padding_free": false,
+    "loss_type": "nll",
+    "bf16": true,
+    "bf16_full_eval": true,
+    "tf32": true,
+    "data_seed": 3407,
+    "auto_find_batch_size": false,
+    "model_preparation_gradient_checkpointing": "unsloth",
+    "use_rslora": false,
+    "quant_type": "nf4",
+    "use_double_quant": true,
+    "checkpoint_selection": "lowest epoch validation loss on corresponding test partition",
+    "expected_historical_train_examples": 18586,
+    "expected_historical_test_examples": 6616,
+    "historical_evidence": {
+      "catalogue_profile": "L013",
+      "run_id": "ft:Qwen3.5-4B-SFT-20260724:both-topic-3epochs-unsloth",
+      "source_file_sha256": {
+        "all_sft_evidence.json": "119da8dfb4774e4aae30ec9ca7186728af9c1390ba97a33d586294f2c6ca4bdd",
+        "evidence.json": "657bca82e98c4f05ec19dbfb4c506bef379eff80730da92d39adb3b28e9e67eb"
+      },
+      "selected_epoch": 2,
+      "best_checkpoint_step": 2324,
+      "final_step": 3486,
+      "selected_epoch_is_descriptive_not_forced": true,
+      "packages": {
+        "unsloth_zoo": "2026.7.6",
+        "accelerate": "1.10.1",
+        "torch": "2.9.0",
+        "trl": "0.24.0",
+        "triton": "3.5.0",
+        "transformers": "5.5.0",
+        "wandb": "0.22.1",
+        "peft": "0.18.1",
+        "unsloth": "2026.7.5",
+        "datasets": "4.3.0",
+        "bitsandbytes": "0.48.1"
+      },
+      "dataset_examples": {
+        "train": 18586,
+        "eval": 6616
+      }
+    }
   },
   "mistral-group": {
     "model": "mistralai/Mistral-7B-Instruct-v0.3",
@@ -158,13 +320,13 @@
     "lora_alpha": 16,
     "lora_dropout": 0.0,
     "target_modules": [
-      "q_proj",
-      "k_proj",
-      "v_proj",
-      "o_proj",
+      "down_proj",
       "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
       "up_proj",
-      "down_proj"
+      "v_proj"
     ],
     "load_in_4bit": true,
     "max_length": 4096,
@@ -176,15 +338,61 @@
     "seed": 3407,
     "weight_decay": 0.001,
     "gradient_checkpointing": true,
-    "torch_compile": false,
-    "source": "paper Appendix SFT Hyperparameters; generic Unsloth implementation",
+    "torch_compile": true,
+    "source": "Camera-ready SFT evidence, catalogue profile L012; see docs/pipelines.md",
     "exact_training_corpus_and_checkpoint_in_release": false,
     "unverified_historical_settings": [
-      "precise original target-module list",
-      "original dependency versions",
-      "exact original checkpoint-selection policy",
-      "original quantization setting; new-run profile uses 4-bit weights"
-    ]
+      "original base-weight quantization; runnable profile retains explicit 4-bit NF4 new-run default"
+    ],
+    "gradient_checkpointing_kwargs": {},
+    "torch_compile_backend": "inductor",
+    "torch_compile_mode": "max-autotune",
+    "eval_accumulation_steps": 2,
+    "eval_packing": true,
+    "padding_free": true,
+    "loss_type": "chunked_nll",
+    "bf16": true,
+    "bf16_full_eval": true,
+    "tf32": true,
+    "data_seed": 3407,
+    "auto_find_batch_size": true,
+    "model_preparation_gradient_checkpointing": "unsloth",
+    "use_rslora": false,
+    "quant_type": "nf4",
+    "use_double_quant": true,
+    "checkpoint_selection": "lowest epoch validation loss on corresponding test partition",
+    "expected_historical_train_examples": 17057,
+    "expected_historical_test_examples": 3804,
+    "historical_evidence": {
+      "catalogue_profile": "L012",
+      "run_id": "ft:Mistral-7B-Instruct-v0.3-SFT-20260725-bd-unsloth:bd-group-3epochs",
+      "source_file_sha256": {
+        "all_sft_evidence.json": "119da8dfb4774e4aae30ec9ca7186728af9c1390ba97a33d586294f2c6ca4bdd",
+        "evidence.json": "657bca82e98c4f05ec19dbfb4c506bef379eff80730da92d39adb3b28e9e67eb"
+      },
+      "selected_epoch": 1,
+      "best_checkpoint_step": 317,
+      "final_step": 951,
+      "selected_epoch_is_descriptive_not_forced": true,
+      "packages": {
+        "torch": "2.11.0+cu129",
+        "transformers": "5.14.1",
+        "trl": "1.9.0",
+        "peft": "0.19.1",
+        "bitsandbytes": "0.49.2",
+        "datasets": "5.0.0",
+        "accelerate": "1.14.0",
+        "unsloth": "2026.7.5",
+        "unsloth-zoo": "2026.7.6",
+        "xformers": "0.0.35",
+        "vllm": "0.25.1+cu129",
+        "wandb": "0.28.1"
+      },
+      "dataset_examples": {
+        "train": 17057,
+        "eval": 3804
+      }
+    }
   },
   "mistral-topic": {
     "model": "mistralai/Mistral-7B-Instruct-v0.3",
@@ -199,13 +407,13 @@
     "lora_alpha": 16,
     "lora_dropout": 0.0,
     "target_modules": [
-      "q_proj",
-      "k_proj",
-      "v_proj",
-      "o_proj",
+      "down_proj",
       "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
       "up_proj",
-      "down_proj"
+      "v_proj"
     ],
     "load_in_4bit": true,
     "max_length": 4096,
@@ -217,14 +425,60 @@
     "seed": 3407,
     "weight_decay": 0.001,
     "gradient_checkpointing": true,
-    "torch_compile": false,
-    "source": "paper Appendix SFT Hyperparameters; generic Unsloth implementation",
+    "torch_compile": true,
+    "source": "Camera-ready SFT evidence, catalogue profile L012; see docs/pipelines.md",
     "exact_training_corpus_and_checkpoint_in_release": false,
     "unverified_historical_settings": [
-      "precise original target-module list",
-      "original dependency versions",
-      "exact original checkpoint-selection policy",
-      "original quantization setting; new-run profile uses 4-bit weights"
-    ]
+      "original base-weight quantization; runnable profile retains explicit 4-bit NF4 new-run default"
+    ],
+    "gradient_checkpointing_kwargs": {},
+    "torch_compile_backend": "inductor",
+    "torch_compile_mode": "max-autotune",
+    "eval_accumulation_steps": 2,
+    "eval_packing": true,
+    "padding_free": true,
+    "loss_type": "chunked_nll",
+    "bf16": true,
+    "bf16_full_eval": true,
+    "tf32": true,
+    "data_seed": 3407,
+    "auto_find_batch_size": true,
+    "model_preparation_gradient_checkpointing": "unsloth",
+    "use_rslora": false,
+    "quant_type": "nf4",
+    "use_double_quant": true,
+    "checkpoint_selection": "lowest epoch validation loss on corresponding test partition",
+    "expected_historical_train_examples": 14662,
+    "expected_historical_test_examples": 6199,
+    "historical_evidence": {
+      "catalogue_profile": "L012",
+      "run_id": "ft:Mistral-7B-Instruct-v0.3-SFT-20260725-bd-unsloth:bd-topic-3epochs",
+      "source_file_sha256": {
+        "all_sft_evidence.json": "119da8dfb4774e4aae30ec9ca7186728af9c1390ba97a33d586294f2c6ca4bdd",
+        "evidence.json": "657bca82e98c4f05ec19dbfb4c506bef379eff80730da92d39adb3b28e9e67eb"
+      },
+      "selected_epoch": 1,
+      "best_checkpoint_step": 271,
+      "final_step": 813,
+      "selected_epoch_is_descriptive_not_forced": true,
+      "packages": {
+        "torch": "2.11.0+cu129",
+        "transformers": "5.14.1",
+        "trl": "1.9.0",
+        "peft": "0.19.1",
+        "bitsandbytes": "0.49.2",
+        "datasets": "5.0.0",
+        "accelerate": "1.14.0",
+        "unsloth": "2026.7.5",
+        "unsloth-zoo": "2026.7.6",
+        "xformers": "0.0.35",
+        "vllm": "0.25.1+cu129",
+        "wandb": "0.28.1"
+      },
+      "dataset_examples": {
+        "train": 14662,
+        "eval": 6199
+      }
+    }
   }
 }

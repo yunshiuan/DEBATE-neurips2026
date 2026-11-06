@@ -49,6 +49,43 @@ def completion_example(tokenizer, row, llama=False, enable_thinking=False):
     return {"prompt": prompt, "completion": rendered[len(prompt):]}
 
 
+def trainer_arguments(config, output_dir, compile_enabled):
+    """Resolve the arguments used by both the dry-run plan and SFTConfig."""
+    arguments = {
+        "output_dir": str(output_dir), "num_train_epochs": config["epochs"],
+        "learning_rate": config["learning_rate"], "per_device_train_batch_size": config["batch_size"],
+        "per_device_eval_batch_size": config["eval_batch_size"],
+        "gradient_accumulation_steps": config["gradient_accumulation_steps"],
+        "optim": config["optim"], "lr_scheduler_type": config["lr_scheduler_type"],
+        "warmup_ratio": config["warmup_ratio"], "weight_decay": config["weight_decay"],
+        "adam_beta1": 0.9, "adam_beta2": 0.999, "adam_epsilon": 1e-8, "max_grad_norm": 1.0,
+        "eval_strategy": "epoch", "save_strategy": "epoch", "eval_on_start": True, "do_eval": True,
+        "metric_for_best_model": "eval_loss", "greater_is_better": False,
+        "load_best_model_at_end": True, "save_total_limit": 2,
+        "seed": config["seed"], "torch_compile": compile_enabled,
+        "report_to": "none", "logging_steps": 1,
+    }
+    for key in ("completion_only_loss", "max_length", "packing", "eval_packing", "padding_free",
+                "group_by_length", "loss_type", "eval_accumulation_steps", "bf16", "bf16_full_eval",
+                "tf32", "gradient_checkpointing", "gradient_checkpointing_kwargs", "data_seed",
+                "auto_find_batch_size"):
+        if key in config:
+            arguments[key] = config[key]
+    if compile_enabled:
+        arguments["torch_compile_backend"] = config["torch_compile_backend"]
+        arguments["torch_compile_mode"] = config["torch_compile_mode"]
+    return arguments
+
+
+def quantization_arguments(config, compute_dtype):
+    """Keep loader quantization explicit instead of relying on library defaults."""
+    return {
+        "load_in_4bit": config["load_in_4bit"],
+        "bnb_4bit_quant_type": config["quant_type"],
+        "bnb_4bit_compute_dtype": compute_dtype,
+        "bnb_4bit_use_double_quant": config["use_double_quant"],
+    }
+
 def main(argv=None):
     profiles = json.loads(PROFILES.read_text())
     parser = argparse.ArgumentParser(description=__doc__)
@@ -80,6 +117,8 @@ def main(argv=None):
             "model_revision": args.revision, "attention_implementation": args.attention_implementation,
             "torch_compile": config["torch_compile"] and not args.no_compile,
             "historical_exact_retraining_claim": False}
+    plan["trainer_arguments"] = trainer_arguments(config, args.output_dir, plan["torch_compile"])
+    plan["quantization_arguments"] = quantization_arguments(config, "bfloat16")
     write_json(args.output_dir / "training_plan.json", plan)
     if args.dry_run:
         print(f"Validated {train_info['count']} train and {validation_info['count']} validation examples; no model loaded.")
@@ -101,21 +140,25 @@ def main(argv=None):
         model, tokenizer = FastLanguageModel.from_pretrained(
             model_name=config["model"], max_seq_length=config["max_length"],
             load_in_4bit=config["load_in_4bit"], dtype=torch.bfloat16,
+            quantization_config=BitsAndBytesConfig(**quantization_arguments(config, torch.bfloat16)),
             **({"text_only": True} if args.profile.startswith("qwen") else {}), **revision)
         model = FastLanguageModel.get_peft_model(
             model, r=config["lora_rank"], lora_alpha=config["lora_alpha"],
             lora_dropout=config["lora_dropout"], bias="none", target_modules=config["target_modules"],
-            use_gradient_checkpointing="unsloth", random_state=config["seed"], use_rslora=False)
+            use_gradient_checkpointing=config["model_preparation_gradient_checkpointing"],
+            random_state=config["seed"], use_rslora=config["use_rslora"])
     else:
         tokenizer = AutoTokenizer.from_pretrained(config["model"], **revision)
-        quantization = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.bfloat16)
+        quantization = BitsAndBytesConfig(**quantization_arguments(config, torch.bfloat16))
         model = AutoModelForCausalLM.from_pretrained(config["model"], quantization_config=quantization,
                                                     device_map="auto", torch_dtype=torch.bfloat16,
                                                     attn_implementation=args.attention_implementation, **revision)
-        model = prepare_model_for_kbit_training(model, gradient_checkpointing_kwargs={"use_reentrant": True})
+        model = prepare_model_for_kbit_training(
+            model, use_gradient_checkpointing=config["model_preparation_gradient_checkpointing"],
+            gradient_checkpointing_kwargs=config["gradient_checkpointing_kwargs"])
         peft_config = LoraConfig(r=config["lora_rank"], lora_alpha=config["lora_alpha"],
                                  lora_dropout=config["lora_dropout"], bias="none", task_type="CAUSAL_LM",
-                                 target_modules=config["target_modules"])
+                                 target_modules=config["target_modules"], use_rslora=config["use_rslora"])
     tokenizer.pad_token = tokenizer.eos_token
     datasets = {}
     for name, path in (("train", args.train), ("validation", args.validation)):
@@ -123,19 +166,7 @@ def main(argv=None):
         datasets[name] = dataset.map(lambda row: completion_example(tokenizer, row, llama=args.profile.startswith("llama"),
                                                                     enable_thinking=config.get("enable_thinking", False)),
                                      remove_columns=dataset.column_names)
-    training_args = SFTConfig(
-        output_dir=str(args.output_dir), num_train_epochs=config["epochs"],
-        learning_rate=config["learning_rate"], per_device_train_batch_size=config["batch_size"],
-        per_device_eval_batch_size=config["eval_batch_size"], gradient_accumulation_steps=config["gradient_accumulation_steps"],
-        completion_only_loss=True, max_length=config["max_length"], packing=config["packing"],
-        optim=config["optim"], lr_scheduler_type=config["lr_scheduler_type"], warmup_ratio=config["warmup_ratio"],
-        weight_decay=config["weight_decay"], adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-8, max_grad_norm=1.0,
-        eval_strategy="epoch", save_strategy="epoch", eval_on_start=True, do_eval=True,
-        metric_for_best_model="eval_loss", greater_is_better=False, load_best_model_at_end=True, save_total_limit=2,
-        bf16=True, tf32=True, gradient_checkpointing=True, seed=config["seed"],
-        torch_compile=plan["torch_compile"], torch_compile_backend="inductor", torch_compile_mode="max-autotune",
-        report_to="none", logging_steps=1,
-    )
+    training_args = SFTConfig(**plan["trainer_arguments"])
     trainer = SFTTrainer(model=model, processing_class=tokenizer, peft_config=peft_config,
                          train_dataset=datasets["train"], eval_dataset=datasets["validation"], args=training_args)
     dependencies = {}

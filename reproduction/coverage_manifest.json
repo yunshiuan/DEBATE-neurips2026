@@ -155,10 +155,13 @@
     },
     {
       "id": "cross_model",
-      "title": "Llama/Qwen/Mistral convergence and private error tables",
+      "title": "Llama/Qwen/Mistral convergence and public/private prediction-error tables",
       "stage": "tables",
       "status": "recomputed_from_cached_labels",
-      "verification": "reference/cross_model_table_values.json"
+      "verification": "reference/cross_model_table_values.json",
+      "displayed_values": 100,
+      "source_paper_commit": "e2df1ff",
+      "reference_provenance": "tables/cross_model_convergence_family_references.csv and tables/cross_model_provenance.json"
     },
     {
       "id": "demographics",

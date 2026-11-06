@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-06",
+  "paper_commit": "e2df1ff894e59d878845ed3dae86bef58e0e2c15",
+  "scope": "Camera-ready cross-model tables, recovered SFT settings, and release documentation",
+  "dataset_revision": "39ae48ab86048a4c480e224c9a6badfabde79a39",
+  "data_archives_changed": false,
+  "dataset_files_sha256_verified": 86261,
+  "dataset_components_verified": 8,
+  "tables": {
+    "recomputed_stage": "tables",
+    "displayed_values_matched": 100,
+    "convergence_values": 28,
+    "public_error_values": 36,
+    "private_error_values": 36,
+    "latex_values_matched_in_row_order": 100,
+    "original_family_reference_deltas_preserved": 36,
+    "strict_identity_coverage": true,
+    "inventory_field_checks_passed": 68,
+    "primary_input_reuse": "Previously verified primary M1/M3/A3/A5 CSVs; Qwen/Mistral tables recomputed from released labels",
+    "independent_paper_source_check": "All 100 reference values agree with the paper source CSVs within 1e-12 and with displayed LaTeX values"
+  },
+  "figures": {
+    "families_verified": 16,
+    "numeric_cells": 47060,
+    "mismatches": 0,
+    "rerendered_in_this_followup": false,
+    "note": "Existing outputs reverified; figure calculation and reference assets are unchanged"
+  },
+  "tests": {
+    "passed": 45,
+    "subtests_passed": 9,
+    "warnings": 24,
+    "warning_kind": "Existing LangChain simulation API deprecation",
+    "six_training_profiles": "Offline mocked training entry-point tests verify loader and trainer argument wiring"
+  },
+  "installed_wheel": {
+    "passed": true,
+    "outside_checkout": true,
+    "profiles_present": 6,
+    "reference_cells_present": 100,
+    "cli_help_checks": 3,
+    "dry_run_profile": "qwen-group",
+    "reconstructed_train_examples": 20020,
+    "reconstructed_validation_examples": 4520,
+    "gpu_training_executed": false,
+    "model_weights_downloaded": false
+  },
+  "gpu_training_executed": false,
+  "live_llm_requests_made": false,
+  "original_training_jsonls_and_adapters_recovered": false,
+  "commands": [
+    "python -m pytest -q",
+    "debate verify --data-root DATA_ROOT",
+    "debate reproduce tables --data-root DATA_ROOT --output-dir OUTPUT_DIR",
+    "debate reproduce verify --data-root DATA_ROOT --output-dir PREVIOUSLY_VERIFIED_OUTPUT_DIR",
+    "python -m build --wheel --no-isolation",
+    "debate pipeline train --profile qwen-group --train group_train.jsonl --validation group_test.jsonl --output-dir DRY_RUN_DIR --dry-run"
+  ]
+}
