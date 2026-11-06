@@ -1,19 +1,22 @@
-# DEBATE: NeurIPS 2026 reproducibility code
-
-Code for **[DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents](https://arxiv.org/abs/2510.25110)**.
+# DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents
 
 NeurIPS 2026 Main Conference (Evaluations & Datasets Track)
 
-Yun-Shiuan Chuang<sup>1†</sup>, Ruixuan Tu<sup>1,2,3*</sup>, Chengtao Dai<sup>1*</sup>, You Li<sup>1*</sup>, Smit Vasani<sup>1*</sup>, Binwei Yao<sup>1</sup>, Michael Henry Tessler<sup>5</sup>, Sijia Yang<sup>1</sup>, Dhavan Shah<sup>1</sup>, Robert Hawkins<sup>4</sup>, Junjie Hu<sup>1</sup>, Timothy T. Rogers<sup>1,6‡</sup>
+<strong>Yun-Shiuan Chuang<sup>1†</sup>, Ruixuan Tu<sup>1,2,3*</sup>, Chengtao Dai<sup>1*</sup>, You Li<sup>1*</sup>, Smit Vasani<sup>1*</sup>, Binwei Yao<sup>1</sup>, Michael Henry Tessler<sup>5</sup>, Sijia Yang<sup>1</sup>, Dhavan Shah<sup>1</sup>, Robert Hawkins<sup>4</sup>, Junjie Hu<sup>1</sup>, Timothy T. Rogers<sup>1,6‡</sup></strong>
 
-<sup>1</sup> University of Wisconsin–Madison · <sup>2</sup> University of Tokyo<br>
+<em><sup>1</sup> University of Wisconsin–Madison · <sup>2</sup> University of Tokyo<br>
 <sup>3</sup> RIKEN Center for Advanced Intelligence Project (AIP)<br>
 <sup>4</sup> Stanford University · <sup>5</sup> Google DeepMind<br>
-<sup>6</sup> UCL Institute of Cognitive Neuroscience
+<sup>6</sup> UCL Institute of Cognitive Neuroscience</em>
 
-\* Co-authors with core contributions.<br>
-† First author contact: [yunshiuan.chuang@gmail.com](mailto:yunshiuan.chuang@gmail.com).<br>
-‡ Correspondence to Timothy T. Rogers: [timothy.rogers@ucl.ac.uk](mailto:timothy.rogers@ucl.ac.uk).
+<sub>* Co-authors with core contributions.</sub><br>
+<sub>† First author contact: <a href="mailto:yunshiuan.chuang@gmail.com">yunshiuan.chuang@gmail.com</a>.</sub><br>
+<sub>‡ Correspondence to Timothy T. Rogers: <a href="mailto:timothy.rogers@ucl.ac.uk">timothy.rogers@ucl.ac.uk</a>.</sub>
+
+- **Paper:** <https://arxiv.org/abs/2510.25110>
+- **Dataset:** <https://huggingface.co/datasets/seantw/DEBATE_LLM>
+- **Code:** <https://github.com/yunshiuan/DEBATE-neurips2026>
+- **Benchmark Website:** <https://debate-benchmark.vercel.app/>
 
 The associated [dataset](https://huggingface.co/datasets/seantw/DEBATE_LLM) contains human conversation records, the evaluation partitions, cached model generations, and stance and validity annotations. This repository contains the simulation, annotation, training, evaluation, and figure-generation code.
 
