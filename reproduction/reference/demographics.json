@@ -1,0 +1,1445 @@
+{
+  "source_files": 708,
+  "selection": "Union of supplied original Ruixuan group train and test CSVs; all 708 sessions.",
+  "deduplication": "One value per session, worker_id, demographic field; repeated identical source rows collapse. No conflicting values were found.",
+  "unique_worker_ids_across_all_events": 2832,
+  "participant_session_records": 2832,
+  "participants_per_session_histogram": {
+    "4": 708
+  },
+  "worker_ids_appearing_in_multiple_sessions": 0,
+  "rows_missing_worker_id": 0,
+  "survey_respondents_any_item": 2640,
+  "survey_unique_worker_ids": 2640,
+  "survey_participation_percent": 93.22033898305085,
+  "participation_definition": "At least one nonempty demographic response; does not imply a complete questionnaire.",
+  "field_denominator_definition": "For each item, denominator is the number of respondents providing a nonempty value; age additionally excludes nonnumeric or out-of-range values. Multi-select percentages use respondents, not number of selections.",
+  "repeated_identical_field_rows": {
+    "age": 2643,
+    "gender": 2641,
+    "education": 2643,
+    "ethnicity": 2642,
+    "income": 2643,
+    "politicalIdentity": 2643,
+    "politicalViews": 2643,
+    "maritalStatus": 2642,
+    "childrenSchool": 2643,
+    "residence": 2643,
+    "bibleBelief": 2642,
+    "evangelical": 2641,
+    "religion": 2643,
+    "occupation": 2640,
+    "residency": 2614,
+    "origin": 2615
+  },
+  "conflicting_field_values": {},
+  "figure_field_mapping": {
+    "demo_age_fig": "age",
+    "demo_gender_fig": "gender",
+    "demo_ethnicity_fig": "ethnicity",
+    "demo_education_fig": "education",
+    "demo_income_fig": "income",
+    "demo_occupuation_fig": "occupation",
+    "demo_political_party_fig": "politicalIdentity",
+    "demo_political_view_fig": "politicalViews",
+    "demo_bible_fig": "bibleBelief",
+    "demo_evangelical_fig": "evangelical",
+    "demo_religion_fig": "religion",
+    "demo_marriage_fig": "maritalStatus",
+    "demo_children_fig": "childrenSchool",
+    "demo_residence_fig": "residence",
+    "demo_origin_fig": "origin"
+  },
+  "fields": {
+    "age": {
+      "response_n": 2636,
+      "survey_respondents": 2640,
+      "missing_or_non_numeric_n": 1,
+      "excluded_out_of_range_n": 3,
+      "excluded_out_of_range_counts": {
+        "2.0": 1,
+        "17.0": 1,
+        "0.0": 1
+      },
+      "valid_range_rule": "18 <= age <= 120",
+      "multi_select": false,
+      "minimum": 18.0,
+      "maximum": 84.0,
+      "mean": 39.71206373292868,
+      "sample_sd": 13.031482188738366,
+      "population_sd": 13.029010125320745,
+      "median": 37.0,
+      "categories": [
+        {
+          "label": "18",
+          "value": 18.0,
+          "count": 6,
+          "percent": 0.2276176024279211
+        },
+        {
+          "label": "19",
+          "value": 19.0,
+          "count": 25,
+          "percent": 0.9484066767830045
+        },
+        {
+          "label": "20",
+          "value": 20.0,
+          "count": 28,
+          "percent": 1.062215477996965
+        },
+        {
+          "label": "21",
+          "value": 21.0,
+          "count": 32,
+          "percent": 1.2139605462822458
+        },
+        {
+          "label": "22",
+          "value": 22.0,
+          "count": 55,
+          "percent": 2.08649468892261
+        },
+        {
+          "label": "23",
+          "value": 23.0,
+          "count": 53,
+          "percent": 2.01062215477997
+        },
+        {
+          "label": "24",
+          "value": 24.0,
+          "count": 77,
+          "percent": 2.921092564491654
+        },
+        {
+          "label": "25",
+          "value": 25.0,
+          "count": 57,
+          "percent": 2.1623672230652504
+        },
+        {
+          "label": "26",
+          "value": 26.0,
+          "count": 80,
+          "percent": 3.0349013657056148
+        },
+        {
+          "label": "27",
+          "value": 27.0,
+          "count": 74,
+          "percent": 2.8072837632776935
+        },
+        {
+          "label": "28",
+          "value": 28.0,
+          "count": 89,
+          "percent": 3.3763277693474962
+        },
+        {
+          "label": "29",
+          "value": 29.0,
+          "count": 84,
+          "percent": 3.1866464339908953
+        },
+        {
+          "label": "30",
+          "value": 30.0,
+          "count": 90,
+          "percent": 3.4142640364188166
+        },
+        {
+          "label": "31",
+          "value": 31.0,
+          "count": 79,
+          "percent": 2.9969650986342944
+        },
+        {
+          "label": "32",
+          "value": 32.0,
+          "count": 103,
+          "percent": 3.9074355083459786
+        },
+        {
+          "label": "33",
+          "value": 33.0,
+          "count": 77,
+          "percent": 2.921092564491654
+        },
+        {
+          "label": "34",
+          "value": 34.0,
+          "count": 92,
+          "percent": 3.490136570561457
+        },
+        {
+          "label": "35",
+          "value": 35.0,
+          "count": 82,
+          "percent": 3.110773899848255
+        },
+        {
+          "label": "36",
+          "value": 36.0,
+          "count": 95,
+          "percent": 3.6039453717754175
+        },
+        {
+          "label": "37",
+          "value": 37.0,
+          "count": 69,
+          "percent": 2.6176024279210925
+        },
+        {
+          "label": "38",
+          "value": 38.0,
+          "count": 70,
+          "percent": 2.655538694992413
+        },
+        {
+          "label": "39",
+          "value": 39.0,
+          "count": 62,
+          "percent": 2.3520485584218513
+        },
+        {
+          "label": "40",
+          "value": 40.0,
+          "count": 61,
+          "percent": 2.314112291350531
+        },
+        {
+          "label": "41",
+          "value": 41.0,
+          "count": 59,
+          "percent": 2.2382397572078907
+        },
+        {
+          "label": "42",
+          "value": 42.0,
+          "count": 51,
+          "percent": 1.9347496206373294
+        },
+        {
+          "label": "43",
+          "value": 43.0,
+          "count": 51,
+          "percent": 1.9347496206373294
+        },
+        {
+          "label": "44",
+          "value": 44.0,
+          "count": 60,
+          "percent": 2.276176024279211
+        },
+        {
+          "label": "45",
+          "value": 45.0,
+          "count": 50,
+          "percent": 1.896813353566009
+        },
+        {
+          "label": "46",
+          "value": 46.0,
+          "count": 45,
+          "percent": 1.7071320182094083
+        },
+        {
+          "label": "47",
+          "value": 47.0,
+          "count": 57,
+          "percent": 2.1623672230652504
+        },
+        {
+          "label": "48",
+          "value": 48.0,
+          "count": 34,
+          "percent": 1.289833080424886
+        },
+        {
+          "label": "49",
+          "value": 49.0,
+          "count": 49,
+          "percent": 1.8588770864946889
+        },
+        {
+          "label": "50",
+          "value": 50.0,
+          "count": 64,
+          "percent": 2.4279210925644916
+        },
+        {
+          "label": "51",
+          "value": 51.0,
+          "count": 57,
+          "percent": 2.1623672230652504
+        },
+        {
+          "label": "52",
+          "value": 52.0,
+          "count": 47,
+          "percent": 1.7830045523520486
+        },
+        {
+          "label": "53",
+          "value": 53.0,
+          "count": 40,
+          "percent": 1.5174506828528074
+        },
+        {
+          "label": "54",
+          "value": 54.0,
+          "count": 57,
+          "percent": 2.1623672230652504
+        },
+        {
+          "label": "55",
+          "value": 55.0,
+          "count": 41,
+          "percent": 1.5553869499241275
+        },
+        {
+          "label": "56",
+          "value": 56.0,
+          "count": 34,
+          "percent": 1.289833080424886
+        },
+        {
+          "label": "57",
+          "value": 57.0,
+          "count": 27,
+          "percent": 1.024279210925645
+        },
+        {
+          "label": "58",
+          "value": 58.0,
+          "count": 20,
+          "percent": 0.7587253414264037
+        },
+        {
+          "label": "59",
+          "value": 59.0,
+          "count": 27,
+          "percent": 1.024279210925645
+        },
+        {
+          "label": "60",
+          "value": 60.0,
+          "count": 18,
+          "percent": 0.6828528072837633
+        },
+        {
+          "label": "61",
+          "value": 61.0,
+          "count": 19,
+          "percent": 0.7207890743550834
+        },
+        {
+          "label": "62",
+          "value": 62.0,
+          "count": 30,
+          "percent": 1.1380880121396055
+        },
+        {
+          "label": "63",
+          "value": 63.0,
+          "count": 17,
+          "percent": 0.644916540212443
+        },
+        {
+          "label": "64",
+          "value": 64.0,
+          "count": 22,
+          "percent": 0.834597875569044
+        },
+        {
+          "label": "65",
+          "value": 65.0,
+          "count": 14,
+          "percent": 0.5311077389984825
+        },
+        {
+          "label": "66",
+          "value": 66.0,
+          "count": 7,
+          "percent": 0.26555386949924126
+        },
+        {
+          "label": "67",
+          "value": 67.0,
+          "count": 18,
+          "percent": 0.6828528072837633
+        },
+        {
+          "label": "68",
+          "value": 68.0,
+          "count": 11,
+          "percent": 0.417298937784522
+        },
+        {
+          "label": "69",
+          "value": 69.0,
+          "count": 9,
+          "percent": 0.34142640364188165
+        },
+        {
+          "label": "70",
+          "value": 70.0,
+          "count": 6,
+          "percent": 0.2276176024279211
+        },
+        {
+          "label": "71",
+          "value": 71.0,
+          "count": 9,
+          "percent": 0.34142640364188165
+        },
+        {
+          "label": "72",
+          "value": 72.0,
+          "count": 11,
+          "percent": 0.417298937784522
+        },
+        {
+          "label": "73",
+          "value": 73.0,
+          "count": 7,
+          "percent": 0.26555386949924126
+        },
+        {
+          "label": "74",
+          "value": 74.0,
+          "count": 5,
+          "percent": 0.18968133535660092
+        },
+        {
+          "label": "75",
+          "value": 75.0,
+          "count": 4,
+          "percent": 0.15174506828528073
+        },
+        {
+          "label": "76",
+          "value": 76.0,
+          "count": 4,
+          "percent": 0.15174506828528073
+        },
+        {
+          "label": "78",
+          "value": 78.0,
+          "count": 8,
+          "percent": 0.30349013657056145
+        },
+        {
+          "label": "79",
+          "value": 79.0,
+          "count": 1,
+          "percent": 0.03793626707132018
+        },
+        {
+          "label": "80",
+          "value": 80.0,
+          "count": 2,
+          "percent": 0.07587253414264036
+        },
+        {
+          "label": "83",
+          "value": 83.0,
+          "count": 3,
+          "percent": 0.11380880121396054
+        },
+        {
+          "label": "84",
+          "value": 84.0,
+          "count": 1,
+          "percent": 0.03793626707132018
+        }
+      ]
+    },
+    "gender": {
+      "response_n": 2637,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 3,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2637,
+      "categories": [
+        {
+          "label": "female",
+          "count": 1356,
+          "percent": 51.42207053469852
+        },
+        {
+          "label": "male",
+          "count": 1252,
+          "percent": 47.478194918467956
+        },
+        {
+          "label": "non-binary",
+          "count": 20,
+          "percent": 0.7584376185058779
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 9,
+          "percent": 0.3412969283276451
+        }
+      ]
+    },
+    "ethnicity": {
+      "response_n": 2638,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 2,
+      "multi_select": true,
+      "list_encoded": true,
+      "selection_count": 2772,
+      "categories": [
+        {
+          "label": "white",
+          "count": 1782,
+          "percent": 67.55117513267626
+        },
+        {
+          "label": "black",
+          "count": 605,
+          "percent": 22.93404094010614
+        },
+        {
+          "label": "asian",
+          "count": 162,
+          "percent": 6.1410159211523885
+        },
+        {
+          "label": "hispanic",
+          "count": 144,
+          "percent": 5.458680818802123
+        },
+        {
+          "label": "native-american",
+          "count": 50,
+          "percent": 1.8953752843062925
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 16,
+          "percent": 0.6065200909780136
+        },
+        {
+          "label": "other",
+          "count": 13,
+          "percent": 0.4927975739196361
+        }
+      ]
+    },
+    "education": {
+      "response_n": 2639,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 1,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2639,
+      "categories": [
+        {
+          "label": "bachelor",
+          "count": 986,
+          "percent": 37.362637362637365
+        },
+        {
+          "label": "master-doctoral",
+          "count": 757,
+          "percent": 28.685107995452825
+        },
+        {
+          "label": "some-college",
+          "count": 364,
+          "percent": 13.793103448275861
+        },
+        {
+          "label": "high-school",
+          "count": 244,
+          "percent": 9.245926487305798
+        },
+        {
+          "label": "associate",
+          "count": 187,
+          "percent": 7.0860174308450175
+        },
+        {
+          "label": "professional",
+          "count": 93,
+          "percent": 3.5240621447518
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 8,
+          "percent": 0.30314513073133764
+        }
+      ]
+    },
+    "income": {
+      "response_n": 2639,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 1,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2639,
+      "categories": [
+        {
+          "label": "100k-150k",
+          "count": 548,
+          "percent": 20.765441455096628
+        },
+        {
+          "label": "50k-75k",
+          "count": 516,
+          "percent": 19.552860932171278
+        },
+        {
+          "label": "25k-50k",
+          "count": 474,
+          "percent": 17.961348995831756
+        },
+        {
+          "label": "75k-100k",
+          "count": 468,
+          "percent": 17.733990147783253
+        },
+        {
+          "label": "less-25k",
+          "count": 242,
+          "percent": 9.170140204622964
+        },
+        {
+          "label": "150k-200k",
+          "count": 227,
+          "percent": 8.601743084501706
+        },
+        {
+          "label": "over-200k",
+          "count": 122,
+          "percent": 4.622963243652899
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 42,
+          "percent": 1.5915119363395225
+        }
+      ]
+    },
+    "occupation": {
+      "response_n": 2636,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 4,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2636,
+      "categories": [
+        {
+          "label": "other",
+          "count": 346,
+          "percent": 13.125948406676782
+        },
+        {
+          "label": "finance",
+          "count": 326,
+          "percent": 12.367223065250379
+        },
+        {
+          "label": "health-care",
+          "count": 294,
+          "percent": 11.153262518968134
+        },
+        {
+          "label": "engineering",
+          "count": 283,
+          "percent": 10.735963581183611
+        },
+        {
+          "label": "sales",
+          "count": 198,
+          "percent": 7.511380880121396
+        },
+        {
+          "label": "education",
+          "count": 175,
+          "percent": 6.638846737481032
+        },
+        {
+          "label": "manufacturing",
+          "count": 134,
+          "percent": 5.0834597875569045
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 123,
+          "percent": 4.666160849772383
+        },
+        {
+          "label": "media",
+          "count": 115,
+          "percent": 4.362670713201821
+        },
+        {
+          "label": "construction",
+          "count": 94,
+          "percent": 3.566009104704097
+        },
+        {
+          "label": "arts",
+          "count": 89,
+          "percent": 3.3763277693474962
+        },
+        {
+          "label": "restaurant",
+          "count": 81,
+          "percent": 3.0728376327769347
+        },
+        {
+          "label": "research",
+          "count": 55,
+          "percent": 2.08649468892261
+        },
+        {
+          "label": "transportation",
+          "count": 53,
+          "percent": 2.01062215477997
+        },
+        {
+          "label": "law",
+          "count": 43,
+          "percent": 1.6312594840667678
+        },
+        {
+          "label": "government",
+          "count": 42,
+          "percent": 1.5933232169954477
+        },
+        {
+          "label": "agriculture",
+          "count": 29,
+          "percent": 1.1001517450682854
+        },
+        {
+          "label": "insurance",
+          "count": 27,
+          "percent": 1.024279210925645
+        },
+        {
+          "label": "non-profit",
+          "count": 25,
+          "percent": 0.9484066767830045
+        },
+        {
+          "label": "personal-care",
+          "count": 24,
+          "percent": 0.9104704097116844
+        },
+        {
+          "label": "real-estate",
+          "count": 23,
+          "percent": 0.8725341426403642
+        },
+        {
+          "label": "wholesale",
+          "count": 17,
+          "percent": 0.644916540212443
+        },
+        {
+          "label": "maintenance",
+          "count": 15,
+          "percent": 0.5690440060698028
+        },
+        {
+          "label": "cleaning",
+          "count": 15,
+          "percent": 0.5690440060698028
+        },
+        {
+          "label": "mining",
+          "count": 10,
+          "percent": 0.37936267071320184
+        }
+      ]
+    },
+    "politicalIdentity": {
+      "response_n": 2639,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 1,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2639,
+      "categories": [
+        {
+          "label": "republican",
+          "count": 759,
+          "percent": 28.76089427813566
+        },
+        {
+          "label": "democrat",
+          "count": 570,
+          "percent": 21.599090564607806
+        },
+        {
+          "label": "independent",
+          "count": 564,
+          "percent": 21.371731716559303
+        },
+        {
+          "label": "strong-republican",
+          "count": 353,
+          "percent": 13.376278893520272
+        },
+        {
+          "label": "strong-democrat",
+          "count": 333,
+          "percent": 12.618416066691928
+        },
+        {
+          "label": "other",
+          "count": 36,
+          "percent": 1.3641530882910193
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 24,
+          "percent": 0.9094353921940129
+        }
+      ]
+    },
+    "politicalViews": {
+      "response_n": 2639,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 1,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2639,
+      "categories": [
+        {
+          "label": "conservative",
+          "count": 697,
+          "percent": 26.41151951496779
+        },
+        {
+          "label": "liberal",
+          "count": 637,
+          "percent": 24.137931034482758
+        },
+        {
+          "label": "moderate",
+          "count": 541,
+          "percent": 20.500189465706708
+        },
+        {
+          "label": "very-liberal",
+          "count": 371,
+          "percent": 14.058355437665783
+        },
+        {
+          "label": "very-conservative",
+          "count": 356,
+          "percent": 13.489958317544524
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 21,
+          "percent": 0.7957559681697612
+        },
+        {
+          "label": "dont-know",
+          "count": 16,
+          "percent": 0.6062902614626753
+        }
+      ]
+    },
+    "bibleBelief": {
+      "response_n": 2638,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 2,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2638,
+      "categories": [
+        {
+          "label": "literal",
+          "count": 892,
+          "percent": 33.81349507202426
+        },
+        {
+          "label": "inspired",
+          "count": 834,
+          "percent": 31.614859742228962
+        },
+        {
+          "label": "ancient-book",
+          "count": 724,
+          "percent": 27.445034116755117
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 188,
+          "percent": 7.12661106899166
+        }
+      ]
+    },
+    "evangelical": {
+      "response_n": 2637,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 3,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2637,
+      "categories": [
+        {
+          "label": "no",
+          "count": 1236,
+          "percent": 46.87144482366325
+        },
+        {
+          "label": "yes",
+          "count": 1171,
+          "percent": 44.406522563519154
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 126,
+          "percent": 4.778156996587031
+        },
+        {
+          "label": "dont-know",
+          "count": 104,
+          "percent": 3.943875616230565
+        }
+      ]
+    },
+    "religion": {
+      "response_n": 2639,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 1,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2639,
+      "categories": [
+        {
+          "label": "roman-catholic",
+          "count": 732,
+          "percent": 27.73777946191739
+        },
+        {
+          "label": "no-religion",
+          "count": 689,
+          "percent": 26.108374384236452
+        },
+        {
+          "label": "protestant",
+          "count": 656,
+          "percent": 24.857900719969685
+        },
+        {
+          "label": "other-christian",
+          "count": 284,
+          "percent": 10.761652140962486
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 76,
+          "percent": 2.8798787419477074
+        },
+        {
+          "label": "other-non-christian",
+          "count": 69,
+          "percent": 2.614626752557787
+        },
+        {
+          "label": "muslim",
+          "count": 43,
+          "percent": 1.6294050776809397
+        },
+        {
+          "label": "dont-know",
+          "count": 41,
+          "percent": 1.5536187949981053
+        },
+        {
+          "label": "jewish",
+          "count": 39,
+          "percent": 1.477832512315271
+        },
+        {
+          "label": "mormon",
+          "count": 10,
+          "percent": 0.378931413414172
+        }
+      ]
+    },
+    "maritalStatus": {
+      "response_n": 2638,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 2,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2638,
+      "categories": [
+        {
+          "label": "married",
+          "count": 1311,
+          "percent": 49.696739954510996
+        },
+        {
+          "label": "never-married",
+          "count": 767,
+          "percent": 29.075056861258528
+        },
+        {
+          "label": "living-partner",
+          "count": 301,
+          "percent": 11.410159211523881
+        },
+        {
+          "label": "divorced",
+          "count": 156,
+          "percent": 5.913570887035633
+        },
+        {
+          "label": "widowed",
+          "count": 40,
+          "percent": 1.5163002274450341
+        },
+        {
+          "label": "separated",
+          "count": 35,
+          "percent": 1.3267626990144048
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 28,
+          "percent": 1.061410159211524
+        }
+      ]
+    },
+    "childrenSchool": {
+      "response_n": 2639,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 1,
+      "multi_select": true,
+      "list_encoded": true,
+      "selection_count": 3003,
+      "categories": [
+        {
+          "label": "no-children",
+          "count": 955,
+          "percent": 36.18794998105343
+        },
+        {
+          "label": "public",
+          "count": 812,
+          "percent": 30.76923076923077
+        },
+        {
+          "label": "private",
+          "count": 564,
+          "percent": 21.371731716559303
+        },
+        {
+          "label": "out-of-school",
+          "count": 251,
+          "percent": 9.511178476695719
+        },
+        {
+          "label": "university",
+          "count": 222,
+          "percent": 8.41227737779462
+        },
+        {
+          "label": "home",
+          "count": 123,
+          "percent": 4.660856384994316
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 76,
+          "percent": 2.8798787419477074
+        }
+      ]
+    },
+    "residence": {
+      "response_n": 2639,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 1,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2639,
+      "categories": [
+        {
+          "label": "suburban",
+          "count": 1182,
+          "percent": 44.789693065555134
+        },
+        {
+          "label": "urban",
+          "count": 1135,
+          "percent": 43.00871542250852
+        },
+        {
+          "label": "rural",
+          "count": 297,
+          "percent": 11.25426297840091
+        },
+        {
+          "label": "prefer not to answer",
+          "count": 18,
+          "percent": 0.6820765441455097
+        },
+        {
+          "label": "dont-know",
+          "count": 7,
+          "percent": 0.26525198938992045
+        }
+      ]
+    },
+    "origin": {
+      "response_n": 2611,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 29,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2611,
+      "categories": [
+        {
+          "label": "United States of America",
+          "count": 2490,
+          "percent": 95.36576024511682
+        },
+        {
+          "label": "Prefer not to answer",
+          "count": 10,
+          "percent": 0.38299502106472616
+        },
+        {
+          "label": "American Samoa",
+          "count": 8,
+          "percent": 0.3063960168517809
+        },
+        {
+          "label": "South Africa",
+          "count": 7,
+          "percent": 0.2680965147453083
+        },
+        {
+          "label": "China",
+          "count": 7,
+          "percent": 0.2680965147453083
+        },
+        {
+          "label": "India",
+          "count": 6,
+          "percent": 0.2297970126388357
+        },
+        {
+          "label": "Other",
+          "count": 6,
+          "percent": 0.2297970126388357
+        },
+        {
+          "label": "United States Minor Outlying Islands",
+          "count": 5,
+          "percent": 0.19149751053236308
+        },
+        {
+          "label": "Korea, Republic of",
+          "count": 5,
+          "percent": 0.19149751053236308
+        },
+        {
+          "label": "Kenya",
+          "count": 5,
+          "percent": 0.19149751053236308
+        },
+        {
+          "label": "Georgia",
+          "count": 4,
+          "percent": 0.15319800842589046
+        },
+        {
+          "label": "Zimbabwe",
+          "count": 4,
+          "percent": 0.15319800842589046
+        },
+        {
+          "label": "Viet Nam",
+          "count": 4,
+          "percent": 0.15319800842589046
+        },
+        {
+          "label": "United Kingdom of Great Britain and Northern Ireland",
+          "count": 4,
+          "percent": 0.15319800842589046
+        },
+        {
+          "label": "Ukraine",
+          "count": 3,
+          "percent": 0.11489850631941785
+        },
+        {
+          "label": "Mexico",
+          "count": 3,
+          "percent": 0.11489850631941785
+        },
+        {
+          "label": "Virgin Islands, U.S.",
+          "count": 3,
+          "percent": 0.11489850631941785
+        },
+        {
+          "label": "Israel",
+          "count": 2,
+          "percent": 0.07659900421294523
+        },
+        {
+          "label": "Philippines",
+          "count": 2,
+          "percent": 0.07659900421294523
+        },
+        {
+          "label": "Canada",
+          "count": 2,
+          "percent": 0.07659900421294523
+        },
+        {
+          "label": "Italy",
+          "count": 2,
+          "percent": 0.07659900421294523
+        },
+        {
+          "label": "Spain",
+          "count": 2,
+          "percent": 0.07659900421294523
+        },
+        {
+          "label": "Pakistan",
+          "count": 2,
+          "percent": 0.07659900421294523
+        },
+        {
+          "label": "Hong Kong",
+          "count": 2,
+          "percent": 0.07659900421294523
+        },
+        {
+          "label": "C\u00f4te d'Ivoire",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Hungary",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Jamaica",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Brazil",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Belarus",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Romania",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Venezuela, Bolivarian Republic of",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Lebanon",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Nigeria",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Dominican Republic",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Germany",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Peru",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Uzbekistan",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Nepal",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Antigua and Barbuda",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Andorra",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "T\u00fcrkiye",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Haiti",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Ireland",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Indonesia",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Cuba",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "Puerto Rico",
+          "count": 1,
+          "percent": 0.038299502106472615
+        },
+        {
+          "label": "United Arab Emirates",
+          "count": 1,
+          "percent": 0.038299502106472615
+        }
+      ]
+    },
+    "residency": {
+      "response_n": 2610,
+      "survey_respondents": 2640,
+      "missing_or_empty_n": 30,
+      "multi_select": false,
+      "list_encoded": false,
+      "selection_count": 2610,
+      "categories": [
+        {
+          "label": "United States of America",
+          "count": 2584,
+          "percent": 99.00383141762453
+        },
+        {
+          "label": "American Samoa",
+          "count": 9,
+          "percent": 0.3448275862068966
+        },
+        {
+          "label": "Prefer not to answer",
+          "count": 4,
+          "percent": 0.1532567049808429
+        },
+        {
+          "label": "Other",
+          "count": 4,
+          "percent": 0.1532567049808429
+        },
+        {
+          "label": "Virgin Islands, U.S.",
+          "count": 2,
+          "percent": 0.07662835249042145
+        },
+        {
+          "label": "United States Minor Outlying Islands",
+          "count": 1,
+          "percent": 0.038314176245210725
+        },
+        {
+          "label": "United Arab Emirates",
+          "count": 1,
+          "percent": 0.038314176245210725
+        },
+        {
+          "label": "Albania",
+          "count": 1,
+          "percent": 0.038314176245210725
+        },
+        {
+          "label": "United Kingdom of Great Britain and Northern Ireland",
+          "count": 1,
+          "percent": 0.038314176245210725
+        },
+        {
+          "label": "Anguilla",
+          "count": 1,
+          "percent": 0.038314176245210725
+        },
+        {
+          "label": "Andorra",
+          "count": 1,
+          "percent": 0.038314176245210725
+        },
+        {
+          "label": "Georgia",
+          "count": 1,
+          "percent": 0.038314176245210725
+        }
+      ]
+    }
+  },
+  "recommended_text_values": {
+    "participants": 2832,
+    "survey_respondents": 2640,
+    "survey_percent_1dp": "93.2",
+    "age_n": 2636,
+    "age_range": "18--84",
+    "age_mean_1dp": "39.7",
+    "age_sample_sd_1dp": "13.0",
+    "gender_percent_1dp": {
+      "female": "51.4",
+      "male": "47.5",
+      "non-binary": "0.8",
+      "prefer not to answer": "0.3"
+    },
+    "ethnicity_percent_1dp": {
+      "white": "67.6",
+      "black": "22.9",
+      "asian": "6.1",
+      "hispanic": "5.5",
+      "native-american": "1.9",
+      "prefer not to answer": "0.6",
+      "other": "0.5"
+    },
+    "evangelical_percent_1dp": {
+      "no": "46.9",
+      "yes": "44.4",
+      "prefer not to answer": "4.8",
+      "dont-know": "3.9"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+owner,partition,simulation_version,opinion_type,panel,model,stage,likert,count,n,percent,source,binned_n,unbinned_n
+ruixuan,group_test,v0,public,1,human,first,1,46,192,23.958333333333332,v5 human,192,0
+ruixuan,group_test,v0,public,1,human,first,2,6,192,3.125,v5 human,192,0
+ruixuan,group_test,v0,public,1,human,first,3,15,192,7.8125,v5 human,192,0
+ruixuan,group_test,v0,public,1,human,first,4,20,192,10.416666666666666,v5 human,192,0
+ruixuan,group_test,v0,public,1,human,first,5,11,192,5.729166666666667,v5 human,192,0
+ruixuan,group_test,v0,public,1,human,first,6,94,192,48.958333333333336,v5 human,192,0
+ruixuan,group_test,v0,public,2,human,final,1,46,192,23.958333333333332,v5 human,192,0
+ruixuan,group_test,v0,public,2,human,final,2,9,192,4.6875,v5 human,192,0
+ruixuan,group_test,v0,public,2,human,final,3,12,192,6.25,v5 human,192,0
+ruixuan,group_test,v0,public,2,human,final,4,16,192,8.333333333333334,v5 human,192,0
+ruixuan,group_test,v0,public,2,human,final,5,11,192,5.729166666666667,v5 human,192,0
+ruixuan,group_test,v0,public,2,human,final,6,98,192,51.041666666666664,v5 human,192,0
+ruixuan,group_test,v0,public,3,Llama-3.1-8B-Instruct,final,1,27,156,17.307692307692307,reused canonical eval_v3 base,156,0
+ruixuan,group_test,v0,public,3,Llama-3.1-8B-Instruct,final,2,9,156,5.769230769230769,reused canonical eval_v3 base,156,0
+ruixuan,group_test,v0,public,3,Llama-3.1-8B-Instruct,final,3,51,156,32.69230769230769,reused canonical eval_v3 base,156,0
+ruixuan,group_test,v0,public,3,Llama-3.1-8B-Instruct,final,4,30,156,19.23076923076923,reused canonical eval_v3 base,156,0
+ruixuan,group_test,v0,public,3,Llama-3.1-8B-Instruct,final,5,15,156,9.615384615384615,reused canonical eval_v3 base,156,0
+ruixuan,group_test,v0,public,3,Llama-3.1-8B-Instruct,final,6,24,156,15.384615384615385,reused canonical eval_v3 base,156,0
+ruixuan,group_test,v0,public,4,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,final,1,72,244,29.508196721311474,v5 SFT,244,0
+ruixuan,group_test,v0,public,4,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,final,2,11,244,4.508196721311475,v5 SFT,244,0
+ruixuan,group_test,v0,public,4,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,final,3,21,244,8.60655737704918,v5 SFT,244,0
+ruixuan,group_test,v0,public,4,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,final,4,18,244,7.377049180327869,v5 SFT,244,0
+ruixuan,group_test,v0,public,4,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,final,5,15,244,6.147540983606557,v5 SFT,244,0
+ruixuan,group_test,v0,public,4,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,final,6,107,244,43.85245901639344,v5 SFT,244,0
+ruixuan,group_test,v0,public,5,DeGroot fit,final,1,31,256,12.109375,v5 human rows; saved training-fit alphas,256,0
+ruixuan,group_test,v0,public,5,DeGroot fit,final,2,36,256,14.0625,v5 human rows; saved training-fit alphas,256,0
+ruixuan,group_test,v0,public,5,DeGroot fit,final,3,31,256,12.109375,v5 human rows; saved training-fit alphas,256,0
+ruixuan,group_test,v0,public,5,DeGroot fit,final,4,26,256,10.15625,v5 human rows; saved training-fit alphas,256,0
+ruixuan,group_test,v0,public,5,DeGroot fit,final,5,37,256,14.453125,v5 human rows; saved training-fit alphas,256,0
+ruixuan,group_test,v0,public,5,DeGroot fit,final,6,95,256,37.109375,v5 human rows; saved training-fit alphas,256,0
+ruixuan,group_test,v0,public,6,gpt-5-mini,final,1,31,192,16.145833333333332,reused canonical eval_v3 base,192,0
+ruixuan,group_test,v0,public,6,gpt-5-mini,final,2,9,192,4.6875,reused canonical eval_v3 base,192,0
+ruixuan,group_test,v0,public,6,gpt-5-mini,final,3,44,192,22.916666666666668,reused canonical eval_v3 base,192,0
+ruixuan,group_test,v0,public,6,gpt-5-mini,final,4,31,192,16.145833333333332,reused canonical eval_v3 base,192,0
+ruixuan,group_test,v0,public,6,gpt-5-mini,final,5,30,192,15.625,reused canonical eval_v3 base,192,0
+ruixuan,group_test,v0,public,6,gpt-5-mini,final,6,47,192,24.479166666666668,reused canonical eval_v3 base,192,0
+ruixuan,group_test,v0,public,7,gpt-4o-mini-2024-07-18,final,1,34,252,13.492063492063492,reused canonical eval_v3 base,252,0
+ruixuan,group_test,v0,public,7,gpt-4o-mini-2024-07-18,final,2,14,252,5.555555555555555,reused canonical eval_v3 base,252,0
+ruixuan,group_test,v0,public,7,gpt-4o-mini-2024-07-18,final,3,68,252,26.984126984126984,reused canonical eval_v3 base,252,0
+ruixuan,group_test,v0,public,7,gpt-4o-mini-2024-07-18,final,4,39,252,15.476190476190476,reused canonical eval_v3 base,252,0
+ruixuan,group_test,v0,public,7,gpt-4o-mini-2024-07-18,final,5,15,252,5.9523809523809526,reused canonical eval_v3 base,252,0
+ruixuan,group_test,v0,public,7,gpt-4o-mini-2024-07-18,final,6,82,252,32.53968253968254,reused canonical eval_v3 base,252,0
+ruixuan,group_test,v0,public,8,gemini-2.5-flash-lite,final,1,66,248,26.612903225806452,reused canonical eval_v3 base,248,0
+ruixuan,group_test,v0,public,8,gemini-2.5-flash-lite,final,2,15,248,6.048387096774194,reused canonical eval_v3 base,248,0
+ruixuan,group_test,v0,public,8,gemini-2.5-flash-lite,final,3,44,248,17.741935483870968,reused canonical eval_v3 base,248,0
+ruixuan,group_test,v0,public,8,gemini-2.5-flash-lite,final,4,25,248,10.080645161290322,reused canonical eval_v3 base,248,0
+ruixuan,group_test,v0,public,8,gemini-2.5-flash-lite,final,5,8,248,3.225806451612903,reused canonical eval_v3 base,248,0
+ruixuan,group_test,v0,public,8,gemini-2.5-flash-lite,final,6,90,248,36.29032258064516,reused canonical eval_v3 base,248,0
+ruixuan,group_test,v0,public,9,Mistral-7B-Instruct-v0.3,final,1,42,228,18.42105263157895,reused canonical eval_v3 base,222,6
+ruixuan,group_test,v0,public,9,Mistral-7B-Instruct-v0.3,final,2,12,228,5.2631578947368425,reused canonical eval_v3 base,222,6
+ruixuan,group_test,v0,public,9,Mistral-7B-Instruct-v0.3,final,3,37,228,16.228070175438596,reused canonical eval_v3 base,222,6
+ruixuan,group_test,v0,public,9,Mistral-7B-Instruct-v0.3,final,4,26,228,11.403508771929825,reused canonical eval_v3 base,222,6
+ruixuan,group_test,v0,public,9,Mistral-7B-Instruct-v0.3,final,5,21,228,9.210526315789474,reused canonical eval_v3 base,222,6
+ruixuan,group_test,v0,public,9,Mistral-7B-Instruct-v0.3,final,6,84,228,36.8421052631579,reused canonical eval_v3 base,222,6
+ruixuan,group_test,v0,public,10,Qwen2.5-32B-Instruct,final,1,27,132,20.454545454545453,reused canonical eval_v3 base,129,3
+ruixuan,group_test,v0,public,10,Qwen2.5-32B-Instruct,final,2,7,132,5.303030303030303,reused canonical eval_v3 base,129,3
+ruixuan,group_test,v0,public,10,Qwen2.5-32B-Instruct,final,3,19,132,14.393939393939394,reused canonical eval_v3 base,129,3
+ruixuan,group_test,v0,public,10,Qwen2.5-32B-Instruct,final,4,14,132,10.606060606060606,reused canonical eval_v3 base,129,3
+ruixuan,group_test,v0,public,10,Qwen2.5-32B-Instruct,final,5,15,132,11.363636363636363,reused canonical eval_v3 base,129,3
+ruixuan,group_test,v0,public,10,Qwen2.5-32B-Instruct,final,6,47,132,35.60606060606061,reused canonical eval_v3 base,129,3
+ruixuan,group_test,v0,public,11,Llama-3.1-70B-Instruct,final,1,35,184,19.02173913043478,reused canonical eval_v3 base,177,7
+ruixuan,group_test,v0,public,11,Llama-3.1-70B-Instruct,final,2,16,184,8.695652173913043,reused canonical eval_v3 base,177,7
+ruixuan,group_test,v0,public,11,Llama-3.1-70B-Instruct,final,3,31,184,16.847826086956523,reused canonical eval_v3 base,177,7
+ruixuan,group_test,v0,public,11,Llama-3.1-70B-Instruct,final,4,25,184,13.58695652173913,reused canonical eval_v3 base,177,7
+ruixuan,group_test,v0,public,11,Llama-3.1-70B-Instruct,final,5,11,184,5.978260869565218,reused canonical eval_v3 base,177,7
+ruixuan,group_test,v0,public,11,Llama-3.1-70B-Instruct,final,6,59,184,32.06521739130435,reused canonical eval_v3 base,177,7

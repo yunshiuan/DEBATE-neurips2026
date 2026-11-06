@@ -1,0 +1,231 @@
+{
+  "source_repository": "https://github.com/yunshiuan/mini-twitter-llm-agent-modeling",
+  "files": [
+    {
+      "source": "neurips_2026/chengtao/src/radar/generate_plots.py",
+      "source_sha256": "6e2b85aed8e8967641ed2258733a42a8dbb36a56fc66d598c72f03648ae0df2f",
+      "release_sha256": "6e2b85aed8e8967641ed2258733a42a8dbb36a56fc66d598c72f03648ae0df2f",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/chengtao/src/radar/generate_v3_depth_base_model_scatter_reports.py",
+      "source_sha256": "2f7ac1cbac2aac01a738bedd3e146eaf18e49d13e87d8c5394b329dac201622b",
+      "release_sha256": "2f7ac1cbac2aac01a738bedd3e146eaf18e49d13e87d8c5394b329dac201622b",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/chengtao/src/radar/group_opinion_convergence.py",
+      "source_sha256": "1b9f4e5c6b52223763c2c4bcbe8a14e51c3538f6c99e5d75f83b16524989d89f",
+      "release_sha256": "1b9f4e5c6b52223763c2c4bcbe8a14e51c3538f6c99e5d75f83b16524989d89f",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/chengtao/src/radar/plot_opinion_histograms.py",
+      "source_sha256": "74eda5336b83ae9386a02d2315237f8e15d003730f2a742cf4e075e8c9bd9926",
+      "release_sha256": "74eda5336b83ae9386a02d2315237f8e15d003730f2a742cf4e075e8c9bd9926",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/chengtao/src/radar/post_training_breadth_profiles.py",
+      "source_sha256": "78bf645b5e6a2298748733b08758f02c8c20572f17b5a4dd523b82dd1fd4d42f",
+      "release_sha256": "78bf645b5e6a2298748733b08758f02c8c20572f17b5a4dd523b82dd1fd4d42f",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/leo/transition/src/build_transition_layout.py",
+      "source_sha256": "569fe25db223ac1ac524a36ed60c4312282fc51dc2293ea34d82283e58d735fb",
+      "release_sha256": "569fe25db223ac1ac524a36ed60c4312282fc51dc2293ea34d82283e58d735fb",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/leo/transition/src/utils.py",
+      "source_sha256": "c4779000ea6a04288781b3b0fed6945c25b4c441992b6da6c976f83034819839",
+      "release_sha256": "c4779000ea6a04288781b3b0fed6945c25b4c441992b6da6c976f83034819839",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/base_model_v3_style.py",
+      "source_sha256": "be475a5cfafd5d08a5e5bd43bc1a6261584ce7887365d71a3a43404aab58be64",
+      "release_sha256": "be475a5cfafd5d08a5e5bd43bc1a6261584ce7887365d71a3a43404aab58be64",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/result_version_config.py",
+      "source_sha256": "6b7cc8af175fd1e093ba2a0e353f8820f6fea950d21be778c17dd6f7051583c4",
+      "release_sha256": "6b7cc8af175fd1e093ba2a0e353f8820f6fea950d21be778c17dd6f7051583c4",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/correlate_abm_summary_metrics.py",
+      "source_sha256": "5c387b0e1b6b522f1320df091ffc6c417e8809b42d6785e6b30df435a1619637",
+      "release_sha256": "5c387b0e1b6b522f1320df091ffc6c417e8809b42d6785e6b30df435a1619637",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v3_report.py",
+      "source_sha256": "9f7806a1c367aa9d864c8f62e0ccc8a0580ed34a1008fa5ff218b5ddca2317c9",
+      "release_sha256": "9f7806a1c367aa9d864c8f62e0ccc8a0580ed34a1008fa5ff218b5ddca2317c9",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_abm_transition_publication_panel.py",
+      "source_sha256": "133b038d7c5fad0d8d1f58feab02583431e4a33a5dcb934a15b8bb9e288f12e1",
+      "release_sha256": "133b038d7c5fad0d8d1f58feab02583431e4a33a5dcb934a15b8bb9e288f12e1",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_beyond_stance_exports.py",
+      "source_sha256": "1c2404daa0539387069a790ff519426d01ff1769e74b395d525dccfeb4280b03",
+      "release_sha256": "1c2404daa0539387069a790ff519426d01ff1769e74b395d525dccfeb4280b03",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_scatter_post_train_publication_exports.py",
+      "source_sha256": "e560958182d3588a43d5bc13d887384df073acfadb2ecfe8f116c0325d087a81",
+      "release_sha256": "e560958182d3588a43d5bc13d887384df073acfadb2ecfe8f116c0325d087a81",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_scatter_post_train_spearman_rho_exports.py",
+      "source_sha256": "009020891aa68385a8f3fdb597651d96c5962c141b155c761e7feb0d93bc92d8",
+      "release_sha256": "009020891aa68385a8f3fdb597651d96c5962c141b155c761e7feb0d93bc92d8",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_scatter_post_train_spearman_rho_publication_exports.py",
+      "source_sha256": "8cf48b4a43ef02177f088173a521c2b5b9b0847dbd2e3c1c4b5198ca14a62e3b",
+      "release_sha256": "8cf48b4a43ef02177f088173a521c2b5b9b0847dbd2e3c1c4b5198ca14a62e3b",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_vs_v4b_abm_summary_post_training_publication_figures.py",
+      "source_sha256": "2b49c787698364ed47933703e6adf41bcba32e302360e1be97bf86f0d7311384",
+      "release_sha256": "2b49c787698364ed47933703e6adf41bcba32e302360e1be97bf86f0d7311384",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_vs_v4b_abm_summary_post_training_report.py",
+      "source_sha256": "c37aef2a2a9838cb35b63912db3e3f632f153c7f975077246fdfeaf5490939ef",
+      "release_sha256": "c37aef2a2a9838cb35b63912db3e3f632f153c7f975077246fdfeaf5490939ef",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_vs_v4b_summary_base_model_report.py",
+      "source_sha256": "9265c640186057cd8b5217e250d6c4bd802fe453b815f4b81d877f9b4616923f",
+      "release_sha256": "9265c640186057cd8b5217e250d6c4bd802fe453b815f4b81d877f9b4616923f",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/create_v4_vs_v4b_summary_post_training_report.py",
+      "source_sha256": "588d5d1c878fd6541fa9ea23b54bcfdd35b357e8a5831f720da9633a7f0ee123",
+      "release_sha256": "588d5d1c878fd6541fa9ea23b54bcfdd35b357e8a5831f720da9633a7f0ee123",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v3_degroot_abm_post_train_report.py",
+      "source_sha256": "da41b63c2d77d3a5d87f2a51d00870b8ac5fd6234742b263ac0a1c9c01947990",
+      "release_sha256": "da41b63c2d77d3a5d87f2a51d00870b8ac5fd6234742b263ac0a1c9c01947990",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v3_degroot_abm_proxy_tree_common.py",
+      "source_sha256": "f0c50823b2139d3b74c368be0e4a93178f7e346c1756033ea044a964d571d78e",
+      "release_sha256": "f0c50823b2139d3b74c368be0e4a93178f7e346c1756033ea044a964d571d78e",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v3_degroot_abm_report.py",
+      "source_sha256": "832f78c4fb5328a457c714f1e6c350753c93fef71c7ae1e1f82835584692fec2",
+      "release_sha256": "832f78c4fb5328a457c714f1e6c350753c93fef71c7ae1e1f82835584692fec2",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v3_degroot_abm_summary_common.py",
+      "source_sha256": "183dc92c7f4e1fc28c7ae03945e410f5a87b483f6df09a437b795bb9d70d5190",
+      "release_sha256": "183dc92c7f4e1fc28c7ae03945e410f5a87b483f6df09a437b795bb9d70d5190",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v3_depth_base_line_plots.py",
+      "source_sha256": "b099f157f71b834896a2e97c6b45af9fff6897a6ff3c19b07885dca05a347f4c",
+      "release_sha256": "b099f157f71b834896a2e97c6b45af9fff6897a6ff3c19b07885dca05a347f4c",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v4_dataset_stats_tables.py",
+      "source_sha256": "bbd9bc5886ae1356747de747dfa1adaf2d92c6e360c52eda3e26aac4ca987a09",
+      "release_sha256": "bbd9bc5886ae1356747de747dfa1adaf2d92c6e360c52eda3e26aac4ca987a09",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v5_leo_qwen4b_comparison.py",
+      "source_sha256": "0ea9640a02c43d3f434b81eff5136da0fb7f05fcd325e7789bcb213ef398f17b",
+      "release_sha256": "ca1d9ddb941513fd0a68a483c501455004f2f688f055cc0de8eb8947b6e2ec1d",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v5_ruixuan_mistral_sft_comparison.py",
+      "source_sha256": "ff4e39cbabc7da2dd5544934e6162e110415bb97ce07590719d4abee55a88978",
+      "release_sha256": "287e4de0e1748cdcca83f8a5fb688031bc86faa6d29976618dd0b78b769f36fd",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/scripts/generate_v5_ruixuan_paper_figures.py",
+      "source_sha256": "5c3874908109176630a7a6d2234965e0b11c392fc077db7a360a89f108d64f15",
+      "release_sha256": "c3cc93a24adb2e3d065e9f8388763939276f430f3a8a744ec1b4b53bf99b36ef",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/v3/masks/__init__.py",
+      "source_sha256": "ce87594044506e9d1af345017c1e476d79812c8a4e378e7b2a326da2823e2d11",
+      "release_sha256": "ce87594044506e9d1af345017c1e476d79812c8a4e378e7b2a326da2823e2d11",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/v3/masks/complete_group_masks.py",
+      "source_sha256": "cedb70a75dafa4d1080ad0fb17499ac8fe785e650efe12e89546e9e38d3d5980",
+      "release_sha256": "cedb70a75dafa4d1080ad0fb17499ac8fe785e650efe12e89546e9e38d3d5980",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    },
+    {
+      "source": "neurips_2026/sean_reproduce/v3/masks/report_metadata.py",
+      "source_sha256": "3c2f38ac136411a20c9fe40abb86b14dd5156d8f079dbb32f3ae528a75a4a464",
+      "release_sha256": "3c2f38ac136411a20c9fe40abb86b14dd5156d8f079dbb32f3ae528a75a4a464",
+      "change": "Only author-machine default path and documentation substitutions; scientific calculations unchanged."
+    }
+  ],
+  "external_imports": [
+    "PIL",
+    "__future__",
+    "adjustText",
+    "argparse",
+    "collections",
+    "concurrent",
+    "csv",
+    "dataclasses",
+    "functools",
+    "hashlib",
+    "html",
+    "io",
+    "math",
+    "matplotlib",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "pypdf",
+    "random",
+    "re",
+    "scipy",
+    "shutil",
+    "statistics",
+    "subprocess",
+    "sys",
+    "tempfile",
+    "textwrap",
+    "tqdm",
+    "typing"
+  ],
+  "source_commit": "4671d5f258b6f7df5d3d547e4a43116c3e7d0bef",
+  "source_note": "Individual source hashes identify the exact imported files, including any uncommitted source revisions."
+}

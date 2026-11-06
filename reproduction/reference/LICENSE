@@ -1,0 +1,176 @@
+DEBATE DATASET RESEARCH-ONLY LICENSE (NON-COMMERCIAL, v1.0)
+
+Copyright (c) 2025
+Yun-Shiuan (Sean) Chuang and DEBATE collaborators
+All rights reserved.
+
+1. Definitions
+--------------
+
+(a) "Dataset" means the DEBATE data made available in this repository,
+    including all files, annotations, and associated metadata.
+
+(b) "You" (or "User") means the individual or legal entity exercising
+    permissions under this License.
+
+(c) "Research Use" means use whose primary purpose is to advance or
+    evaluate scientific, technical, or methodological knowledge, including
+    training, testing, and analyzing models, and publishing research
+    results.
+
+(d) "Industry Research" means Research Use carried out by or within a
+    for-profit company or other commercial organization, provided it
+    complies with all restrictions in this License.
+
+(e) "Commercial Use" means use of the Dataset or any derivative work
+    that is primarily intended for commercial advantage, revenue
+    generation, or integration into a paid or revenue-generating product
+    or service.
+
+(f) "Derivative Works" means any data, models, code, or other outputs
+    that are created using the Dataset, including but not limited to
+    trained or fine-tuned models, distilled datasets, embeddings, or
+    synthetic data.
+
+2. Grant of Rights
+------------------
+
+Subject to the terms and conditions of this License, the licensors grant
+You a worldwide, royalty-free, non-exclusive, non-transferable license to:
+
+(a) Download, copy, and use the Dataset for Research Use, including
+    Industry Research;
+
+(b) Create Derivative Works from the Dataset for Research Use;
+
+(c) Publish and share research results based on the Dataset and/or
+    Derivative Works, including in academic venues and technical reports,
+    so long as You comply with the Attribution and Restrictions below.
+
+No rights are granted for Commercial Use.
+
+3. Permitted Uses
+-----------------
+
+Under this License, You MAY:
+
+(a) Use the Dataset and Derivative Works in academic, non-profit, or
+    government research;
+
+(b) Use the Dataset and Derivative Works in Industry Research within
+    for-profit organizations, so long as such use is not a Commercial Use;
+
+(c) Train, fine-tune, evaluate, and analyze machine learning models using
+    the Dataset;
+
+(d) Release non-commercial code and non-commercial models that were
+    trained, fine-tuned, or evaluated using the Dataset, subject to
+    Section 5 (Redistribution) and Section 4 (Attribution);
+
+(e) Use the Dataset for classroom teaching, coursework, and educational
+    demonstrations that are not part of a Commercial Use.
+
+4. Attribution and Citation
+---------------------------
+
+Any public use of the Dataset or Derivative Works in a published work
+(e.g., papers, preprints, technical reports, blog posts, or model cards)
+MUST provide appropriate credit to the creators by citing the following
+work:
+
+@article{chuang2025debate,
+  title={DEBATE: A Large-Scale Benchmark for Role-Playing LLM Agents in Multi-Agent, Long-Form Debates},
+  author={Chuang, Yun-Shiuan and Tu, Ruixuan and Dai, Chengtao and Vasani, Smit and Yao, Binwei and Tessler, Michael Henry and Yang, Sijia and Shah, Dhavan V and Hawkins, Robert D and Hu, Junjie and others},
+  journal={arXiv preprint arXiv:2510.25110},
+  year={2025}
+}
+
+
+Attribution should be made in a manner reasonable to the medium, such as
+including the citation above in the references section of a paper or in
+a model card. Where space allows, you may additionally mention that the
+work appears at the 39th Conference on Neural Information Processing
+Systems (NeurIPS 2025) Workshop: Scaling Environments for Agents (SEA).
+
+5. Redistribution
+-----------------
+
+You MAY redistribute the Dataset or substantial portions of it only if:
+
+(a) This License is included in full and remains the governing license
+    for the redistributed Dataset;
+
+(b) You do not remove or weaken any anonymization or privacy protections
+    present in the original Dataset;
+
+(c) You clearly indicate any modifications (e.g., filtering, reformatting,
+    additional annotations) you have made;
+
+(d) You do not represent your redistribution as being an official or
+    canonical release by the original authors unless You have their
+    express permission.
+
+Redistribution of Derivative Works (e.g., trained models) is permitted
+only if the Derivative Work is itself distributed for non-commercial
+purposes and is accompanied by a notice that it was trained or developed
+using the DEBATE Dataset under this License.
+
+6. Prohibited Uses
+------------------
+
+You MAY NOT:
+
+(a) Use the Dataset or Derivative Works in any Commercial Use, including
+    but not limited to:
+    - integrating them into a paid product or service;
+    - using them to provide paid APIs or hosted services;
+    - using them to develop or improve models or systems that are
+      deployed or marketed as commercial offerings;
+
+(b) Sell, license, or otherwise monetize the Dataset itself, or any
+    substantial portion of it;
+
+(c) Attempt to re-identify or deanonymize any participant, or otherwise
+    use the Dataset in a way that reasonably risks the privacy, safety,
+    or well-being of individuals represented in the data;
+
+(d) Claim endorsement by the authors, institutions, or funders associated
+    with the Dataset;
+
+(e) Use the Dataset in violation of any applicable law, regulation, or
+    institutional policy (including IRB or ethics board requirements).
+
+7. No Warranty; Limitation of Liability
+---------------------------------------
+
+THE DATASET IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF
+ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING
+WITHOUT LIMITATION ANY WARRANTIES OF ACCURACY, COMPLETENESS, FITNESS FOR
+A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+IN NO EVENT WILL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+DATASET OR THIS LICENSE.
+
+8. Termination
+--------------
+
+This License will automatically terminate for You if You breach any
+term or condition herein. Upon termination, You must cease all use and
+distribution of the Dataset and any Derivative Works that depend on it,
+except that previously published research outputs may remain available.
+
+The authors reserve the right to offer the Dataset under different terms
+or to update this License for future releases. Such changes will not
+retroactively affect rights granted under this version.
+
+9. Miscellaneous
+----------------
+
+Nothing in this License is intended to transfer or waive any moral
+rights, privacy rights, or other personal rights that may apply to
+individuals represented in the Dataset.
+
+If You are uncertain whether a particular use is allowed under this
+License, You are encouraged to contact the authors for clarification.

@@ -1,0 +1,66 @@
+{
+  "M1": {
+    "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_comparison.csv",
+    "reference_csv": "reference/figures/M1.csv"
+  },
+  "M2": {
+    "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_public_private_1x4_correlation_correlations.csv",
+    "reference_csv": "reference/figures/M2.csv"
+  },
+  "M3": {
+    "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_convergence_sd_panels.csv",
+    "reference_csv": "reference/figures/M3.csv"
+  },
+  "M4": {
+    "paper_asset": "figures/new_v4/heldout_breadth_group_public_private_transition_matrices_selected_models.csv",
+    "reference_csv": "reference/figures/M4.csv"
+  },
+  "M5": {
+    "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_partner_gap_merged.csv",
+    "reference_csv": "reference/figures/M5.csv"
+  },
+  "A1": {
+    "paper_asset": "figures/new_v4/group_test_plot_data.csv",
+    "reference_csv": "reference/figures/A1.csv"
+  },
+  "A2": {
+    "paper_asset": "figures/new_v4/topic_test_plot_data.csv",
+    "reference_csv": "reference/figures/A2.csv"
+  },
+  "A3": {
+    "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_comparison.csv",
+    "reference_csv": "reference/figures/A3.csv"
+  },
+  "A4": {
+    "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_public_private_1x4_correlation_correlations.csv",
+    "reference_csv": "reference/figures/A4.csv"
+  },
+  "A5": {
+    "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_convergence_sd_panels.csv",
+    "reference_csv": "reference/figures/A5.csv"
+  },
+  "A6_public": {
+    "paper_asset": "figures/new_v4/heldout_breadth_group_public_opinion_histogram_overview.csv",
+    "reference_csv": "reference/figures/A6_public.csv"
+  },
+  "A6_private": {
+    "paper_asset": "figures/new_v4/heldout_breadth_group_private_opinion_histogram_overview.csv",
+    "reference_csv": "reference/figures/A6_private.csv"
+  },
+  "A7_public": {
+    "paper_asset": "figures/new_v4/heldout_breadth_topic_public_opinion_histogram_overview.csv",
+    "reference_csv": "reference/figures/A7_public.csv"
+  },
+  "A7_private": {
+    "paper_asset": "figures/new_v4/heldout_breadth_topic_private_opinion_histogram_overview.csv",
+    "reference_csv": "reference/figures/A7_private.csv"
+  },
+  "A8": {
+    "paper_asset": "figures/new_v4/heldout_breadth_topic_public_private_transition_matrices_selected_models.csv",
+    "reference_csv": "reference/figures/A8.csv"
+  },
+  "A9": {
+    "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_partner_gap_merged.csv",
+    "reference_csv": "reference/figures/A9.csv"
+  }
+}

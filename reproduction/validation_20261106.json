@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-06",
+  "dataset": {
+    "repo_id": "seantw/DEBATE_LLM",
+    "revision": "39ae48ab86048a4c480e224c9a6badfabde79a39",
+    "extracted_files_sha256_verified": 86261,
+    "unauthenticated_public_download_check": "Historical component: 7 files downloaded and verified"
+  },
+  "reproduction_command": "debate reproduce all --data-root data --output-dir outputs/paper",
+  "fresh_run": true,
+  "reuse_summary": false,
+  "exit_code": 0,
+  "bootstrap_resamples": 1000,
+  "environment": {
+    "python": "3.11.3",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.10.1",
+    "matplotlib": "3.10.9",
+    "Pillow": "11.3.0",
+    "adjustText": "1.4.0"
+  },
+  "figure_verification": {
+    "passed": true,
+    "families": 16,
+    "csv_rows": 19104,
+    "numeric_cells": 47060,
+    "mismatches": 0,
+    "fitted_degroot_coefficients_checked": 8
+  },
+  "other_verification": {
+    "dataset_inventory": {
+      "passed": true,
+      "field_checks": 68
+    },
+    "cross_model_tables": {
+      "passed": true,
+      "displayed_values": 72
+    },
+    "demographics": {
+      "passed": true,
+      "aggregate_fields": 18,
+      "figure_panels": 15
+    },
+    "memory_ablation": {
+      "passed": true,
+      "values": 4
+    },
+    "conversation_quality": {
+      "passed": true,
+      "conversations": 120,
+      "criteria": 3,
+      "agreed_judgments": 358,
+      "total_judgments": 360,
+      "agreement_percent": 99.4
+    }
+  },
+  "tests": {
+    "full_suite_passed": 30,
+    "subtests_passed": 9,
+    "warnings": "24 deprecation warnings from retained LangChain simulation API; no failed tests",
+    "reproduction_specific_tests": 5,
+    "integration": "Actual retained simulator -> new annotator -> original metric core, both v0/v1_5, with deterministic fake providers; no API calls"
+  },
+  "numerical_compatibility": "Python 3.10 computed population SD as sqrt(pvariance). Python 3.11 changed exact-fraction square-root rounding by approximately one ulp, splitting some continuous DeGroot SD ties. The adapter preserves the original formula and rank results; no reference values or comparison tolerances were changed.",
+  "scope_limitations": [
+    "Historical Llama post-opinion validity source issue is preserved and disclosed; replay success does not independently validate generated-text validity.",
+    "Some auxiliary historical annotation/temperature/robustness studies remain reported-aggregate-only; see coverage_manifest.json.",
+    "Live provider generation and GPU training were not run in this validation. Original trained adapters and exact formatted historical SFT JSONLs were not recovered."
+  ],
+  "details": "docs/paper_reproduction.md",
+  "installed_wheel_validation": {
+    "outside_checkout": true,
+    "module_imports_passed": 9,
+    "cli_help_checks_passed": 9,
+    "historical_stage": "Passed using data downloaded publicly without authentication."
+  }
+}

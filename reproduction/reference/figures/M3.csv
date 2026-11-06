@@ -1,0 +1,79 @@
+panel,model,model_label,mean_delta_sd,raw_mean_delta_sd,bootstrap_or_delta_se,anchored_to_human,partition,simulation_version,step,mean_sd,se,raw_mean_sd,raw_se
+public_convergence,human,Human,-0.08450322555719314,-0.08450322555719314,0.1725370541199961,False,group_test,v0,,,,,
+public_convergence,gpt-5-mini,gpt-5-mini,-0.2449326840061612,-0.19231742184827327,0.14568483153754685,True,group_test,v0,,,,,
+public_convergence,gpt-4o-mini-2024-07-18,gpt-4o-mini,-0.17344973620376636,-0.17819058498958507,0.1387288460338864,True,group_test,v0,,,,,
+public_convergence,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,0.09501990544808026,0.08522859015466477,0.14734173108316867,True,group_test,v0,,,,,
+public_convergence,Mistral-7B-Instruct-v0.3,Mistral-7B,-0.3308651639945551,-0.4365200162081454,0.14964290293523289,True,group_test,v0,,,,,
+public_convergence,Qwen2.5-32B-Instruct,Qwen2.5-32B,-0.23592051910249157,-0.32944964369630525,0.16769635106795772,True,group_test,v0,,,,,
+public_convergence,Llama-3.1-70B-Instruct,Llama-3.1-70B,-0.20172593814681594,-0.23383797367258974,0.1590204031839067,True,group_test,v0,,,,,
+public_convergence,Llama-3.1-8B-Instruct,Llama-3.1-8B,-0.17898750975375877,-0.19531524982963577,0.1365444047260656,True,group_test,v0,,,,,
+public_convergence,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,Llama SFT (group),-0.10572497942313341,-0.12099278707397465,0.15987863281401687,True,group_test,v0,,,,,
+public_convergence,DeGroot fit,DeGroot fit,-0.3661160317583333,-0.3849168266552675,0.14141671465131078,True,group_test,v0,,,,,
+public_convergence_reference,One-Step Toward First Partner,One-Step Toward First Partner,-0.408844311972514,,nan,,group_test,v0,,,,,
+public_convergence_reference,50% SD Reduction,50% SD Reduction,-0.5991496103968341,,nan,,group_test,v0,,,,,
+private_convergence,human,Human,-0.09620596148040805,-0.09620596148040805,0.21771602575142363,False,group_test,v0,,,,,
+private_convergence,gpt-5-mini,gpt-5-mini,-0.2428656421628803,-0.3417961009221695,0.1717897641517148,True,group_test,v0,,,,,
+private_convergence,gpt-4o-mini-2024-07-18,gpt-4o-mini,-0.5032878260520027,-0.6187870380583967,0.16772989916823242,True,group_test,v0,,,,,
+private_convergence,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,-0.2543704075571058,-0.37798109176664574,0.17088816852451322,True,group_test,v0,,,,,
+private_convergence,Mistral-7B-Instruct-v0.3,Mistral-7B,-0.4617622854621247,-0.5936967606719817,0.1705586639948541,True,group_test,v0,,,,,
+private_convergence,Qwen2.5-32B-Instruct,Qwen2.5-32B,-0.535496814887299,-0.6798654253320352,0.16669457173793864,True,group_test,v0,,,,,
+private_convergence,Llama-3.1-70B-Instruct,Llama-3.1-70B,-0.4796883209223872,-0.6125705078299655,0.16749722853967422,True,group_test,v0,,,,,
+private_convergence,Llama-3.1-8B-Instruct,Llama-3.1-8B,-0.3448761330997011,-0.4039933826569827,0.1659524467309009,True,group_test,v0,,,,,
+private_convergence,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,Llama SFT (group),-0.061560143799421096,-0.20141707240724926,0.2094485444411996,True,group_test,v0,,,,,
+private_convergence,DeGroot fit,DeGroot fit,-0.2073876464577078,-0.3124981485388221,0.18245605487981664,True,group_test,v0,,,,,
+private_convergence_reference,One-Step Toward First Partner,One-Step Toward First Partner,-0.4047780214415922,,nan,,group_test,v0,,,,,
+private_convergence_reference,50% SD Reduction,50% SD Reduction,-0.5589677656488425,,nan,,group_test,v0,,,,,
+public_trajectory,human,Human,,,,False,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.3255870207451665,0.11751587040236114
+public_trajectory,human,Human,,,,False,group_test,v0,Tweet r2,1.2496758433779735,0.13215056416622462,1.2496758433779735,0.13215056416622462
+public_trajectory,human,Human,,,,False,group_test,v0,Tweet r3,1.2410837951879734,0.1263291543863962,1.2410837951879734,0.1263291543863962
+public_trajectory,gpt-5-mini,gpt-5-mini,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.2729717585872786,0.12338147054227674
+public_trajectory,gpt-5-mini,gpt-5-mini,,,,False,group_test,v0,Tweet r2,1.1429868375678207,0.08723209310197312,1.1429868375678207,0.08723209310197312
+public_trajectory,gpt-5-mini,gpt-5-mini,,,,False,group_test,v0,Tweet r3,1.0806543367390054,0.08610511218097837,1.0806543367390054,0.08610511218097837
+public_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.3303278695309853,0.10446919062557748
+public_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,False,group_test,v0,Tweet r2,1.1329816732863967,0.0761163869913551,1.1329816732863967,0.0761163869913551
+public_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,False,group_test,v0,Tweet r3,1.1521372845414002,0.07372728752279728,1.1521372845414002,0.07372728752279728
+public_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.335378336038582,0.10396287343459802
+public_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,False,group_test,v0,Tweet r2,1.3571828571623574,0.09115335796852886,1.3571828571623574,0.09115335796852886
+public_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,False,group_test,v0,Tweet r3,1.4206069261932468,0.08887972728446153,1.4206069261932468,0.08887972728446153
+public_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.4312418729587568,0.11069551416067014
+public_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,False,group_test,v0,Tweet r2,0.9983581959145319,0.08713248457811253,0.9983581959145319,0.08713248457811253
+public_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,False,group_test,v0,Tweet r3,0.9947218567506114,0.09264458215383665,0.9947218567506114,0.09264458215383665
+public_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.4191161453389802,0.1309352614412742
+public_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,False,group_test,v0,Tweet r2,1.363680649961369,0.11198008143695809,1.363680649961369,0.11198008143695809
+public_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,False,group_test,v0,Tweet r3,1.089666501642675,0.11963313238849506,1.089666501642675,0.11963313238849506
+public_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.3576990562709403,0.12545771375988776
+public_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,False,group_test,v0,Tweet r2,1.2292187923254199,0.0920560855806277,1.2292187923254199,0.0920560855806277
+public_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,False,group_test,v0,Tweet r3,1.1238610825983506,0.10713313601471632,1.1238610825983506,0.10713313601471632
+public_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.3419147608210436,0.11677407687055345
+public_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,False,group_test,v0,Tweet r2,1.1586183373737264,0.08299813171137747,1.1586183373737264,0.08299813171137747
+public_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,False,group_test,v0,Tweet r3,1.1465995109914078,0.06952981134427928,1.1465995109914078,0.06952981134427928
+public_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,Llama SFT (group),,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.3408548283960078,0.10464434703269918
+public_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,Llama SFT (group),,,,False,group_test,v0,Tweet r2,1.2277217009772896,0.11687198746523995,1.2277217009772896,0.11687198746523995
+public_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,Llama SFT (group),,,,False,group_test,v0,Tweet r3,1.2198620413220331,0.10840294015410601,1.2198620413220331,0.10840294015410601
+public_trajectory,DeGroot fit,DeGroot fit,,,,True,group_test,v0,Tweet r1,1.3255870207451665,0.11751587040236114,1.3443878156421007,0.1032882842395966
+public_trajectory,DeGroot fit,DeGroot fit,,,,False,group_test,v0,Tweet r2,1.1105124072402641,0.08656544211384769,1.1105124072402641,0.08656544211384769
+public_trajectory,DeGroot fit,DeGroot fit,,,,False,group_test,v0,Tweet r3,0.9594709889868333,0.07866833788981255,0.9594709889868333,0.07866833788981255
+public_trajectory_reference,One-Step Toward First Partner,One-Step Toward First Partner,,,,,group_test,v0,Tweet r3,0.7518542473439,nan,,
+public_trajectory_reference,50% SD Reduction,50% SD Reduction,,,,,group_test,v0,Tweet r3,0.580349279658207,nan,,
+private_trajectory,human,Human,,,,False,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.3381428940926665,0.15648603402292224
+private_trajectory,human,Human,,,,False,group_test,v0,Post,1.2419369326122585,0.15136838845931924,1.2419369326122585,0.15136838845931924
+private_trajectory,gpt-5-mini,gpt-5-mini,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4370733528519557,0.0946138238671541
+private_trajectory,gpt-5-mini,gpt-5-mini,,,,False,group_test,v0,Post,1.0952772519297862,0.0708790817031274,1.0952772519297862,0.0708790817031274
+private_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4536421060990605,0.08914042021112777
+private_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,False,group_test,v0,Post,0.8348550680406638,0.060377481156158146,0.8348550680406638,0.060377481156158146
+private_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4617535783022064,0.09211004497570242
+private_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,False,group_test,v0,Post,1.0837724865355607,0.06866503693612382,1.0837724865355607,0.06866503693612382
+private_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4700773693025235,0.09445405378103527
+private_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,False,group_test,v0,Post,0.8763806086305418,0.0678408359285641,0.8763806086305418,0.0678408359285641
+private_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4825115045374027,0.10106391288939207
+private_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,False,group_test,v0,Post,0.8026460792053675,0.05743867514725243,0.8026460792053675,0.05743867514725243
+private_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4710250810002448,0.09491610533684956
+private_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,False,group_test,v0,Post,0.8584545731702793,0.05972807316705167,0.8584545731702793,0.05972807316705167
+private_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.397260143649948,0.09222584269928416
+private_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,False,group_test,v0,Post,0.9932667609929654,0.05524794776052157,0.9932667609929654,0.05524794776052157
+private_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,Llama SFT (group),,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4779998227004947,0.13055800207710286
+private_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,Llama SFT (group),,,,False,group_test,v0,Post,1.2765827502932454,0.1392149917369318,1.2765827502932454,0.1392149917369318
+private_trajectory,DeGroot fit,DeGroot fit,,,,True,group_test,v0,Initial,1.3381428940926665,0.15648603402292224,1.4432533961737808,0.118433846140919
+private_trajectory,DeGroot fit,DeGroot fit,,,,False,group_test,v0,Post,1.1307552476349587,0.09382074993349544,1.1307552476349587,0.09382074993349544
+private_trajectory_reference,One-Step Toward First Partner,One-Step Toward First Partner,,,,,group_test,v0,Post,0.8647795818411306,nan,,
+private_trajectory_reference,50% SD Reduction,50% SD Reduction,,,,,group_test,v0,Post,0.6249928698395264,nan,,

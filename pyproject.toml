@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "debate-neurips2026"
+version = "0.1.0"
+description = "Reproducible evaluation and simulation pipelines for the DEBATE benchmark"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = {text = "MIT"}
+authors = [{name = "Yun-Shiuan Chuang and DEBATE contributors"}]
+dependencies = [
+  "numpy==1.26.4", "pandas==2.2.3", "scipy==1.10.1",
+  "matplotlib==3.10.9", "seaborn==0.13.2", "Pillow>=10,<12",
+  "pypdf>=5,<7", "adjustText>=1.3,<2", "tqdm>=4.66,<5",
+  "PyYAML>=6,<7", "huggingface-hub>=0.25,<2",
+]
+
+[project.optional-dependencies]
+simulation = ["langchain-core>=0.3,<2", "langchain-openai>=0.3.30,<2", "openai>=1.97,<3"]
+gemini = ["langchain-google-genai>=2,<5"]
+dev = ["pytest>=8,<10", "build>=1,<2"]
+
+[project.scripts]
+debate = "debate.cli:main"
+
+[project.urls]
+Repository = "https://github.com/yunshiuan/DEBATE-neurips2026"
+Dataset = "https://huggingface.co/datasets/seantw/DEBATE_LLM"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["debate*", "reproduction*", "pipelines*"]
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE", "**/LICENSE", "*.json", "*.yaml", "*.yml", "*.md", "*.txt", "*.csv", "*.tex", "**/*.json", "**/*.yaml", "**/*.yml", "**/*.md", "**/*.txt", "**/*.csv", "**/*.tex"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "pipelines/tests", "reproduction/tests"]

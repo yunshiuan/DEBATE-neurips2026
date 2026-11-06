@@ -1,0 +1,1 @@
+{SECOND_AGENT_NAME}'s response: {MESSAGE_RECEIVED}

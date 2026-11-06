@@ -1,0 +1,1 @@
+In light of conversations you just had, please write whether you agree or disagree with {TOPIC} and explain why in 2-3 sentences.

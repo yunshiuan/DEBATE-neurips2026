@@ -1,0 +1,79 @@
+panel,model,model_label,mean_delta_sd,raw_mean_delta_sd,bootstrap_or_delta_se,anchored_to_human,partition,simulation_version,step,mean_sd,se,raw_mean_sd,raw_se
+public_convergence,human,Human,-0.11259824062743418,-0.11259824062743418,0.12638028096234866,False,topic_test,v0,,,,,
+public_convergence,gpt-5-mini,gpt-5-mini,-0.15564110775967177,-0.10927093618704742,0.11229240416185496,True,topic_test,v0,,,,,
+public_convergence,gpt-4o-mini-2024-07-18,gpt-4o-mini,-0.2047586789978042,-0.16064106532815625,0.1061242335918368,True,topic_test,v0,,,,,
+public_convergence,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,-0.041241058361580984,-0.025686171295502325,0.11491266627867282,True,topic_test,v0,,,,,
+public_convergence,Mistral-7B-Instruct-v0.3,Mistral-7B,-0.5487259648721448,-0.571280817785714,0.11713032615224973,True,topic_test,v0,,,,,
+public_convergence,Qwen2.5-32B-Instruct,Qwen2.5-32B,-0.3347538697521688,-0.315397875072992,0.15366973123740715,True,topic_test,v0,,,,,
+public_convergence,Llama-3.1-70B-Instruct,Llama-3.1-70B,-0.3221661864271639,-0.24231621548187565,0.12102412681035461,True,topic_test,v0,,,,,
+public_convergence,Llama-3.1-8B-Instruct,Llama-3.1-8B,-0.10050633355975891,-0.08476224949085531,0.11090251060881574,True,topic_test,v0,,,,,
+public_convergence,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs,Llama SFT (topic),-0.08318062733527021,-0.053584342305075916,0.12371195036742014,True,topic_test,v0,,,,,
+public_convergence,DeGroot fit,DeGroot fit,-0.4022115302996032,-0.3687888663790435,0.11148784151234133,True,topic_test,v0,,,,,
+public_convergence_reference,One-Step Toward First Partner,One-Step Toward First Partner,-0.4140671499849202,,nan,,topic_test,v0,,,,,
+public_convergence_reference,50% SD Reduction,50% SD Reduction,-0.6093137558763607,,nan,,topic_test,v0,,,,,
+private_convergence,human,Human,-0.08073928565569166,-0.08073928565569166,0.176892904819903,False,topic_test,v0,,,,,
+private_convergence,gpt-5-mini,gpt-5-mini,-0.36940019127200774,-0.3920487292960939,0.1367634391726342,True,topic_test,v0,,,,,
+private_convergence,gpt-4o-mini-2024-07-18,gpt-4o-mini,-0.5831215369015831,-0.6122335476284803,0.130108888393168,True,topic_test,v0,,,,,
+private_convergence,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,-0.3635476378198448,-0.3486274189642844,0.1361438138221756,True,topic_test,v0,,,,,
+private_convergence,Mistral-7B-Instruct-v0.3,Mistral-7B,-0.6207513747168495,-0.645917235808558,0.13298843582565775,True,topic_test,v0,,,,,
+private_convergence,Qwen2.5-32B-Instruct,Qwen2.5-32B,-0.5602203527203299,-0.5810926587891004,0.13362305540972888,True,topic_test,v0,,,,,
+private_convergence,Llama-3.1-70B-Instruct,Llama-3.1-70B,-0.544279571171932,-0.5337181503266254,0.13189906596983383,True,topic_test,v0,,,,,
+private_convergence,Llama-3.1-8B-Instruct,Llama-3.1-8B,-0.46774144525458516,-0.507984385665194,0.1296019903272269,True,topic_test,v0,,,,,
+private_convergence,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs,Llama SFT (topic),-0.11628867862649828,-0.012538025701358757,0.16111925366234298,True,topic_test,v0,,,,,
+private_convergence,DeGroot fit,DeGroot fit,-0.28174366206237456,-0.25599617677040754,0.14436488468007183,True,topic_test,v0,,,,,
+private_convergence_reference,One-Step Toward First Partner,One-Step Toward First Partner,-0.39846667146529324,,nan,,topic_test,v0,,,,,
+private_convergence_reference,50% SD Reduction,50% SD Reduction,-0.5899682895174284,,nan,,topic_test,v0,,,,,
+public_trajectory,human,Human,,,,False,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.361903388205558,0.08961826768789377
+public_trajectory,human,Human,,,,False,topic_test,v0,Tweet r2,1.262834392660045,0.0907859361510114,1.262834392660045,0.0907859361510114
+public_trajectory,human,Human,,,,False,topic_test,v0,Tweet r3,1.2493051475781238,0.08910971615229847,1.2493051475781238,0.08910971615229847
+public_trajectory,gpt-5-mini,gpt-5-mini,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.3155332166329337,0.10032440378059501
+public_trajectory,gpt-5-mini,gpt-5-mini,,,,False,topic_test,v0,Tweet r2,1.2345052944990778,0.0737673343369227,1.2345052944990778,0.0737673343369227
+public_trajectory,gpt-5-mini,gpt-5-mini,,,,False,topic_test,v0,Tweet r3,1.2062622804458862,0.06766202870939057,1.2062622804458862,0.06766202870939057
+public_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.31778577453591,0.08544175706976087
+public_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,False,topic_test,v0,Tweet r2,1.144869921736828,0.05932827219226126,1.144869921736828,0.05932827219226126
+public_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,False,topic_test,v0,Tweet r3,1.1571447092077538,0.05684117391535607,1.1571447092077538,0.05684117391535607
+public_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.3463485011394793,0.08605213185815633
+public_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,False,topic_test,v0,Tweet r2,1.292219800908698,0.06607390019310366,1.292219800908698,0.06607390019310366
+public_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,False,topic_test,v0,Tweet r3,1.320662329843977,0.07192695578081032,1.320662329843977,0.07192695578081032
+public_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.3844582411191273,0.09020143297017733
+public_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,False,topic_test,v0,Tweet r2,0.9542520694821044,0.07320772652283544,0.9542520694821044,0.07320772652283544
+public_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,False,topic_test,v0,Tweet r3,0.8131774233334133,0.07541935693940523,0.8131774233334133,0.07541935693940523
+public_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.3425473935263812,0.13124166946630123
+public_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,False,topic_test,v0,Tweet r2,1.102508740124562,0.12830584226171582,1.102508740124562,0.12830584226171582
+public_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,False,topic_test,v0,Tweet r3,1.0271495184533892,0.1248316962762181,1.0271495184533892,0.1248316962762181
+public_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.2820534172602698,0.11208789641146022
+public_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,False,topic_test,v0,Tweet r2,1.1477612766587126,0.0873018037057992,1.1477612766587126,0.0873018037057992
+public_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,False,topic_test,v0,Tweet r3,1.0397372017783941,0.08133514226230755,1.0397372017783941,0.08133514226230755
+public_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.3461593041366544,0.11079302758232466
+public_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,False,topic_test,v0,Tweet r2,1.2331712491677673,0.0706993727021793,1.2331712491677673,0.0706993727021793
+public_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,False,topic_test,v0,Tweet r3,1.261397054645799,0.06532941876336802,1.261397054645799,0.06532941876336802
+public_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs,Llama SFT (topic),,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.3323071031753637,0.09188278773006457
+public_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs,Llama SFT (topic),,,,False,topic_test,v0,Tweet r2,1.2127997145881093,0.08658591686025763,1.2127997145881093,0.08658591686025763
+public_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs,Llama SFT (topic),,,,False,topic_test,v0,Tweet r3,1.2787227608702878,0.08528313291813357,1.2787227608702878,0.08528313291813357
+public_trajectory,DeGroot fit,DeGroot fit,,,,True,topic_test,v0,Tweet r1,1.361903388205558,0.08961826768789377,1.3284807242849983,0.08686507971806083
+public_trajectory,DeGroot fit,DeGroot fit,,,,False,topic_test,v0,Tweet r2,1.1075033317667402,0.07342502053247835,1.1075033317667402,0.07342502053247835
+public_trajectory,DeGroot fit,DeGroot fit,,,,False,topic_test,v0,Tweet r3,0.9596918579059548,0.06631820942774279,0.9596918579059548,0.06631820942774279
+public_trajectory_reference,One-Step Toward First Partner,One-Step Toward First Partner,,,,,topic_test,v0,Tweet r3,0.8244164562191558,nan,,
+public_trajectory_reference,50% SD Reduction,50% SD Reduction,,,,,topic_test,v0,Tweet r3,0.6192418031020378,nan,,
+private_trajectory,human,Human,,,,False,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.3825868312107896,0.12103739971645448
+private_trajectory,human,Human,,,,False,topic_test,v0,Post,1.301847545555098,0.12900018467235808,1.301847545555098,0.12900018467235808
+private_trajectory,gpt-5-mini,gpt-5-mini,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.4052353692348758,0.08411215970478496
+private_trajectory,gpt-5-mini,gpt-5-mini,,,,False,topic_test,v0,Post,1.0131866399387819,0.06367249142452362,1.0131866399387819,0.06367249142452362
+private_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.4116988419376868,0.08056573060636414
+private_trajectory,gpt-4o-mini-2024-07-18,gpt-4o-mini,,,,False,topic_test,v0,Post,0.7994652943092065,0.047731234100796875,0.7994652943092065,0.047731234100796875
+private_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.3676666123552292,0.08094225278178392
+private_trajectory,gemini-2.5-flash-lite,Gemini-2.5-Flash-Lite,,,,False,topic_test,v0,Post,1.0190391933909448,0.062330457337696765,1.0190391933909448,0.062330457337696765
+private_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.407752692302498,0.08367376647723371
+private_trajectory,Mistral-7B-Instruct-v0.3,Mistral-7B,,,,False,topic_test,v0,Post,0.7618354564939401,0.05509874711129383,0.7618354564939401,0.05509874711129383
+private_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.4034591372795602,0.09083096893813117
+private_trajectory,Qwen2.5-32B-Instruct,Qwen2.5-32B,,,,False,topic_test,v0,Post,0.8223664784904597,0.05661332711394637,0.8223664784904597,0.05661332711394637
+private_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.372025410365483,0.0821841139819651
+private_trajectory,Llama-3.1-70B-Instruct,Llama-3.1-70B,,,,False,topic_test,v0,Post,0.8383072600388576,0.052414802046691016,0.8383072600388576,0.052414802046691016
+private_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.4228297716213985,0.082255789367768
+private_trajectory,Llama-3.1-8B-Instruct,Llama-3.1-8B,,,,False,topic_test,v0,Post,0.9148453859562045,0.0463316713130213,0.9148453859562045,0.0463316713130213
+private_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs,Llama SFT (topic),,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.27883617828565,0.11714868778769251
+private_trajectory,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-topic-5epochs,Llama SFT (topic),,,,False,topic_test,v0,Post,1.2662981525842913,0.10634548307563253,1.2662981525842913,0.10634548307563253
+private_trajectory,DeGroot fit,DeGroot fit,,,,True,topic_test,v0,Initial,1.3825868312107896,0.12103739971645448,1.3568393459188226,0.09897090034233065
+private_trajectory,DeGroot fit,DeGroot fit,,,,False,topic_test,v0,Post,1.100843169148415,0.07868397421692462,1.100843169148415,0.07868397421692462
+private_trajectory_reference,One-Step Toward First Partner,One-Step Toward First Partner,,,,,topic_test,v0,Post,0.8692126646045295,nan,,
+private_trajectory_reference,50% SD Reduction,50% SD Reduction,,,,,topic_test,v0,Post,0.6320738841561043,nan,,

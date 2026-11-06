@@ -1,0 +1,207 @@
+[
+  {
+    "claim": "Human-judged convergence check",
+    "paper_file": "sections/appendix/lllm_eval_classifier.tex; sections/appendix/post_training_sft.tex",
+    "values": {
+      "groups": 20,
+      "human_public": -0.12,
+      "model_public": -0.24,
+      "human_private": -0.11,
+      "model_private": -0.33
+    },
+    "status": "matches_historical_source",
+    "scope": "Supporting historical analysis, not a Ruixuan v5 main evaluation.",
+    "note": ""
+  },
+  {
+    "claim": "Convergence robustness sample and pairwise/range/mean-change results",
+    "paper_file": "sections/appendix/post_training_sft.tex",
+    "values": {
+      "groups": 39,
+      "topics": 7,
+      "public_pairwise": [
+        -0.07,
+        -0.41
+      ],
+      "private_pairwise": [
+        0.02,
+        -0.44
+      ],
+      "public_range": [
+        -0.18,
+        -0.72
+      ],
+      "private_range": [
+        -0.08,
+        -0.69
+      ],
+      "public_mean_shift": [
+        -0.24,
+        -0.02
+      ],
+      "private_mean_shift": [
+        -0.36,
+        0.14
+      ]
+    },
+    "status": "matches_historical_source",
+    "scope": "Supporting historical analysis, not a Ruixuan v5 main evaluation.",
+    "note": ""
+  },
+  {
+    "claim": "Topic-level Wilcoxon tests",
+    "paper_file": "sections/appendix/post_training_sft.tex",
+    "values": {
+      "topics": 7,
+      "tweet_p": 0.02,
+      "private_p": 0.05
+    },
+    "status": "matches_historical_source",
+    "scope": "Supporting historical analysis, not a Ruixuan v5 main evaluation.",
+    "note": "Stored source identifies these as one-sided H > R Wilcoxon p-values; the paper says paired Wilcoxon and rounds them as the source does."
+  },
+  {
+    "claim": "Llama temperature sweep",
+    "paper_file": "sections/appendix/post_training_sft.tex",
+    "values": {
+      "T0": [
+        -0.3,
+        -0.33
+      ],
+      "default": [
+        -0.32,
+        -0.4
+      ],
+      "T1": [
+        -0.41,
+        -0.27
+      ]
+    },
+    "status": "matches_historical_source",
+    "scope": "Supporting historical analysis, not a Ruixuan v5 main evaluation.",
+    "note": ""
+  },
+  {
+    "claim": "Topic drift",
+    "paper_file": "sections/appendix/post_training_sft.tex",
+    "values": {
+      "human_public_change": -0.01,
+      "model_public_change": -0.03
+    },
+    "status": "matches_historical_source",
+    "scope": "Supporting historical analysis, not a Ruixuan v5 main evaluation.",
+    "note": ""
+  },
+  {
+    "claim": "GPT-4o-mini memory ablation",
+    "paper_file": "sections/appendix/post_training_sft.tex",
+    "values": {
+      "public_with_without": [
+        -0.28,
+        -0.57
+      ],
+      "private_with_without": [
+        -0.32,
+        -0.59
+      ]
+    },
+    "status": "matches_historical_source",
+    "scope": "Supporting historical analysis, not a Ruixuan v5 main evaluation.",
+    "note": "Use detailed source section 8, which identifies GPT-4o-mini. An earlier summary heading incorrectly calls this Llama; current paper already uses GPT-4o-mini."
+  },
+  {
+    "claim": "Second-judge agreement ranges",
+    "paper_file": "sections/appendix/lllm_eval_classifier.tex",
+    "values": {
+      "NMP_ontopic": [
+        0.88,
+        0.98
+      ],
+      "FDS_ontopic": [
+        0.75,
+        0.99
+      ],
+      "NMP_stance_rho": [
+        0.89,
+        0.93
+      ],
+      "FDS_stance_rho": [
+        0.82,
+        0.92
+      ]
+    },
+    "status": "matches_historical_source",
+    "scope": "Supporting historical analysis, not a Ruixuan v5 main evaluation.",
+    "note": "Numerical ranges match the historical summary. This does not independently establish the exact second-judge model identifier or imply rerunning Ruixuan v5 with it."
+  },
+  {
+    "claim": "Conversation-quality audit arithmetic",
+    "paper_file": "sections/appendix/dataset_cleaning.tex",
+    "status": "internally_consistent_raw_annotations_not_located",
+    "scope": "Independent manual-quality audit, not v5 result output.",
+    "values": {
+      "groups": 20,
+      "dyadic_conversations": 120,
+      "criteria_per_conversation": 3,
+      "judgments": 360,
+      "agreements": 358,
+      "overall_percent": 99.4,
+      "responsive_ann1_percent": 99.2,
+      "responsive_ann2_percent": 100.0,
+      "engaged_ann1_percent": 97.5,
+      "engaged_ann2_percent": 98.3,
+      "engaged_agreement_percent": 99.2
+    },
+    "note": "The displayed table fractions and 358/360=99.4% agree arithmetically. No independent conversation-audit annotation file was located; these values were retained from the original snapshot."
+  },
+  {
+    "claim": "Manual classifier-validation sample counts and agreement",
+    "paper_file": "sections/appendix/lllm_eval_classifier.tex; sections/03_dataset.tex",
+    "status": "retained_original_claim_not_independently_verifiable",
+    "scope": "Separate annotation-validation study, not Ruixuan v5 evaluation output.",
+    "values": {
+      "stratified_sample_percent": 10,
+      "topics": 107,
+      "base_models": 7,
+      "tweet_texts": 11161,
+      "private_texts": 7423,
+      "approximate_agreement_percent": 90
+    },
+    "note": "These counts already appear in commit 672ddf5. Searches of the local modeling scripts/notes did not locate the underlying validation sample or independent count summary. Do not describe this audit as independently verifying those counts."
+  },
+  {
+    "claim": "Human-human agreement study",
+    "paper_file": "sections/appendix/lllm_eval_classifier.tex",
+    "status": "partially_supported_historical_claim",
+    "scope": "Separate annotation study, not Ruixuan v5 result output.",
+    "values": {
+      "messages": 400,
+      "annotators": 2,
+      "raw_validity_agreement_percent": 96.8,
+      "validity_kappa": 0.89,
+      "stance_kappa": 0.81
+    },
+    "note": "Kappas .89 and .81 are repeated in the historical review notes. The 400-message/96.8% claim is inherited from the original manuscript; the paired annotation records were not located for recomputation."
+  },
+  {
+    "claim": "Illustrative conversation stance numbers",
+    "paper_file": "sections/appendix/example_logs/breadth_topic_news_conversation_log.tex; sections/04b_opinion_dynamics.tex",
+    "status": "matches_separate_illustrative_source",
+    "scope": "Separate SFT example, explicitly disclosed as such in the paper.",
+    "source_initial_final_stances": {
+      "human": [
+        1,
+        1
+      ],
+      "base": [
+        1,
+        6
+      ],
+      "SFT": [
+        1,
+        1
+      ]
+    },
+    "note": "The 1-to-6 scale, three-round labels, initial 1, final human 1/base 6/SFT 1 agree with the v4 illustrative conversation source; these are not Ruixuan v5 checkpoint outputs."
+  }
+]

@@ -1,0 +1,1 @@
+You have just finished your conversation with {PREVIOUS_AGENT_NAME}. Instead, you are now engaging in conversation with another stranger {NEXT_AGENT_NAME} on a separate text box.

@@ -1,0 +1,271 @@
+{
+  "release": "NeurIPS2026 camera-ready, original Ruixuan v5",
+  "default_bootstrap_resamples": 1000,
+  "data_root_contract": {
+    "reproduction/inputs/llama/human_llm": "Original Llama v5 evaluated records plus llm_report_v0_bd.csv and llm_report_v1_5_bd.csv",
+    "reproduction/inputs/llama/data/sft_data/masks": "Original four train/test prefix lists",
+    "reproduction/inputs/llama/data/sft_data/group_split_data_bd": "Reconstructed 708-session group split CSVs, including original human messages and exit survey",
+    "reproduction/inputs/llama/data/sft_data/topic_split_data_bd": "Reconstructed topic split CSVs from supplied human records",
+    "reproduction/inputs/base/human_llm": "Seven base model caches and canonical human fallbacks",
+    "reproduction/inputs/base/text_metrics/maintable.csv": "Original scored base text metrics",
+    "reproduction/inputs/qwen/human_llm": "Qwen base/SFT labels",
+    "reproduction/inputs/qwen/masks": "Qwen evaluation partitions",
+    "reproduction/inputs/leo_llama/human_llm": "Accompanying Llama cache needed for original Qwen common-group eligibility",
+    "reproduction/inputs/mistral/human_llm": "Mistral SFT labels",
+    "reproduction/inputs/validity/initial_post": "Canonical initial/post-opinion message validity sidecars",
+    "reproduction/inputs/validity/tweet": "Optional canonical human tweet validity overrides; no such overrides exist in the release, so inline labels are used and an absent directory is expected.",
+    "reproduction/inputs/historical/group_level_eval": "Historical cached memory-ablation/sample labels",
+    "reproduction/inputs/historical/conversation_quality_annotations.csv": "Two independent annotators x 120 conversations x 3 binary criteria"
+  },
+  "results": [
+    {
+      "id": "M1",
+      "title": "Group-test stance errors",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_comparison.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/M1.csv"
+    },
+    {
+      "id": "M2",
+      "title": "Group-test public/private error correlations",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_public_private_1x4_correlation_correlations.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/M2.csv"
+    },
+    {
+      "id": "M3",
+      "title": "Group-test convergence",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_convergence_sd_panels.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/M3.csv"
+    },
+    {
+      "id": "M4",
+      "title": "Group-test stance transitions",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_group_public_private_transition_matrices_selected_models.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/M4.csv"
+    },
+    {
+      "id": "M5",
+      "title": "Group-test partner-gap and opinion-change analysis",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_group_posttrain_partner_gap_merged.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/M5.csv"
+    },
+    {
+      "id": "A1",
+      "title": "Group-test text metrics",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/group_test_plot_data.csv",
+      "status": "rerendered_from_scored_aggregates",
+      "verification": "reference/figures/A1.csv"
+    },
+    {
+      "id": "A2",
+      "title": "Topic-test text metrics",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/topic_test_plot_data.csv",
+      "status": "rerendered_from_scored_aggregates",
+      "verification": "reference/figures/A2.csv"
+    },
+    {
+      "id": "A3",
+      "title": "Topic-test stance errors",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_comparison.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A3.csv"
+    },
+    {
+      "id": "A4",
+      "title": "Topic-test public/private error correlations",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_public_private_1x4_correlation_correlations.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A4.csv"
+    },
+    {
+      "id": "A5",
+      "title": "Topic-test convergence",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_convergence_sd_panels.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A5.csv"
+    },
+    {
+      "id": "A6_public",
+      "title": "Group-test public opinion distributions",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_group_public_opinion_histogram_overview.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A6_public.csv"
+    },
+    {
+      "id": "A6_private",
+      "title": "Group-test private opinion distributions",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_group_private_opinion_histogram_overview.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A6_private.csv"
+    },
+    {
+      "id": "A7_public",
+      "title": "Topic-test public opinion distributions",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_topic_public_opinion_histogram_overview.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A7_public.csv"
+    },
+    {
+      "id": "A7_private",
+      "title": "Topic-test private opinion distributions",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_topic_private_opinion_histogram_overview.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A7_private.csv"
+    },
+    {
+      "id": "A8",
+      "title": "Topic-test stance transitions",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_topic_public_private_transition_matrices_selected_models.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A8.csv"
+    },
+    {
+      "id": "A9",
+      "title": "Topic-test partner-gap and opinion-change analysis",
+      "stage": "primary",
+      "paper_asset": "figures/new_v4/heldout_breadth_topic_posttrain_partner_gap_merged.csv",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/figures/A9.csv"
+    },
+    {
+      "id": "dataset_inventory",
+      "title": "Table 1 and appendix human-data inventory and coverage",
+      "stage": "tables",
+      "status": "recomputed_from_cached_rows",
+      "verification": "reference/dataset_inventory.json"
+    },
+    {
+      "id": "cross_model",
+      "title": "Llama/Qwen/Mistral convergence and private error tables",
+      "stage": "tables",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/cross_model_table_values.json"
+    },
+    {
+      "id": "demographics",
+      "title": "Demographic summaries and all 15 plot panels",
+      "stage": "demographics",
+      "status": "recomputed_from_survey_rows",
+      "verification": "reference/demographics.json"
+    },
+    {
+      "id": "memory_ablation",
+      "title": "GPT-4o-mini memory ablation",
+      "stage": "historical",
+      "status": "recomputed_from_cached_labels",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "conversation_quality",
+      "title": "120-conversation quality audit",
+      "stage": "historical",
+      "status": "recomputed_from_independent_annotations",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "historical_llama_robustness",
+      "title": "39-group Llama convergence robustness and topic Wilcoxon tests",
+      "stage": null,
+      "status": "reported_aggregate_only",
+      "missing_input": "Exact Llama labels and original aggregation selection; similarly named available sample files do not reproduce the published values",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "temperature_sweep",
+      "title": "Llama decoding-temperature sweep",
+      "stage": null,
+      "status": "reported_aggregate_only",
+      "missing_input": "Per-condition generated outputs and labels",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "human_judged_convergence",
+      "title": "20-group human-judged convergence",
+      "stage": null,
+      "status": "reported_aggregate_only",
+      "missing_input": "Paired human stance annotations and selected group list",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "second_judge",
+      "title": "Second-judge robustness",
+      "stage": null,
+      "status": "reported_aggregate_only",
+      "missing_input": "Paired judge labels and exact evaluated sample",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "manual_classifier_validation",
+      "title": "10% manual classifier validation",
+      "stage": null,
+      "status": "reported_aggregate_only",
+      "missing_input": "Selected 11,161 tweet / 7,423 private texts with human labels",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "human_human_agreement",
+      "title": "400-message inter-annotator agreement",
+      "stage": null,
+      "status": "reported_aggregate_only",
+      "missing_input": "Both annotators original paired labels",
+      "verification": "reference/historical_claims.json"
+    },
+    {
+      "id": "illustrative_conversation",
+      "title": "Separate illustrative SFT conversation",
+      "stage": null,
+      "status": "reported_aggregate_only",
+      "missing_input": "Original illustrative checkpoint and generation record; not a v5 checkpoint example",
+      "verification": "reference/historical_claims.json"
+    }
+  ],
+  "non_empirical_assets": "Conceptual diagrams, UI screenshots, prompt examples, configuration tables, and externally sourced dataset-comparison metadata are not generated by the empirical evaluator.",
+  "verification_scope": "Reference aggregates verify the named result only; success does not certify aggregate-only historical studies.",
+  "known_evaluation_limitations": [
+    {
+      "id": "historical_post_opinion_validity_text_source",
+      "affected_cache": "Llama SFT v5 Post Opinion validity and dependent private-opinion metric inclusion",
+      "finding": "Historical requests used paired human text when post_opinion was absent, despite generated llm_text being available; 255 matched opinion-memory rows retained the same flags.",
+      "replay_policy": "Original inline llm_validity and likert_pred fields are preserved. No cache or manuscript reference values are changed.",
+      "fresh_annotation_protocols": {
+        "generated-text": "Judge generated Post Opinion llm_text; default for new annotation.",
+        "paper-v5": "Use the original post_opinion field if present, otherwise paired human text."
+      },
+      "scope": "Numeric parity establishes faithful historical replay, not independent validation of generated-text validity.",
+      "documentation": "docs/pipelines.md#stance-and-validity-annotation"
+    }
+  ],
+  "numerical_compatibility": {
+    "original_python": "3.10.4",
+    "verified_release_python": "3.11.3",
+    "population_sd": "Preserve sqrt(statistics.pvariance(values)), the Python 3.10 population-SD rounding used by the paper.",
+    "reason": "Python 3.11 exact-fraction sqrt changes some DeGroot SDs by approximately one floating-point unit, splitting rank ties. The adapter retains original semantics, not broader comparison tolerances.",
+    "regression_test": "reproduction/tests/test_numerics.py"
+  },
+  "new_run_evaluation": {
+    "command": "debate evaluate",
+    "module": "reproduction.evaluate",
+    "documentation": "docs/paper_reproduction.md#evaluating-new-generations",
+    "scope": "Original six stance metrics plus counts, correlations and bootstrap intervals on explicitly paired newly annotated runs.",
+    "integration_tests": "reproduction/tests/test_generation_metrics.py"
+  }
+}

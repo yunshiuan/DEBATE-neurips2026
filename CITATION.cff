@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the DEBATE paper and identify the code and dataset revisions used in your experiments."
+type: software
+title: "DEBATE: NeurIPS 2026 Reproducibility Code"
+version: 0.1.0
+date-released: 2026-11-06
+license: MIT
+repository-code: "https://github.com/yunshiuan/DEBATE-neurips2026"
+authors:
+  - family-names: Chuang
+    given-names: Yun-Shiuan
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2510.25110"
+    description: "DEBATE paper"

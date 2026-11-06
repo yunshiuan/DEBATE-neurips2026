@@ -1,0 +1,377 @@
+{
+  "source_repository": "https://github.com/yunshiuan/mini-twitter-llm-agent-modeling",
+  "source_commit": "4671d5f258b6f7df5d3d547e4a43116c3e7d0bef",
+  "files": [
+    {
+      "source": "src/simulation/simulate_conversation.py",
+      "sha256": "16cf2dac7b0afc03c58e28e77a21fec86d53cad45f1eed75aa49cdefed7a43bb",
+      "destination": "vendor/simulation.py",
+      "adaptations": [
+        "explicit input/output/prompt paths and simulation mode",
+        "environment-only credentials",
+        "remove unused training imports and import Gemini lazily",
+        "model-family override for locally served adapters",
+        "disable Qwen thinking",
+        "fix duplicated OpenAI client initialization and isolate payload logs",
+        "v1_5 uses retained v2 prompt_v5 files (byte-identical to v0)",
+        "model-family override also selects Mistral role handling",
+        "reject participant first-five-character collisions",
+        "sanitize local model identifiers in output paths"
+      ],
+      "release_sha256": "01dce122b15c7e17e0958f0b43e0e98963647c310b8229eec01a46f2a30e672b"
+    },
+    {
+      "source": "src/finetuning/format_finetune_data.py",
+      "sha256": "eef2214c3f2080f20733e94676eb462df1b72cc72e2835396025202d571d1a91",
+      "destination": "vendor/format_sft.py",
+      "adaptations": [
+        "remove import-time argument parsing and institution-specific orchestration",
+        "explicit post-opinion validity policy; no silent missing-label acceptance",
+        "include session ID in output directories to avoid participant collisions"
+      ],
+      "release_sha256": "0de2b95924d206c1a31e004c55a4da671a6621e47774b61401267d13faadf99c"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step0_demographics.md",
+      "sha256": "983b3c18b9e784bdcc04cfdb137412d041648d100310435af092697ddd1ce748",
+      "destination": "prompts/simulation_v0/prompt_v5/step0_demographics.md",
+      "adaptations": [],
+      "release_sha256": "983b3c18b9e784bdcc04cfdb137412d041648d100310435af092697ddd1ce748"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step1_inform_about_conversation.md",
+      "sha256": "0da29a8d683dd533f06b3e996d5682c6621549f553fff511411c73f1be9dfb04",
+      "destination": "prompts/simulation_v0/prompt_v5/step1_inform_about_conversation.md",
+      "adaptations": [],
+      "release_sha256": "0da29a8d683dd533f06b3e996d5682c6621549f553fff511411c73f1be9dfb04"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step1_persona.md",
+      "sha256": "4a28da3d9b4f77ba1991a547f44ae0d2c8fe0c5a060dd2007ade82a95ad1270b",
+      "destination": "prompts/simulation_v0/prompt_v5/step1_persona.md",
+      "adaptations": [],
+      "release_sha256": "4a28da3d9b4f77ba1991a547f44ae0d2c8fe0c5a060dd2007ade82a95ad1270b"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step2_add_to_memory_tweet.md",
+      "sha256": "475e9a887000b19c9d1fb29f9fc177e13208d9058b76f879755b1813280062b5",
+      "destination": "prompts/simulation_v0/prompt_v5/step2_add_to_memory_tweet.md",
+      "adaptations": [],
+      "release_sha256": "475e9a887000b19c9d1fb29f9fc177e13208d9058b76f879755b1813280062b5"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step2_generate_response.md",
+      "sha256": "cc015b8eb01502b8f98efa893bd284bb5f7aae4b8e8a3e5f1642aca2a0902d10",
+      "destination": "prompts/simulation_v0/prompt_v5/step2_generate_response.md",
+      "adaptations": [],
+      "release_sha256": "cc015b8eb01502b8f98efa893bd284bb5f7aae4b8e8a3e5f1642aca2a0902d10"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step2_generate_tweet.md",
+      "sha256": "ab982bdaf6b4bc8e914fb6394b396b6017dd36144432357df632da4105460637",
+      "destination": "prompts/simulation_v0/prompt_v5/step2_generate_tweet.md",
+      "adaptations": [],
+      "release_sha256": "ab982bdaf6b4bc8e914fb6394b396b6017dd36144432357df632da4105460637"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step3_add_to_memory_read.md",
+      "sha256": "7c6b40ff00bcbdc55f4b0a7d069f92808f7ea2f28f85e242d8dd7bece017f17d",
+      "destination": "prompts/simulation_v0/prompt_v5/step3_add_to_memory_read.md",
+      "adaptations": [],
+      "release_sha256": "7c6b40ff00bcbdc55f4b0a7d069f92808f7ea2f28f85e242d8dd7bece017f17d"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step3_add_to_memory_write.md",
+      "sha256": "e077b67e09367ead5f051acd48ce8c271de7381b68998ccd80a28a2ee5405247",
+      "destination": "prompts/simulation_v0/prompt_v5/step3_add_to_memory_write.md",
+      "adaptations": [],
+      "release_sha256": "e077b67e09367ead5f051acd48ce8c271de7381b68998ccd80a28a2ee5405247"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step3_change_round.md",
+      "sha256": "8cfd0c21e15823eb86353e9e486a5136743a13a31ab04d1e5b09a55d6130f555",
+      "destination": "prompts/simulation_v0/prompt_v5/step3_change_round.md",
+      "adaptations": [],
+      "release_sha256": "8cfd0c21e15823eb86353e9e486a5136743a13a31ab04d1e5b09a55d6130f555"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step4_generate_post_opinion.md",
+      "sha256": "beeb029ea76816e3eeb17b0ea9adc140f778b3d522923d3fb6da2235d4463bd4",
+      "destination": "prompts/simulation_v0/prompt_v5/step4_generate_post_opinion.md",
+      "adaptations": [],
+      "release_sha256": "beeb029ea76816e3eeb17b0ea9adc140f778b3d522923d3fb6da2235d4463bd4"
+    },
+    {
+      "source": "prompts/simulation_v0/prompt_v5/step4_likert_scale.md",
+      "sha256": "26830b9154a0b14943fd835272e4d4b5b2d9ed70d0ef64b51391d78d43babe72",
+      "destination": "prompts/simulation_v0/prompt_v5/step4_likert_scale.md",
+      "adaptations": [],
+      "release_sha256": "26830b9154a0b14943fd835272e4d4b5b2d9ed70d0ef64b51391d78d43babe72"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step0_demographics.md",
+      "sha256": "983b3c18b9e784bdcc04cfdb137412d041648d100310435af092697ddd1ce748",
+      "destination": "prompts/simulation_v2/prompt_v5/step0_demographics.md",
+      "adaptations": [],
+      "release_sha256": "983b3c18b9e784bdcc04cfdb137412d041648d100310435af092697ddd1ce748"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step1_inform_about_conversation.md",
+      "sha256": "0da29a8d683dd533f06b3e996d5682c6621549f553fff511411c73f1be9dfb04",
+      "destination": "prompts/simulation_v2/prompt_v5/step1_inform_about_conversation.md",
+      "adaptations": [],
+      "release_sha256": "0da29a8d683dd533f06b3e996d5682c6621549f553fff511411c73f1be9dfb04"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step1_persona.md",
+      "sha256": "4a28da3d9b4f77ba1991a547f44ae0d2c8fe0c5a060dd2007ade82a95ad1270b",
+      "destination": "prompts/simulation_v2/prompt_v5/step1_persona.md",
+      "adaptations": [],
+      "release_sha256": "4a28da3d9b4f77ba1991a547f44ae0d2c8fe0c5a060dd2007ade82a95ad1270b"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step2_add_to_memory_tweet.md",
+      "sha256": "475e9a887000b19c9d1fb29f9fc177e13208d9058b76f879755b1813280062b5",
+      "destination": "prompts/simulation_v2/prompt_v5/step2_add_to_memory_tweet.md",
+      "adaptations": [],
+      "release_sha256": "475e9a887000b19c9d1fb29f9fc177e13208d9058b76f879755b1813280062b5"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step2_generate_response.md",
+      "sha256": "cc015b8eb01502b8f98efa893bd284bb5f7aae4b8e8a3e5f1642aca2a0902d10",
+      "destination": "prompts/simulation_v2/prompt_v5/step2_generate_response.md",
+      "adaptations": [],
+      "release_sha256": "cc015b8eb01502b8f98efa893bd284bb5f7aae4b8e8a3e5f1642aca2a0902d10"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step2_generate_tweet.md",
+      "sha256": "ab982bdaf6b4bc8e914fb6394b396b6017dd36144432357df632da4105460637",
+      "destination": "prompts/simulation_v2/prompt_v5/step2_generate_tweet.md",
+      "adaptations": [],
+      "release_sha256": "ab982bdaf6b4bc8e914fb6394b396b6017dd36144432357df632da4105460637"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step3_add_to_memory_read.md",
+      "sha256": "7c6b40ff00bcbdc55f4b0a7d069f92808f7ea2f28f85e242d8dd7bece017f17d",
+      "destination": "prompts/simulation_v2/prompt_v5/step3_add_to_memory_read.md",
+      "adaptations": [],
+      "release_sha256": "7c6b40ff00bcbdc55f4b0a7d069f92808f7ea2f28f85e242d8dd7bece017f17d"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step3_add_to_memory_write.md",
+      "sha256": "e077b67e09367ead5f051acd48ce8c271de7381b68998ccd80a28a2ee5405247",
+      "destination": "prompts/simulation_v2/prompt_v5/step3_add_to_memory_write.md",
+      "adaptations": [],
+      "release_sha256": "e077b67e09367ead5f051acd48ce8c271de7381b68998ccd80a28a2ee5405247"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step3_change_round.md",
+      "sha256": "8cfd0c21e15823eb86353e9e486a5136743a13a31ab04d1e5b09a55d6130f555",
+      "destination": "prompts/simulation_v2/prompt_v5/step3_change_round.md",
+      "adaptations": [],
+      "release_sha256": "8cfd0c21e15823eb86353e9e486a5136743a13a31ab04d1e5b09a55d6130f555"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step4_generate_post_opinion.md",
+      "sha256": "beeb029ea76816e3eeb17b0ea9adc140f778b3d522923d3fb6da2235d4463bd4",
+      "destination": "prompts/simulation_v2/prompt_v5/step4_generate_post_opinion.md",
+      "adaptations": [],
+      "release_sha256": "beeb029ea76816e3eeb17b0ea9adc140f778b3d522923d3fb6da2235d4463bd4"
+    },
+    {
+      "source": "prompts/simulation_v2/prompt_v5/step4_likert_scale.md",
+      "sha256": "26830b9154a0b14943fd835272e4d4b5b2d9ed70d0ef64b51391d78d43babe72",
+      "destination": "prompts/simulation_v2/prompt_v5/step4_likert_scale.md",
+      "adaptations": [],
+      "release_sha256": "26830b9154a0b14943fd835272e4d4b5b2d9ed70d0ef64b51391d78d43babe72"
+    },
+    {
+      "source": "prompts/fine_tune_v1/change_round.md",
+      "sha256": "8cfd0c21e15823eb86353e9e486a5136743a13a31ab04d1e5b09a55d6130f555",
+      "destination": "prompts/fine_tune_v1/change_round.md",
+      "adaptations": [],
+      "release_sha256": "8cfd0c21e15823eb86353e9e486a5136743a13a31ab04d1e5b09a55d6130f555"
+    },
+    {
+      "source": "prompts/fine_tune_v1/demographics.md",
+      "sha256": "983b3c18b9e784bdcc04cfdb137412d041648d100310435af092697ddd1ce748",
+      "destination": "prompts/fine_tune_v1/demographics.md",
+      "adaptations": [],
+      "release_sha256": "983b3c18b9e784bdcc04cfdb137412d041648d100310435af092697ddd1ce748"
+    },
+    {
+      "source": "prompts/fine_tune_v1/generate_message.md",
+      "sha256": "cc015b8eb01502b8f98efa893bd284bb5f7aae4b8e8a3e5f1642aca2a0902d10",
+      "destination": "prompts/fine_tune_v1/generate_message.md",
+      "adaptations": [],
+      "release_sha256": "cc015b8eb01502b8f98efa893bd284bb5f7aae4b8e8a3e5f1642aca2a0902d10"
+    },
+    {
+      "source": "prompts/fine_tune_v1/generate_tweet.md",
+      "sha256": "91b35fbb5b83499824c1bbd3468322c4f5d2133ba979e4aa22a4d2c8e4db6cda",
+      "destination": "prompts/fine_tune_v1/generate_tweet.md",
+      "adaptations": [],
+      "release_sha256": "91b35fbb5b83499824c1bbd3468322c4f5d2133ba979e4aa22a4d2c8e4db6cda"
+    },
+    {
+      "source": "prompts/fine_tune_v1/persona.md",
+      "sha256": "25a6a60f119743ee5501b3cc0e2f23a3660812c1d74b643f3be4e9b6a40e24b2",
+      "destination": "prompts/fine_tune_v1/persona.md",
+      "adaptations": [],
+      "release_sha256": "25a6a60f119743ee5501b3cc0e2f23a3660812c1d74b643f3be4e9b6a40e24b2"
+    },
+    {
+      "source": "prompts/fine_tune_v1/post_opinion_likert.md",
+      "sha256": "26830b9154a0b14943fd835272e4d4b5b2d9ed70d0ef64b51391d78d43babe72",
+      "destination": "prompts/fine_tune_v1/post_opinion_likert.md",
+      "adaptations": [],
+      "release_sha256": "26830b9154a0b14943fd835272e4d4b5b2d9ed70d0ef64b51391d78d43babe72"
+    },
+    {
+      "source": "prompts/fine_tune_v1/post_opinion_text.md",
+      "sha256": "beeb029ea76816e3eeb17b0ea9adc140f778b3d522923d3fb6da2235d4463bd4",
+      "destination": "prompts/fine_tune_v1/post_opinion_text.md",
+      "adaptations": [],
+      "release_sha256": "beeb029ea76816e3eeb17b0ea9adc140f778b3d522923d3fb6da2235d4463bd4"
+    },
+    {
+      "source": "prompts/base_models/step2_generate_response_prompt_v5.md",
+      "sha256": "ac101512251a62653cab5d2ce5908b5ceb3d79df6cd6b977c31c506bc3ff8dd9",
+      "destination": "prompts/base_models/step2_generate_response_prompt_v5.md",
+      "adaptations": [],
+      "release_sha256": "ac101512251a62653cab5d2ce5908b5ceb3d79df6cd6b977c31c506bc3ff8dd9"
+    },
+    {
+      "source": "prompts/llm_judge_v2/system_message_initial.md",
+      "sha256": "4ff4514f498e95390d234e42643c305c88273f32a765319d28e9fa01d395e4ca",
+      "destination": "prompts/llm_judge_v2/system_message_initial.md",
+      "adaptations": [],
+      "release_sha256": "4ff4514f498e95390d234e42643c305c88273f32a765319d28e9fa01d395e4ca"
+    },
+    {
+      "source": "prompts/llm_judge_v2/system_message_post.md",
+      "sha256": "c74bbaa5a3a4b9f4dc91b8f3734d13628f6c48e67bba3ac604dfc39414bd9ca8",
+      "destination": "prompts/llm_judge_v2/system_message_post.md",
+      "adaptations": [],
+      "release_sha256": "c74bbaa5a3a4b9f4dc91b8f3734d13628f6c48e67bba3ac604dfc39414bd9ca8"
+    },
+    {
+      "source": "prompts/llm_judge_v2/system_message_tweet.md",
+      "sha256": "cb883783a5fa06925f1bdbdaca5674783d423827ceb0083ce5793fde09e3552c",
+      "destination": "prompts/llm_judge_v2/system_message_tweet.md",
+      "adaptations": [],
+      "release_sha256": "cb883783a5fa06925f1bdbdaca5674783d423827ceb0083ce5793fde09e3552c"
+    },
+    {
+      "source": "prompts/llm_judge_v2/system_message_utterances.md",
+      "sha256": "8b8bec696a166265400bd4573d74c0f58660d3e863f902d017e4eb12c88e4d7a",
+      "destination": "prompts/llm_judge_v2/system_message_utterances.md",
+      "adaptations": [],
+      "release_sha256": "8b8bec696a166265400bd4573d74c0f58660d3e863f902d017e4eb12c88e4d7a"
+    },
+    {
+      "source": "prompts/llm_judge_v2/user_message_initial.md",
+      "sha256": "e3f19b454d73bae38a36b119c3273a225751db774776ef30f530e8cea8e77373",
+      "destination": "prompts/llm_judge_v2/user_message_initial.md",
+      "adaptations": [],
+      "release_sha256": "e3f19b454d73bae38a36b119c3273a225751db774776ef30f530e8cea8e77373"
+    },
+    {
+      "source": "prompts/llm_judge_v2/user_message_post.md",
+      "sha256": "638b12b23bd320fdf62d760cfa5452e5f57633ab6e88ee68305a82ce9df90658",
+      "destination": "prompts/llm_judge_v2/user_message_post.md",
+      "adaptations": [],
+      "release_sha256": "638b12b23bd320fdf62d760cfa5452e5f57633ab6e88ee68305a82ce9df90658"
+    },
+    {
+      "source": "prompts/llm_judge_v2/user_message_tweet.md",
+      "sha256": "3e730b25430465921df430c6f017ba338e84fdb350d9d09d9ebd549f5df0bee2",
+      "destination": "prompts/llm_judge_v2/user_message_tweet.md",
+      "adaptations": [],
+      "release_sha256": "3e730b25430465921df430c6f017ba338e84fdb350d9d09d9ebd549f5df0bee2"
+    },
+    {
+      "source": "prompts/llm_judge_v2/user_message_utterances.md",
+      "sha256": "29ce4430d292dce21c58b84c959efb88684c76514cc153f6f6b82a4f5b16f7fc",
+      "destination": "prompts/llm_judge_v2/user_message_utterances.md",
+      "adaptations": [],
+      "release_sha256": "29ce4430d292dce21c58b84c959efb88684c76514cc153f6f6b82a4f5b16f7fc"
+    },
+    {
+      "source": "prompts/invalid_response/system_message.md",
+      "sha256": "67a68f5b43feb74593a4a7143e79aa7c8b18793bf8c7e65e8ea5a19e7a499a90",
+      "destination": "prompts/invalid_response/system_message.md",
+      "adaptations": [],
+      "release_sha256": "67a68f5b43feb74593a4a7143e79aa7c8b18793bf8c7e65e8ea5a19e7a499a90"
+    },
+    {
+      "source": "prompts/invalid_response/system_message_long.md",
+      "sha256": "b04215209ed48b8a2db206472ca8737c890f3edc81bf37def2ea512bd8d58c0a",
+      "destination": "prompts/invalid_response/system_message_long.md",
+      "adaptations": [],
+      "release_sha256": "b04215209ed48b8a2db206472ca8737c890f3edc81bf37def2ea512bd8d58c0a"
+    },
+    {
+      "source": "prompts/invalid_response/user_message.md",
+      "sha256": "29ce4430d292dce21c58b84c959efb88684c76514cc153f6f6b82a4f5b16f7fc",
+      "destination": "prompts/invalid_response/user_message.md",
+      "adaptations": [],
+      "release_sha256": "29ce4430d292dce21c58b84c959efb88684c76514cc153f6f6b82a4f5b16f7fc"
+    },
+    {
+      "source": "prompts/invalid_response/user_message_long.md",
+      "sha256": "29ce4430d292dce21c58b84c959efb88684c76514cc153f6f6b82a4f5b16f7fc",
+      "destination": "prompts/invalid_response/user_message_long.md",
+      "adaptations": [],
+      "release_sha256": "29ce4430d292dce21c58b84c959efb88684c76514cc153f6f6b82a4f5b16f7fc"
+    },
+    {
+      "source": "neurips_2026/rejudged_labels/eval_v3/prompts/llm_judge_system_message_initial_v2_20260513.md",
+      "sha256": "91d015abd5ed9f86737542a2a9b5faa6c1edde1bc85437e7cdaa9e25a5e853f2",
+      "destination": "prompts/validity/llm_judge_system_message_initial_v2_20260513.md",
+      "adaptations": [],
+      "release_sha256": "91d015abd5ed9f86737542a2a9b5faa6c1edde1bc85437e7cdaa9e25a5e853f2"
+    },
+    {
+      "source": "neurips_2026/rejudged_labels/eval_v3/prompts/llm_judge_system_message_post_v2_20260513.md",
+      "sha256": "46b007a729b6e028e7a5f74d10598b3c658e364695cfd3dcda91616636e3c170",
+      "destination": "prompts/validity/llm_judge_system_message_post_v2_20260513.md",
+      "adaptations": [],
+      "release_sha256": "46b007a729b6e028e7a5f74d10598b3c658e364695cfd3dcda91616636e3c170"
+    },
+    {
+      "source": "neurips_2026/rejudged_labels/eval_v3/prompts/llm_judge_user_message_initial_v2_20260513.md",
+      "sha256": "789981dae131230a84ffb1716bd8cb757986e4cf9b2c1658d2e07c040989737f",
+      "destination": "prompts/validity/llm_judge_user_message_initial_v2_20260513.md",
+      "adaptations": [],
+      "release_sha256": "789981dae131230a84ffb1716bd8cb757986e4cf9b2c1658d2e07c040989737f"
+    },
+    {
+      "source": "neurips_2026/rejudged_labels/eval_v3/prompts/llm_judge_user_message_post_v2_20260513.md",
+      "sha256": "5c1d9ccb375200980eb1166f78eca16ef2549739af11f165673165384e603377",
+      "destination": "prompts/validity/llm_judge_user_message_post_v2_20260513.md",
+      "adaptations": [],
+      "release_sha256": "5c1d9ccb375200980eb1166f78eca16ef2549739af11f165673165384e603377"
+    },
+    {
+      "source": "Ruixuan eval_v5 cache/validity/20250306_175058_The_United_States_has_the_highest_federal_income_tax_rate_of_any_Western_country_01JNP6Y2EBNR7HAY04ZBD4952J/ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs/simulation-llm-v0.csv",
+      "sha256": "067b05211b35ffd86b6941000bfffc21a33ba17863250ce507314fbeaa52b05d",
+      "destination": "prompts/validity/llm_judge_system_message_initial_v3_recovered.md",
+      "adaptations": [
+        "recover system prompt from recorded input_prompt_validation and replace the discussion topic with {TOPIC}"
+      ],
+      "matching_cached_prompts_checked": 307,
+      "release_sha256": "3a4aac59ee3e590d28a07a1cb3cf85e550acf7fee352eb28b74eba509be33bcc"
+    },
+    {
+      "source": "Ruixuan eval_v5 cache/validity/20250306_175058_The_United_States_has_the_highest_federal_income_tax_rate_of_any_Western_country_01JNP6Y2EBNR7HAY04ZBD4952J/ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs/simulation-llm-v0.csv",
+      "sha256": "067b05211b35ffd86b6941000bfffc21a33ba17863250ce507314fbeaa52b05d",
+      "destination": "prompts/validity/llm_judge_system_message_post_v3_recovered.md",
+      "adaptations": [
+        "recover system prompt from recorded input_prompt_validation and replace the discussion topic with {TOPIC}"
+      ],
+      "matching_cached_prompts_checked": 306,
+      "release_sha256": "6f31151b53bfaad06998a8ecf17dceea33d6cf761c72168af4d31b2fefb8f5a7"
+    }
+  ]
+}

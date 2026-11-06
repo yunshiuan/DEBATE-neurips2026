@@ -1,0 +1,17 @@
+provenance,source_table,simulation_mode,simulation_mode_short,model,semantic_similarity_tweet,semantic_similarity_post_opinion,n_word_diff_tweet,n_word_diff_post_opinion,rouge_l_tweet,rouge_l_post_opinion,valid_response_rate
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,gpt-4o-mini-2024-07-18,0.8,0.62,-5.39,-41.38,0.47,0.15,0.99
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,Llama-3.1-8B-Instruct,0.76,0.58,1.95,-46.62,0.41,0.12,0.98
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,Llama-3.1-70B-Instruct,0.78,0.61,-0.93,-40.18,0.43,0.13,0.98
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,Mistral-7B-Instruct-v0.3,0.76,0.59,-1.79,-32.7,0.42,0.12,0.88
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,Qwen2.5-32B-Instruct,0.78,0.61,-0.65,-33.92,0.44,0.13,0.99
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,gemini-2.5-flash-lite,0.78,0.62,-3.63,-36.45,0.45,0.14,0.99
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,gpt-5-mini,0.79,0.62,-3.11,-24.05,0.45,0.13,0.98
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,gpt-4o-mini-2024-07-18,0.79,0.61,-6.39,-43.64,0.46,0.14,0.98
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,Llama-3.1-8B-Instruct,0.71,0.52,-6.05,-49.0,0.41,0.09,0.95
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,Llama-3.1-70B-Instruct,0.73,0.54,-3.09,-38.31,0.41,0.09,0.96
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,Mistral-7B-Instruct-v0.3,0.74,0.57,-6.0,-30.6,0.41,0.11,0.98
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,Qwen2.5-32B-Instruct,0.72,0.59,-17.78,-44.24,0.43,0.12,0.95
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,gemini-2.5-flash-lite,0.77,0.61,-5.09,-41.57,0.45,0.14,0.98
+reused canonical v4 breadth base aggregate,breadth,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,gpt-5-mini,0.77,0.59,-3.83,-31.62,0.44,0.11,0.98
+supplied v5 SFT aggregate,v5_sft,Simulation Mode 3: Full Conversation Simulation (v0),full_conversation,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,0.7584705173780647,0.53840403482492,0.3422535211267605,-9.07905982905983,0.4507972841107455,0.1106943128321304,
+supplied v5 SFT aggregate,v5_sft,Simulation Mode 2: Tweet-guided Conversation Simulation (v1b),tweet_guided,ft:Llama-3.1-8B-Instruct-SFT-20260608-bd-real:bd-group-5epochs,0.7728861764214838,0.5605196590672751,-0.0443974630021141,-8.2008547008547,0.4567106572285708,0.1285790495458926,

@@ -1,0 +1,3 @@
+My tweet: {TWEET_WRITTEN}
+
+{SECOND_AGENT_NAME}'s tweet: {TWEET_RECEIVED}

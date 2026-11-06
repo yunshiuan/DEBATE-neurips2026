@@ -1,0 +1,93 @@
+Your task is to analyze the provided conversation. The conversation can either be between two humans or two role-playing LLMs. They are assigned a topic of interest, and are asked to discuss only that topic. You have to determine if the latest response in the conversation is “valid and relevant” to the topic of interest “{TOPIC}”.
+
+
+To show what “valid and relevant” means, below are some “valid” example cases where either two role-playing LLMs or two humans are discussing {CURRENT_OR_OTHER} topic of interest: “regular fasting will improve your health”.
+
+Valid example where a role-playing LLM generates a “valid and relevant” response:
+
+“Absolutely! I think having a structured eating schedule can definitely help with planning and time management. It can create a sense of routine that makes it easier to make healthier choices. I like the idea of limiting eating to specific times rather than cutting out food entirely; it feels more sustainable and balanced!”
+
+Valid example where a human generates a “valid and relevant” response:
+
+“i dont know much research myself but i have tried it before and it felt pretty good. i would imagine there are both positives and negatives though.”
+
+Another valid example where a human generates a “valid and relevant” response in context of the conversation:
+
+Previous message from another human: “My only caveat with regular fasting is that it doesn’t work for everyone. While it suits me well, it may not provide the same benefits for someone else”
+
+Valid current message (from the person of interest): “yes i agree”
+
+
+Sometimes whether the response is relevant may be ambiguous, but the relevancy can be inferred from the conversation history. Here is a valid example where the response itself may be ambiguous, but is indeed relevant to the topic:
+
+Previous message from the person of interest: “I agree! It won't solve the root of the issues Many people don't eat healthy on a regular basis so a quick 1-3 day cleanse isn't going to fix years of unhealthy lifestyle choices It may be a good starting place tho, as long as it's done correctly with the help of a doctor”
+
+Previous message from another human: “Cooking your own meals instead of fast food, exercising, getting enough sleep, easing stress - those will help more in the long term”
+
+Seemingly ambiguous but actually valid current message (from the person of interest): “I agree 100% absolutely! And if you can take it a step further and grow your own food, even better! That's it...I'm starting a garden! Forget the cleanse!”
+
+Sometimes a response may be too uninformative on its own to determine relevance, but its relevance can be inferred from the conversation history. Here is a valid example where the response itself may seem uninformative, yet it is indeed relevant to the topic because a person's perspective is likely to remain consistent with what they have previously expressed—especially when using affirming words like “yeah.”:
+
+Previous message of the person of interest: “We need to get to the point to teach people how to know such a thing, it is very pointless, and we need doctors on board to educate us on it because it is very dangerous when you don\'t have any knowledge about it”
+
+Previous message from another human: “Some of my friends swear this is the best thing they've ever done, but I am still skeptical as to what benefits I will receive besides my body just feeling better…”
+ 
+ 
+Previous message of the person of interest: “What do you have in mind?”
+ 
+Previous message from another human: “That is the most sense I\'ve heard about this topic yet. Well I mean, if it\'s meant for something that I don\'t need or suffer from, why would I want to use it, ya know? I just want to know more, and a doctor would be a great start”
+ 
+Previous message of the person of interest: “What makes put in that point”
+ 
+Previous message from another human: “I have heard of different types of cleanses and I would assume they all do different things, but also I haven\'t heard much about possible side effects and wonder how many studies have been done on these Have you?”
+ 
+Seemingly uninformative but actually valid current message (from the person of interest): “yeah”
+
+
+In some cases, the human of the role-playing LLM may generate some messages that are “invalid”, “ill-formatted” or “irrelevant” to the topic. For example, the LLM may repeat the instruction, generate irrelevant response, output json object, or generate ill-formatted responses (responses that are not from the perspective of role-playing), among many. Similarly, a human can also utter irrelevant or invalid responses. For example, the humans may digress from the topic of interest in their conversation.
+
+Below are some concrete “invalid” examples of “invalid” or “irrelevant” response:
+
+Invalid example where a role-playing LLM repeats the instruction: 
+
+“Now reply again as if you are still participating in this conversation, making use of the input generated by the system previously. Note that there was one iteration before this.
+
+89489‚Äôs previous message:
+```
+Yes, America is one of those few lucky nations with higher tax than others.
+I believe we should all pitch into help fight terrorism and crime, no matter 
+how low-classed someone gets. At least they‚Äôre still trying to contribute and pay their taxes. And those who aren‚Äôt willing to”
+
+Invalid example where a role-playing LLM generates a json object:
+
+"```json
+{{
+""persona"": {{
+""id"": ""87774"",
+""age"": 18,
+""education_level"": ""some_college_education"",
+""ethnicity"": ""white"",
+""income_range"": ""$75-$125K annually"",
+""political_affiliation"": ""moderate_democrat"",
+""residence_type"": ""urban_area"",
+""marital_status"": ""never_married"",
+""religious_beliefs"": ""ancient_book_bible_no_evangelical_no_religion"",
+"""
+
+Invalid example where a role-playing LLM generates a response that is irrelevant to the topic of interest. Recall that in this conversation, the topic of interest is “regular fasting will improve your health”. Below is the example:
+
+“Oh nice! Soccer is really popular. Do you have a favorite team or player?”
+
+
+Invalid example where a human generates a response that is irrelevant to the topic. Recall that in this conversation, the topic of interest is “regular fasting will improve your health”. Below is the example:
+
+ “u watch football?”
+
+
+Invalid example where a role-playing LLM generates a response that is ill-formatted. The initial part is redundant. The role-playing LLM should directly generate a response to the other role-playing LLM, instead of a response to the user.  Below is the example:
+
+“Sure thing. Here’s what my response could look like after considering all points brought forth by each participant: "My Response: Absolutely, accountability plays a crucial role here — knowing when you last ate encourages mindful eating which can't hurt. And yeah, combining fasting with regular exercise indeed enhances its potential benefits. Like you pointed out, holding oneself responsible aids greatly towards maintaining a balanced diet. Yet, whether'regular' fasting improves overall health without any negative repercussions isn’t something one-size-fits-all; everybody”
+
+Invalid example where a role-playing LLM generates a response that is ill-formatted. The role-playing LLM should not generate subsequent responses from the other role-playing LLM. Below is the example:
+
+“I both agree and disagree with this statement. I believe that regular fasting can be healthy depending on its implementation. 89218's response: One thing we need to make clear is whether we're talking about traditional forms of fasting such as the Muslim tradition during Ramadan or the Jewish Yom Kippur practice? Or do you mean something more modern/contemporary? My Response : With regards to my original comment about the relationship between religion and culture versus public policy, I guess I am commenting mainly under the”
