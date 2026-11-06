@@ -2,7 +2,7 @@
 
 Code for **[DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents](https://arxiv.org/abs/2510.25110)**.
 
-**NeurIPS 2026 · Evaluations and Datasets**
+NeurIPS 2026 Main Conference (**Evaluations & Datasets Track**)
 
 Yun-Shiuan Chuang, Ruixuan Tu, Chengtao Dai, You Li, Smit Vasani, Binwei Yao, Michael Henry Tessler, Sijia Yang, Dhavan Shah, Robert Hawkins, Junjie Hu, Timothy T. Rogers
 
@@ -83,3 +83,16 @@ Install `pip install -e '.[simulation,dev]'` and run `python -m pytest -q` for o
 ## Licenses
 
 Code is distributed under the [MIT license](LICENSE), with upstream attribution in [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md). The dataset and its derivatives remain subject to the separate **DEBATE Dataset Research-Only License (Non-Commercial, v1.0)** in the [data repository](https://huggingface.co/datasets/seantw/DEBATE_LLM/blob/main/LICENSE). Model access and model weights are governed by their respective providers' terms.
+
+## Citation
+
+Until the formal NeurIPS reference is available, please cite the preprint:
+
+```bibtex
+@article{chuang2025debate,
+  title={DEBATE: A large-scale benchmark for evaluating opinion dynamics in role-playing LLM agents},
+  author={Chuang, Yun-Shiuan and Tu, Ruixuan and Dai, Chengtao and Li, You and Vasani, Smit and Yao, Binwei and Tessler, Michael Henry and Yang, Sijia and Shah, Dhavan and Hawkins, Robert and others},
+  journal={arXiv preprint arXiv:2510.25110},
+  year={2025}
+}
+```
