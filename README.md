@@ -89,10 +89,13 @@ Code is distributed under the [MIT license](LICENSE), with upstream attribution 
 Until the formal NeurIPS reference is available, please cite the preprint:
 
 ```bibtex
-@article{chuang2025debate,
-  title={DEBATE: A large-scale benchmark for evaluating opinion dynamics in role-playing LLM agents},
-  author={Chuang, Yun-Shiuan and Tu, Ruixuan and Dai, Chengtao and Li, You and Vasani, Smit and Yao, Binwei and Tessler, Michael Henry and Yang, Sijia and Shah, Dhavan and Hawkins, Robert and others},
-  journal={arXiv preprint arXiv:2510.25110},
-  year={2025}
+@misc{chuang2026debatelargescalebenchmarkevaluating,
+      title={DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents},
+      author={Yun-Shiuan Chuang and Ruixuan Tu and Chengtao Dai and You Li and Smit Vasani and Binwei Yao and Michael Henry Tessler and Sijia Yang and Dhavan Shah and Robert Hawkins and Junjie Hu and Timothy T. Rogers},
+      year={2026},
+      eprint={2510.25110},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2510.25110},
 }
 ```
