@@ -1,0 +1,12 @@
+#!/bin/sh
+# DEBATE: pushes are reserved for the user after local commit review.
+# Agents must never set or use the human-only override.
+if [ "${DEBATE_REVIEWED_PUSH:-}" != "1" ]; then
+    printf '%s\n' \
+        'Push blocked: the user must review local commits and push personally.' \
+        'Agents must never push, set the review override, or bypass this hook.' \
+        'After review, the user may run in their own terminal:' \
+        '  DEBATE_REVIEWED_PUSH=1 git push' >&2
+    exit 1
+fi
+exit 0
