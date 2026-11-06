@@ -4,6 +4,28 @@ Code for **[DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in R
 
 The associated [dataset](https://huggingface.co/datasets/seantw/DEBATE_LLM) contains human conversation records, the evaluation partitions, cached model generations, and stance and validity annotations. This repository contains the simulation, annotation, training, evaluation, and figure-generation code.
 
+## The experiment
+
+[![Four participants report initial private opinions, complete three rounds of public posts and dyadic chats with different partners, and report final private opinions.](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/experiment_20261106.png)](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/experiment_20261106.png)
+
+Each four-person group discusses one statement. Participants report an initial private opinion, then complete three rounds of public tweet-like posts and chats with different partners before reporting a final private opinion. These records let us compare human and simulated opinion dynamics at the message, individual, and group levels.
+
+## Selected results
+
+The figures below show the **group-generalization test split**. Click any figure to open the full-resolution image. [Explore the leaderboard and conversations](https://debate-benchmark.vercel.app/).
+
+### Stance prediction
+
+[![Six stance-error panels compare public and private single-opinion, opinion-update, and opinion-convergence prediction across base models, Llama SFT, and DeGroot.](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/stance_errors_group_test_20261106.png)](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/stance_errors_group_test_20261106.png)
+
+Lower error is better. Solid bars show Full Dynamics Simulation; hatched bars show Next Message Prediction. Error bars are bootstrap 95% confidence intervals. Llama SFT has lower errors than the base Llama model across all six measures in both simulation settings.
+
+### Group opinion dynamics
+
+[![Public and private opinion-convergence bars and standard-deviation trajectories compare human groups, base models, Llama SFT, and DeGroot.](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/convergence_group_test_20261106.png)](https://huggingface.co/datasets/seantw/DEBATE_LLM/resolve/bf14e562f8672cd6f139dbcaeeea86e1af81c724/media/convergence_group_test_20261106.png)
+
+Full Dynamics Simulation: more negative bars indicate a larger reduction in within-group stance variation. The right panels show the corresponding standard-deviation trajectories, anchored to the human initial standard deviation. Llama SFT brings both public and private opinion convergence closer to the human pattern than the base Llama model.
+
 ## Reproduce from cached data
 
 Use Python 3.10 or 3.11 on Linux or macOS. Cached evaluation runs on a CPU and does not require an API key or model weights.
