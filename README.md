@@ -1,6 +1,6 @@
 # DEBATE: NeurIPS 2026 reproducibility code
 
-Code for **DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents**.
+Code for **[DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents](https://arxiv.org/abs/2510.25110)**.
 
 The associated [dataset](https://huggingface.co/datasets/seantw/DEBATE_LLM) contains human conversation records, the evaluation partitions, cached model generations, and stance and validity annotations. This repository contains the simulation, annotation, training, evaluation, and figure-generation code.
 
