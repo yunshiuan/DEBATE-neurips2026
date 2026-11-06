@@ -1,12 +1,10 @@
 #!/bin/sh
-# DEBATE: pushes are reserved for the user after local commit review.
-# Agents must never set or use the human-only override.
-if [ "${DEBATE_REVIEWED_PUSH:-}" != "1" ]; then
+# Humans may push normally; Codex executions may not.
+# Agents must never remove/spoof execution markers or bypass this guard.
+if [ -n "${CODEX_THREAD_ID:-}${CODEX_SESSION_ID:-}${CODEX_TOOL_CALL_ID:-}${CODEX_CI:-}${CODEX_SANDBOX:-}" ]; then
     printf '%s\n' \
-        'Push blocked: the user must review local commits and push personally.' \
-        'Agents must never push, set the review override, or bypass this hook.' \
-        'After review, the user may run in their own terminal:' \
-        '  DEBATE_REVIEWED_PUSH=1 git push' >&2
+        'Push blocked for Codex: only the user may push reviewed commits.' \
+        'The user can use VS Code Source Control or their own terminal normally.' >&2
     exit 1
 fi
 exit 0
