@@ -42,6 +42,19 @@ Lower error is better. Solid bars show Full Dynamics Simulation; hatched bars sh
 
 Full Dynamics Simulation: more negative bars indicate a larger reduction in within-group stance variation. The right panels show the corresponding standard-deviation trajectories. Llama SFT brings both public and private opinion convergence closer to the human pattern than the base Llama model.
 
+## Use the human data
+
+The dataset provides three human-data views: [human events](https://huggingface.co/datasets/seantw/DEBATE_LLM/blob/main/human_views/human_events.csv), [the paper's human-evaluation records](https://huggingface.co/datasets/seantw/DEBATE_LLM/blob/main/human_views/paper_human_evaluation.csv), and [initial/final opinion pairs](https://huggingface.co/datasets/seantw/DEBATE_LLM/blob/main/human_views/human_opinion_pairs.csv). Use `self_reported_opinion` for human self-reports and `annotated_stance` for LLM annotations of human-written text. The legacy `agreement_level` field is model-generated metadata, not a human self-report.
+
+After installing the code as described below, regenerate these views from the public release:
+
+```bash
+debate download --data-root ./data --components human_inputs base_labels validity_labels
+debate export-human --data-root ./data --output-dir ./human_views
+```
+
+Exporting runs locally without model weights or API calls once the inputs are downloaded. The [human-data guide](docs/human_data.md) explains the schema, automatic submissions, duplicate handling, and initial/final selection rule. These views support new human-data analyses; the paper-reproduction commands continue to use their pinned archives and original evaluation rules.
+
 ## Reproduce from cached data
 
 Use Python 3.10 or 3.11 on Linux or macOS. Cached evaluation runs on a CPU and does not require an API key or model weights.
