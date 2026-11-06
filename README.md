@@ -2,9 +2,18 @@
 
 Code for **[DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents](https://arxiv.org/abs/2510.25110)**.
 
-NeurIPS 2026 Main Conference (**Evaluations & Datasets Track**)
+NeurIPS 2026 Main Conference (Evaluations & Datasets Track)
 
-Yun-Shiuan Chuang, Ruixuan Tu, Chengtao Dai, You Li, Smit Vasani, Binwei Yao, Michael Henry Tessler, Sijia Yang, Dhavan Shah, Robert Hawkins, Junjie Hu, Timothy T. Rogers
+Yun-Shiuan Chuang<sup>1†</sup>, Ruixuan Tu<sup>1,2,3*</sup>, Chengtao Dai<sup>1*</sup>, You Li<sup>1*</sup>, Smit Vasani<sup>1*</sup>, Binwei Yao<sup>1</sup>, Michael Henry Tessler<sup>5</sup>, Sijia Yang<sup>1</sup>, Dhavan Shah<sup>1</sup>, Robert Hawkins<sup>4</sup>, Junjie Hu<sup>1</sup>, Timothy T. Rogers<sup>1,6‡</sup>
+
+<sup>1</sup> University of Wisconsin–Madison · <sup>2</sup> University of Tokyo<br>
+<sup>3</sup> RIKEN Center for Advanced Intelligence Project (AIP)<br>
+<sup>4</sup> Stanford University · <sup>5</sup> Google DeepMind<br>
+<sup>6</sup> UCL Institute of Cognitive Neuroscience
+
+\* Co-authors with core contributions.<br>
+† First author contact: [yunshiuan.chuang@gmail.com](mailto:yunshiuan.chuang@gmail.com).<br>
+‡ Correspondence to Timothy T. Rogers: [timothy.rogers@ucl.ac.uk](mailto:timothy.rogers@ucl.ac.uk).
 
 The associated [dataset](https://huggingface.co/datasets/seantw/DEBATE_LLM) contains human conversation records, the evaluation partitions, cached model generations, and stance and validity annotations. This repository contains the simulation, annotation, training, evaluation, and figure-generation code.
 
