@@ -16,7 +16,7 @@ NeurIPS 2026 Main Conference (Evaluations & Datasets Track)
 - **Paper:** <https://arxiv.org/abs/2510.25110>
 - **Dataset:** <https://huggingface.co/datasets/seantw/DEBATE_LLM>
 - **Code:** <https://github.com/yunshiuan/DEBATE-neurips2026>
-- **Benchmark Website:** <https://debate-benchmark.vercel.app/>
+- **Benchmark Website:** <https://debate-llm-benchmark.vercel.app/>
 
 The associated [dataset](https://huggingface.co/datasets/seantw/DEBATE_LLM) contains human conversation records, the evaluation partitions, cached model generations, and stance and validity annotations. This repository contains the simulation, annotation, training, evaluation, and figure-generation code.
 
@@ -28,7 +28,7 @@ Each four-person group discusses one statement. Participants report an initial p
 
 ## Selected results
 
-The figures below show the **group-generalization test split**. Click any figure to open the full-resolution image. [Explore the leaderboard and conversations](https://debate-benchmark.vercel.app/).
+The figures below show the **group-generalization test split**. Click any figure to open the full-resolution image. [Explore the leaderboard and conversations](https://debate-llm-benchmark.vercel.app/).
 
 ### Stance prediction
 
